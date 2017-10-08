@@ -1,0 +1,2110 @@
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+MAX+plus II Compiler Report File
+Version 8.3 4/02/98
+Compiled: 10/06/99 05:01:21
+
+Copyright (C) 1988-1998 Altera Corporation
+Any megafunction design, and related net list (encrypted or decrypted),
+support information, device programming or simulation file, and any other
+associated documentation or information provided by Altera or a partner
+under Altera's Megafunction Partnership Program may be used only to
+program PLD devices (but not masked PLD devices) from Altera.  Any other
+use of such megafunction design, net list, support information, device
+programming or simulation file, or any other related documentation or
+information is prohibited for any other purpose, including, but not
+limited to modification, reverse engineering, de-compiling, or use with
+any other silicon devices, unless such use is explicitly licensed under
+a separate agreement with Altera or a megafunction partner.  Title to
+the intellectual property, including patents, copyrights, trademarks,
+trade secrets, or maskworks, embodied in any such megafunction design,
+net list, support information, device programming or simulation file, or
+any other related documentation or information provided by Altera or a
+megafunction partner, remains with Altera, the megafunction partner, or
+their respective licensors.  No other licenses, including any licenses
+needed under any third party's intellectual property, are provided herein.
+
+
+
+***** Project compilation was unsuccessful
+
+
+Untitled
+
+
+** DEVICE SUMMARY **
+
+Chip/                     Input   Output   Bidir         Shareable
+POF       Device          Pins    Pins     Pins     LCs  Expanders  % Utilized
+
+uploader  EPM7128SLC84-10  10       24       24     110     44          No Fit
+
+User Pins:                 10       24       24 
+
+
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** PROJECT COMPILATION MESSAGES **
+
+Warning: Line 43, File e:\pro\nintendo64\plm\uploader.tdf:
+   Symbolic name "epp_wrg4" was declared but never used
+Error: No fit found, generating Report File
+
+(See individual chip error summaries for additional information)
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** AUTO GLOBAL SIGNALS **
+
+
+
+INFO: Signal 'clk' chosen for auto global Clock
+
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** PIN/LOCATION/CHIP ASSIGNMENTS **
+
+                  Actual                  
+    User       Assignments                
+Assignments   (if different)     Node Name
+
+uploader@36      ---------        cas0L
+uploader@33      ---------        cas0U
+uploader@35      ---------        cas1L
+uploader@34      ---------        cas1U
+uploader@83      ---------        clk
+uploader@52      ---------        dram_a0
+uploader@51      ---------        dram_a1
+uploader@50      ---------        dram_a2
+uploader@49      ---------        dram_a3
+uploader@48      ---------        dram_a4
+uploader@46      ---------        dram_a5
+uploader@45      ---------        dram_a6
+uploader@44      ---------        dram_a7
+uploader@41      ---------        dram_a8
+uploader@40      ---------        dram_a9
+uploader@39      ---------        dram_a10
+uploader@37      ---------        dram_a11
+uploader@20      ---------        epp_addr_stb
+uploader@17      ---------        epp_busy
+uploader@18      ---------        epp_data_stb
+uploader@6       ---------        epp_data0
+uploader@8       ---------        epp_data1
+uploader@9       ---------        epp_data2
+uploader@10      ---------        epp_data3
+uploader@11      ---------        epp_data4
+uploader@12      ---------        epp_data5
+uploader@15      ---------        epp_data6
+uploader@16      ---------        epp_data7
+uploader@1       ---------        epp_init
+uploader@5       ---------        epp_write
+uploader@73      ---------        ndrambuf
+uploader@80      ---------        n64_aleh
+uploader@81      ---------        n64_alel
+uploader@74      ---------        n64_cold_reset
+uploader@54      ---------        n64_data0
+uploader@55      ---------        n64_data1
+uploader@56      ---------        n64_data2
+uploader@57      ---------        n64_data3
+uploader@58      ---------        n64_data4
+uploader@60      ---------        n64_data5
+uploader@61      ---------        n64_data6
+uploader@63      ---------        n64_data7
+uploader@21      ---------        n64_data8
+uploader@22      ---------        n64_data9
+uploader@24      ---------        n64_data10
+uploader@25      ---------        n64_data11
+uploader@27      ---------        n64_data12
+uploader@28      ---------        n64_data13
+uploader@29      ---------        n64_data14
+uploader@30      ---------        n64_data15
+uploader@75      ---------        n64_read
+uploader@76      ---------        n64_write
+uploader@64      ---------        ras0
+uploader@65      ---------        ras1
+uploader@77      ---------        rom_read
+uploader@79      ---------        rom_write
+uploader@31      ---------        we
+
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** STATE MACHINE ASSIGNMENTS **
+
+
+epp_ss: MACHINE
+        OF BITS (
+           epp_ss~6,
+           epp_ss~5,
+           epp_ss~4,
+           epp_ss~3,
+           epp_ss~2,
+           epp_ss~1
+        )
+        WITH STATES (
+                              s0 = B"000000", 
+                              s1 = B"110000", 
+                              sa = B"101000", 
+                              sd = B"100100", 
+                              sr = B"100010", 
+                             sr1 = B"100001"
+);
+
+
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** FILE HIERARCHY **
+
+
+
+|lpm_decode:dc|
+|lpm_decode:dc|altshift:external_latency_ffs|
+|lpm_decode:dc|declut:decoder|
+|lpm_mux:epp_mux|
+|lpm_mux:epp_mux|bypassff:sel_latency_ff0|
+|lpm_mux:epp_mux|altshift:external_latency_ffs|
+|lpm_mux:epp_mux|muxlut:111|
+|lpm_mux:epp_mux|muxlut:111|muxlut:40|
+|lpm_mux:epp_mux|muxlut:111|muxlut:57|
+|lpm_mux:epp_mux|muxlut:129|
+|lpm_mux:epp_mux|muxlut:129|muxlut:40|
+|lpm_mux:epp_mux|muxlut:129|muxlut:57|
+|lpm_mux:epp_mux|muxlut:147|
+|lpm_mux:epp_mux|muxlut:147|muxlut:40|
+|lpm_mux:epp_mux|muxlut:147|muxlut:57|
+|lpm_mux:epp_mux|muxlut:165|
+|lpm_mux:epp_mux|muxlut:165|muxlut:40|
+|lpm_mux:epp_mux|muxlut:165|muxlut:57|
+|lpm_mux:epp_mux|muxlut:183|
+|lpm_mux:epp_mux|muxlut:183|muxlut:40|
+|lpm_mux:epp_mux|muxlut:183|muxlut:57|
+|lpm_mux:epp_mux|muxlut:201|
+|lpm_mux:epp_mux|muxlut:201|muxlut:40|
+|lpm_mux:epp_mux|muxlut:201|muxlut:57|
+|lpm_mux:epp_mux|muxlut:219|
+|lpm_mux:epp_mux|muxlut:219|muxlut:40|
+|lpm_mux:epp_mux|muxlut:219|muxlut:57|
+|lpm_mux:epp_mux|muxlut:237|
+|lpm_mux:epp_mux|muxlut:237|muxlut:40|
+|lpm_mux:epp_mux|muxlut:237|muxlut:57|
+|lpm_mux:epp_bmux|
+|lpm_mux:epp_bmux|altshift:external_latency_ffs|
+|lpm_mux:epp_bmux|muxlut:75|
+|lpm_mux:epp_bmux|muxlut:88|
+|lpm_mux:epp_bmux|muxlut:101|
+|lpm_mux:epp_bmux|muxlut:114|
+|lpm_mux:epp_bmux|muxlut:127|
+|lpm_mux:epp_bmux|muxlut:140|
+|lpm_mux:epp_bmux|muxlut:153|
+|lpm_mux:epp_bmux|muxlut:166|
+|lpm_mux:dmux|
+|lpm_mux:dmux|altshift:external_latency_ffs|
+|lpm_mux:dmux|muxlut:180|
+|lpm_mux:dmux|muxlut:193|
+|lpm_mux:dmux|muxlut:206|
+|lpm_mux:dmux|muxlut:219|
+|lpm_mux:dmux|muxlut:232|
+|lpm_mux:dmux|muxlut:245|
+|lpm_mux:dmux|muxlut:258|
+|lpm_mux:dmux|muxlut:271|
+|lpm_mux:dmux|muxlut:284|
+|lpm_mux:dmux|muxlut:297|
+|lpm_mux:dmux|muxlut:310|
+|lpm_mux:dmux|muxlut:323|
+|lpm_mux:dmux|muxlut:336|
+|lpm_mux:dmux|muxlut:349|
+|lpm_mux:dmux|muxlut:362|
+|lpm_mux:dmux|muxlut:375|
+|lpm_mux:dmux|muxlut:388|
+|lpm_mux:dmux|muxlut:401|
+|lpm_mux:dmux|muxlut:414|
+|lpm_mux:dmux|muxlut:427|
+|lpm_mux:dmux|muxlut:440|
+|lpm_mux:dmux|muxlut:453|
+|lpm_mux:dmux|muxlut:466|
+|lpm_mux:dmux|muxlut:479|
+|lpm_mux:dmux|muxlut:492|
+|lpm_mux:dmux|muxlut:505|
+|lpm_mux:dmux|muxlut:518|
+|lpm_mux:dmux|muxlut:531|
+|lpm_mux:dmux|muxlut:544|
+|lpm_mux:incmux|
+|lpm_mux:incmux|altshift:external_latency_ffs|
+|lpm_mux:incmux|muxlut:80|
+|lpm_mux:incmux|muxlut:93|
+|lpm_mux:incmux|muxlut:106|
+|lpm_mux:incmux|muxlut:119|
+|lpm_mux:incmux|muxlut:132|
+|lpm_mux:incmux|muxlut:145|
+|lpm_mux:incmux|muxlut:158|
+|lpm_mux:incmux|muxlut:171|
+|lpm_mux:incmux|muxlut:184|
+|lpm_add_sub:add|
+|lpm_add_sub:add|addcore:adder1|
+|lpm_add_sub:add|addcore:adder0|
+|lpm_add_sub:add|look_add:look_aheader|
+|lpm_add_sub:add|altshift:result_ext_latency_ffs|
+|lpm_add_sub:add|altshift:carry_ext_latency_ffs|
+|lpm_add_sub:add|altshift:oflow_ext_latency_ffs|
+|lpm_mux:amux|
+|lpm_mux:amux|altshift:external_latency_ffs|
+|lpm_mux:amux|muxlut:95|
+|lpm_mux:amux|muxlut:108|
+|lpm_mux:amux|muxlut:121|
+|lpm_mux:amux|muxlut:134|
+|lpm_mux:amux|muxlut:147|
+|lpm_mux:amux|muxlut:160|
+|lpm_mux:amux|muxlut:173|
+|lpm_mux:amux|muxlut:186|
+|lpm_mux:amux|muxlut:199|
+|lpm_mux:amux|muxlut:212|
+|lpm_mux:amux|muxlut:225|
+|lpm_mux:amux|muxlut:238|
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+***** Logic for device 'uploader' contains errors -- see ERROR SUMMARY.
+
+
+
+
+Device: EPM7128SLC84-10
+
+Device Options:
+    Turbo Bit                                    = ON
+    Security Bit                                 = OFF
+    Enable JTAG Support                        = ON
+    User Code                                  = ffff
+    MultiVolt I/O                              = OFF
+
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** ERROR SUMMARY **
+
+Error: Pin or logic cell 'epp_ss~5' can't feed LAB 'B' because its path into the LAB is already used
+Info: Can't find a fit for this project, though one may exist
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** RESOURCE USAGE **
+
+                                                Shareable     External
+Logic Array Block     Logic Cells   I/O Pins    Expanders   Interconnect
+
+A:     LC1 - LC16    10/16( 62%)   7/ 8( 87%)   5/16( 31%)  35/36( 97%) 
+B:    LC17 - LC32    16/16(100%)   8/ 8(100%)   4/16( 25%)  33/36( 91%) 
+C:    LC33 - LC48    14/16( 87%)   8/ 8(100%)   7/16( 43%)  32/36( 88%) 
+D:    LC49 - LC64    14/16( 87%)   8/ 8(100%)  11/16( 68%)  30/36( 83%) 
+E:    LC65 - LC80    12/16( 75%)   8/ 8(100%)   7/16( 43%)  34/36( 94%) 
+F:    LC81 - LC96    14/16( 87%)   8/ 8(100%)  13/16( 81%)  25/36( 69%) 
+G:   LC97 - LC112    15/16( 93%)   5/ 8( 62%)  11/16( 68%)  32/36( 88%) 
+H:  LC113 - LC128    15/16( 93%)   8/ 8(100%)  10/16( 62%)  32/36( 88%) 
+
+
+Total dedicated input pins used:                 0/4      (  0%)
+Total I/O pins used:                             0/64     (  0%)
+Total logic cells used:                          0/128    (  0%)
+Total shareable expanders used:                  0/128    (  0%)
+Total Turbo logic cells used:                  110/128    ( 85%)
+Total shareable expanders not available (n/a):  24/128    ( 18%)
+Average fan-in:                                  5.98
+Total fan-in:                                   658
+
+Total input pins required:                      10
+Total fast input logic cells required:           2
+Total output pins required:                     24
+Total bidirectional pins required:              24
+Total reserved pins required                     4
+Total logic cells required:                    110
+Total flipflops required:                       61
+Total pterms required:                         341
+Total logic cells lending parallel expanders:   17
+Total shareable expanders in database:          13
+
+Synthesized logic cells:                         3/ 128   (  2%)
+
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** INPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  83      -   -       INPUT              0      0   0    0    0    0    0  clk
+  20     21    B         FF  +           0      0   0    0    2    1    2  epp_addr_stb
+  18     24    B         FF  +           0      0   0    0    2    1    6  epp_data_stb
+   6     13    A      BIDIR              1      0   1    0    9    3    5  epp_data0
+   8     11    A      BIDIR              0      0   0    0    1    2    6  epp_data1
+   9      8    A      BIDIR              1      0   1    0   10    2    6  epp_data2
+  10      6    A      BIDIR              1      0   1    0    9    3    3  epp_data3
+  11      5    A      BIDIR              1      0   1    0   10    2    3  epp_data4
+  12      3    A      BIDIR              1      0   1    0   10    2    4  epp_data5
+  15     29    B      BIDIR              1      0   1    0   10    2    4  epp_data6
+  16     27    B      BIDIR              1      0   1    1    9    2    3  epp_data7
+   1      -   -       INPUT              0      0   0    0    0    2    0  epp_init
+   5   (14)  (A)      INPUT              0      0   0    0    0    1   11  epp_write
+  80  (126)  (H)      INPUT              0      0   0    0    0    1   11  n64_aleh
+  81  (128)  (H)      INPUT              0      0   0    0    0    2   26  n64_alel
+  74  (117)  (H)      INPUT              0      0   0    0    0    7   28  n64_cold_reset
+  54     83    F      BIDIR              0      0   0    0    1    1    2  n64_data0
+  55     85    F      BIDIR              0      0   0    0    1    0    3  n64_data1
+  56     86    F      BIDIR              0      0   0    0    1    1    2  n64_data2
+  57     88    F      BIDIR              0      0   0    0    1    1    2  n64_data3
+  58     91    F      BIDIR              0      0   0    0    1    1    2  n64_data4
+  60     93    F      BIDIR              0      0   0    0    1    1    2  n64_data5
+  61     94    F      BIDIR              0      0   0    0    1    1    2  n64_data6
+  63     97    G      BIDIR              0      0   0    0    1    1    2  n64_data7
+  21     19    B      BIDIR              0      0   0    0    1    2    1  n64_data8
+  22     17    B      BIDIR              0      0   0    0    1    0    3  n64_data9
+  24     46    C      BIDIR              0      0   0    0    1    1    2  n64_data10
+  25     45    C      BIDIR              0      0   0    0    1    1    1  n64_data11
+  27     43    C      BIDIR              0      0   0    0    1    1    1  n64_data12
+  28     40    C      BIDIR              0      0   0    0    1    1    1  n64_data13
+  29     38    C      BIDIR              0      0   0    0    1    1    1  n64_data14
+  30     37    C      BIDIR              0      0   0    0    1    1    1  n64_data15
+  75  (118)  (H)      INPUT              0      0   0    0    0    2    1  n64_read
+  76  (120)  (H)      INPUT              0      0   0    0    0    4    2  n64_write
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** OUTPUTS **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+  36     57    D     OUTPUT     t !      0      0   0    0    5    0    0  cas0L
+  33     64    D     OUTPUT     t !      0      0   0    0    5    0    0  cas0U
+  35     59    D     OUTPUT     t !      0      0   0    0    5    0    0  cas1L
+  34     61    D     OUTPUT     t !      0      0   0    0    5    0    0  cas1U
+  52     80    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a0
+  51     77    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a1
+  50     75    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a2
+  49     73    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a3
+  48     72    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a4
+  46     69    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a5
+  45     67    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a6
+  44     65    E     OUTPUT     t        0      0   0    0    3    0    0  dram_a7
+  41     49    D     OUTPUT     t        0      0   0    0    3    0    0  dram_a8
+  40     51    D     OUTPUT     t        0      0   0    0    3    0    0  dram_a9
+  39     53    D     OUTPUT     t        0      0   0    0    3    0    0  dram_a10
+  37     56    D         FF  +  t        4      4   0    3    4    2    0  dram_a11
+  17     25    B         FF  +  t !      1      0   1    1   10    1    1  epp_busy
+   6     13    A        TRI     t        1      0   1    0    9    3    5  epp_data0
+   8     11    A        TRI     t        0      0   0    0    1    2    6  epp_data1
+   9      8    A        TRI     t        1      0   1    0   10    2    6  epp_data2
+  10      6    A        TRI     t        1      0   1    0    9    3    3  epp_data3
+  11      5    A        TRI     t        1      0   1    0   10    2    3  epp_data4
+  12      3    A        TRI     t        1      0   1    0   10    2    4  epp_data5
+  15     29    B        TRI     t        1      0   1    0   10    2    4  epp_data6
+  16     27    B        TRI     t        1      0   1    1    9    2    3  epp_data7
+  73    115    H     OUTPUT     t !      1      0   1    4    4    0    0  ndrambuf
+  54     83    F        TRI     t        0      0   0    0    1    1    2  n64_data0
+  55     85    F        TRI     t        0      0   0    0    1    0    3  n64_data1
+  56     86    F        TRI     t        0      0   0    0    1    1    2  n64_data2
+  57     88    F        TRI     t        0      0   0    0    1    1    2  n64_data3
+  58     91    F        TRI     t        0      0   0    0    1    1    2  n64_data4
+  60     93    F        TRI     t        0      0   0    0    1    1    2  n64_data5
+  61     94    F        TRI     t        0      0   0    0    1    1    2  n64_data6
+  63     97    G        TRI     t        0      0   0    0    1    1    2  n64_data7
+  21     19    B        TRI     t        0      0   0    0    1    2    1  n64_data8
+  22     17    B        TRI     t        0      0   0    0    1    0    3  n64_data9
+  24     46    C        TRI     t        0      0   0    0    1    1    2  n64_data10
+  25     45    C        TRI     t        0      0   0    0    1    1    1  n64_data11
+  27     43    C        TRI     t        0      0   0    0    1    1    1  n64_data12
+  28     40    C        TRI     t        0      0   0    0    1    1    1  n64_data13
+  29     38    C        TRI     t        0      0   0    0    1    1    1  n64_data14
+  30     37    C        TRI     t        0      0   0    0    1    1    1  n64_data15
+  67    104    G         FF  +  t !      0      0   0    3    2    0    0  os_event_cart
+  64     99    G     OUTPUT     t !      0      0   0    0    3    0    0  ras0
+  65    101    G     OUTPUT     t !      0      0   0    0    3    0    0  ras1
+  77    123    H     OUTPUT     t !      0      0   0    2    3    0    0  rom_read
+  79    125    H     OUTPUT     t !      0      0   0    2    3    0    0  rom_write
+  31     35    C         FF  +  t        0      0   0    3    9    0    1  we
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** BURIED LOGIC **
+
+                                         Shareable
+                                         Expanders     Fan-In    Fan-Out
+ Pin     LC  LAB  Primitive    Code   Total Shared n/a INP  FBK  OUT  FBK  Name
+   -    114    H      LCELL     t        1      0   1    3    5    1    4  as
+   -     41    C       DFFE  +  t        0      0   0    0    2    4    3  cart_on
+   -    100    G       DFFE  +  t        0      0   0    0    3    4    1  cas
+   -    106    G       DFFE  +  t        0      0   0    0    4    4    2  casr
+   -     63    D       DFFE  +  t        4      3   1    2    6   11   10  cnt0
+   -     42    C       DFFE  +  t        4      3   1    2    7    2    9  cnt1
+   -     90    F       DFFE  +  t        4      3   1    2    8    5    7  cnt2
+ (70)   109    G       DFFE  +  t        6      4   1    2    9    2    6  cnt3
+   -     82    F       DFFE  +  t        6      4   1    2   10    2    5  cnt4
+   -     71    E       TFFE  +  t        5      4   1    2   11    2    4  cnt5
+   -     95    F       TFFE  +  t        5      4   1    2   12    2    3  cnt6
+   -     98    G       TFFE  +  t        5      4   1    2   13    2    2  cnt7
+   -     79    E       TFFE  +  t        5      3   1    2   14    2    1  cnt8
+   -    113    H       DFFE  +  t        3      3   0    2    4    1    1  cnt9
+   -     50    D       DFFE  +  t        3      3   0    2    4    2    0  cnt10
+   -     39    C       DFFE  +  t        3      3   0    2    4    2    0  cnt11
+   -     36    C       DFFE  +  t        3      3   0    2    4    2    0  cnt12
+   -     44    C       DFFE  +  t        3      3   0    2    4    2    0  cnt13
+   -     33    C       DFFE  +  t        3      3   0    2    4    2    0  cnt14
+ (23)    48    C       DFFE  +  t        3      3   0    2    4    2    0  cnt15
+   -     55    D       DFFE  +  t        4      4   0    3    4    2    0  cnt16
+   -    122    H       DFFE  +  t        4      4   0    3    4    1    1  cnt17
+   -     60    D       DFFE  +  t        4      4   0    3    4    2    0  cnt18
+   -    110    G       DFFE  +  t        4      4   0    3    4    2    0  cnt19
+   -     92    F       DFFE  +  t        4      4   0    3    4    2    0  cnt20
+ (68)   105    G       DFFE  +  t        4      4   0    3    4    2    0  cnt21
+ (62)    96    F       DFFE  +  t        4      4   0    3    4    2    0  cnt22
+ (69)   107    G       DFFE  +  t        4      4   0    3    4    2    0  cnt23
+ (80)   126    H       DFFE  +  t        4      4   0    3    4    0    1  cnt25
+   -     54    D       DFFE  +  t        4      4   0    3    4    5    3  cnt26
+   -     81    F       DFFE  +  t        0      0   0    0    2    0    1  enable
+ (81)   128    H       DFFE  +  t        0      0   0    1    3    1    3  epp_as
+   -     78    E       DFFE  +  t        0      0   0    1    2    7    9  epp_rga0
+   -     30    B       DFFE  +  t        0      0   0    1    2    7    9  epp_rga1
+   -     18    B       DFFE  +  t        0      0   0    1    2    7    9  epp_rga2
+   -     22    B       DFFE  +  t        0      0   0    0    3    1    0  epp_ss~1
+   -     23    B       DFFE  +  t        1      0   1    0    7    1    2  epp_ss~2
+ (14)    32    B       DFFE  +  t        0      0   0    0    7    1    5  epp_ss~3
+   -     20    B       DFFE  +  t        0      0   0    0    5    1    3  epp_ss~4
+   -     ??    B       DFFE  +  t        0      0   0    0    6    1    4  epp_ss~5
+   -     70    E       DFFE  +  t        0      0   0    0    2    1    0  ewe
+   -    102    G       DFFE  +  t        0      0   0    0    2    0    9  inc
+ (75)   118    H       DFFE  +  t        0      0   0    1    4    0    8  |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+   -     12    A       DFFE  +  t        0      0   0    1    4    0    8  |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+   -      7    A       DFFE  +  t        0      0   0    1    4    0    8  |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+   -      4    A       DFFE  +  t        0      0   0    1    4    1    2  |lpm_decode:dc|altshift:external_latency_ffs|points0_3
+   -      2    A       DFFE  +  t        0      0   0    1    4    1    5  |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+ (74)   117    H       SOFT   s t        0      0   0    2    0    0    0  |lpm_mux:epp_mux|muxlut:111|muxlut:57|result_node~1
+   -    119    H        OR2   s t  r     1      0   1    0   10    1    0  |lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node~fit~in1
+   -     28    B       DFFE  +  t        0      0   0    0    2    8   30  mode
+   -    124    H       DFFE  +  t        0      0   0    0    1   11    2  mx
+ (76)   120    H       SOFT   s t        0      0   0    1    2    0    0  n64_data0~1
+   -    103    G       DFFE  +  t        0      0   0    0    2    3    3  ras
+   -    111    G       DFFE  +  t        0      0   0    0    3    2    0  rasr
+   -    121    H      LCELL     t !      0      0   0    2    8    0    2  refresh
+   -    116    H       DFFE  +  t        1      0   1    1    5    5    3  wcf
+   -     62    D       DFFE  +  t        1      0   1    0    5    1    0  wdf
+   -     89    F       DFFE  +  t        1      0   1    0    2    1    1  write_ena
+   -     26    B       TFFE  +  t        0      0   0    0    0    3    8  x2
+   -    108    G       TFFE  +  t        0      0   0    0    1    3    7  x4
+
+
+Code:
+
+s = Synthesized pin or logic cell
+t = Turbo logic cell
++ = Synchronous flipflop
+/ = Slow slew-rate output
+! = NOT gate push-back
+r = Fitter-inserted logic cell
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'A':
+
+                             Logic cells placed in LAB 'A'
+        +------------------- LC13 epp_data0
+        | +----------------- LC11 epp_data1
+        | | +--------------- LC8 epp_data2
+        | | | +------------- LC6 epp_data3
+        | | | | +----------- LC5 epp_data4
+        | | | | | +--------- LC3 epp_data5
+        | | | | | | +------- LC12 |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+        | | | | | | | +----- LC7 |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+        | | | | | | | | +--- LC4 |lpm_decode:dc|altshift:external_latency_ffs|points0_3
+        | | | | | | | | | +- LC2 |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+        | | | | | | | | | | 
+        | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | |   that feed LAB 'A'
+LC      | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'A':
+
+Pin
+83   -> - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - - | - * - - - - * - | <-- epp_init
+5    -> - - - - - - * * * * | * * * - * - - * | <-- epp_write
+LC63 -> * - * * * * - - - - | * * * * * * * * | <-- cnt0
+LC90 -> - - * - - - - - - - | * - - * * * * - | <-- cnt2
+LC109-> - - - * - - - - - - | * - - - * * * - | <-- cnt3
+LC82 -> - - - - * - - - - - | * - - - * * * - | <-- cnt4
+LC71 -> - - - - - * - - - - | * - - - * * * - | <-- cnt5
+LC79 -> * - - - - - - - - - | * - - - * - - - | <-- cnt8
+LC50 -> - - * - - - - - - - | * - - - * - - - | <-- cnt10
+LC39 -> - - - * - - - - - - | * - - * - - - - | <-- cnt11
+LC36 -> - - - - * - - - - - | * - - * - - - - | <-- cnt12
+LC44 -> - - - - - * - - - - | * - - - * - - - | <-- cnt13
+LC55 -> * - - - - - - - - - | * - - - * - - - | <-- cnt16
+LC60 -> - - * - - - - - - - | * - - - * - - - | <-- cnt18
+LC110-> - - - * - - - - - - | * - - - * - - - | <-- cnt19
+LC92 -> - - - - * - - - - - | * - - - * - - - | <-- cnt20
+LC105-> - - - - - * - - - - | * - - * - - - - | <-- cnt21
+LC54 -> - - * - - - - - - - | * - * - - - - * | <-- cnt26
+LC56 -> * - - - - - - - - - | * - - * - - - - | <-- dram_a11
+LC78 -> * - * * * * * * * * | * * - - - - - * | <-- epp_rga0
+LC30 -> * - * * * * * * * * | * * - - - - - * | <-- epp_rga1
+LC18 -> * - * * * * * * * * | * * - - - - - * | <-- epp_rga2
+LC32 -> - - - - - - * * * * | * * - - - - - * | <-- epp_ss~3
+LC119-> - * - - - - - - - - | * - - - - - - - | <-- |lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node~fit~in1
+LC28 -> - - - - * - - - - - | * - * * * * * * | <-- mode
+LC83 -> * - - - - - - - - - | * - - * - - - - | <-- n64_data0
+LC86 -> - - * - - - - - - - | * - - * - * - - | <-- n64_data2
+LC88 -> - - - * - - - - - - | * - - - - - * - | <-- n64_data3
+LC91 -> - - - - * - - - - - | * - - - - * - - | <-- n64_data4
+LC93 -> - - - - - * - - - - | * - - - * - * - | <-- n64_data5
+LC19 -> * - - - - - - - - - | * - - * * - - - | <-- n64_data8
+LC46 -> - - * - - - - - - - | * - - * - - - - | <-- n64_data10
+LC45 -> - - - * - - - - - - | * - * - - - - - | <-- n64_data11
+LC43 -> - - - - * - - - - - | * - * - - - - - | <-- n64_data12
+LC40 -> - - - - - * - - - - | * - * - - - - - | <-- n64_data13
+LC116-> - - - - - * - - - - | * - * - - - - * | <-- wcf
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'B':
+
+                                         Logic cells placed in LAB 'B'
+        +------------------------------- LC21 epp_addr_stb
+        | +----------------------------- LC25 epp_busy
+        | | +--------------------------- LC24 epp_data_stb
+        | | | +------------------------- LC29 epp_data6
+        | | | | +----------------------- LC27 epp_data7
+        | | | | | +--------------------- LC30 epp_rga1
+        | | | | | | +------------------- LC18 epp_rga2
+        | | | | | | | +----------------- LC22 epp_ss~1
+        | | | | | | | | +--------------- LC23 epp_ss~2
+        | | | | | | | | | +------------- LC32 epp_ss~3
+        | | | | | | | | | | +----------- LC20 epp_ss~4
+        | | | | | | | | | | | +---------LC???epp_ss~5
+        | | | | | | | | | | | | +------- LC28 mode
+        | | | | | | | | | | | | | +----- LC19 n64_data8
+        | | | | | | | | | | | | | | +--- LC17 n64_data9
+        | | | | | | | | | | | | | | | +- LC26 x2
+        | | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | | |   that feed LAB 'B'
+LC      | | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'B':
+LC21 -> - * - - - - - - - - * * - - - - | - * - - - - - - | <-- epp_addr_stb
+LC25 -> - * - - - - - - - - - * - - - - | - * - - - - - - | <-- epp_busy
+LC24 -> - * - - - - - - * * * * - - - - | - * - - - - - * | <-- epp_data_stb
+LC30 -> - - - * * - - - * * - - - - - - | * * - - - - - * | <-- epp_rga1
+LC18 -> - - - * * - - - * * - - - - - - | * * - - - - - * | <-- epp_rga2
+LC22 -> - * - - - - - - - - - - - - - - | - * - - - - - - | <-- epp_ss~1
+LC23 -> - * - - - - - * - - - - - - - - | - * - - - - - * | <-- epp_ss~2
+LC32 -> - * - - - - - - - - - - - - - - | * * - - - - - * | <-- epp_ss~3
+LC20 -> - * - - - * * - - - - - - - - - | - * - - * - - - | <-- epp_ss~4
+LC26 -> * * * - - - - * * * * * - - - * | - * - - - - * - | <-- x2
+
+Pin
+83   -> - - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - * - - - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+5    -> - - - - - * * - - - - - - - - - | * * * - * - - * | <-- epp_write
+74   -> - - - - * - - - - - - - - - - - | - * * * * * * * | <-- n64_cold_reset
+LC114-> - - - - - - - - - - - - * - - - | - * * - * - * - | <-- as
+LC63 -> - - - * * - - - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC95 -> - - - * - - - - - - - - - - - - | - * - - * * * - | <-- cnt6
+LC98 -> - - - - * - - - - - - - - - - - | - * - - * - * - | <-- cnt7
+LC33 -> - - - * - - - - - - - - - - - - | - * - - * - - - | <-- cnt14
+LC48 -> - - - - * - - - - - - - - - - - | - * - - * - - - | <-- cnt15
+LC96 -> - - - * - - - - - - - - - - - - | - * - * - - - - | <-- cnt22
+LC107-> - - - - * - - - - - - - - - - - | - * - * - - - - | <-- cnt23
+LC81 -> - - - - - - - - - - - - * - - - | - * - - - - - - | <-- enable
+LC13 -> - - - - - - - - - - - - - * - - | - * - * * * - - | <-- epp_data0
+LC11 -> - - - - - * - - - - - - - - * - | - * * - - * - * | <-- epp_data1
+LC8  -> - - - - - - * - - - - - - - - - | - * * * - * - - | <-- epp_data2
+LC78 -> - - - * * - - - * * - - - - - - | * * - - - - - * | <-- epp_rga0
+LC94 -> - - - * - - - - - - - - - - - - | - * - - - * - - | <-- n64_data6
+LC97 -> - - - - * - - - - - - - - - - - | - * - - - - * - | <-- n64_data7
+LC38 -> - - - * - - - - - - - - - - - - | - * * - - - - - | <-- n64_data14
+LC37 -> - - - - * - - - - - - - - - - - | - * * - - - - - | <-- n64_data15
+LC62 -> - - - * - - - - - - - - - - - - | - * - - - - - - | <-- wdf
+LC108-> * * * - - - - * * * * * - - - - | - * - - - - * - | <-- x4
+LC?? -> - * - - - - - - * * * * - - - - | - * - - - - - - | <-- epp_ss~5
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'C':
+
+                                     Logic cells placed in LAB 'C'
+        +--------------------------- LC41 cart_on
+        | +------------------------- LC42 cnt1
+        | | +----------------------- LC39 cnt11
+        | | | +--------------------- LC36 cnt12
+        | | | | +------------------- LC44 cnt13
+        | | | | | +----------------- LC33 cnt14
+        | | | | | | +--------------- LC48 cnt15
+        | | | | | | | +------------- LC46 n64_data10
+        | | | | | | | | +----------- LC45 n64_data11
+        | | | | | | | | | +--------- LC43 n64_data12
+        | | | | | | | | | | +------- LC40 n64_data13
+        | | | | | | | | | | | +----- LC38 n64_data14
+        | | | | | | | | | | | | +--- LC37 n64_data15
+        | | | | | | | | | | | | | +- LC35 we
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'C'
+LC      | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'C':
+LC41 -> - - - - - - - - - - - - - * | - - * - - - - * | <-- cart_on
+LC42 -> - * - - - - - - - - - - - - | - - * - * * * * | <-- cnt1
+LC45 -> - - * - - - - - - - - - - - | * - * - - - - - | <-- n64_data11
+LC43 -> - - - * - - - - - - - - - - | * - * - - - - - | <-- n64_data12
+LC40 -> - - - - * - - - - - - - - - | * - * - - - - - | <-- n64_data13
+LC38 -> - - - - - * - - - - - - - - | - * * - - - - - | <-- n64_data14
+LC37 -> - - - - - - * - - - - - - - | - * * - - - - - | <-- n64_data15
+
+Pin
+83   -> - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+5    -> - - - - - - - - - - - - - * | * * * - * - - * | <-- epp_write
+81   -> - * * * * * * - - - - - - - | - - * * * * * * | <-- n64_alel
+74   -> - * * * * * * - - - - - - * | - * * * * * * * | <-- n64_cold_reset
+76   -> - - - - - - - - - - - - - * | - - * - - - * * | <-- n64_write
+LC114-> - - - - - - - - - - - - - * | - * * - * - * - | <-- as
+LC63 -> - * - - - - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC54 -> - - - - - - - - - - - - - * | * - * - - - - * | <-- cnt26
+LC128-> - - - - - - - - - - - - - * | - - * - - - - * | <-- epp_as
+LC11 -> * * - - - - - - - - - - - - | - * * - - * - * | <-- epp_data1
+LC8  -> - - - - - - - * - - - - - - | - * * * - * - - | <-- epp_data2
+LC6  -> - - * - - - - - * - - - - - | - - * - - * * - | <-- epp_data3
+LC5  -> - - - * - - - - - * - - - - | - - * - - * - - | <-- epp_data4
+LC3  -> - - - - * - - - - - * - - - | - - * - * * * * | <-- epp_data5
+LC29 -> - - - - - * - - - - - * - - | - - * * - * - - | <-- epp_data6
+LC27 -> - - - - - - * - - - - - * - | - - * - - - * - | <-- epp_data7
+LC70 -> - - - - - - - - - - - - - * | - - * - - - - - | <-- ewe
+LC102-> - * - - - - - - - - - - - - | - - * * * * * - | <-- inc
+LC118-> - * - - - - - - - - - - - - | - - * * * * * - | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+LC12 -> - - * * * * * - - - - - - - | - - * * * - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+LC2  -> * - - - - - - - - - - - - - | - - * * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+LC28 -> - * * * * * * - - - - - - * | * - * * * * * * | <-- mode
+LC85 -> - * - - - - - - - - - - - - | - - * - - - - * | <-- n64_data1
+LC103-> - - - - - - - - - - - - - * | - - * - - - * * | <-- ras
+LC116-> - - - - - - - - - - - - - * | * - * - - - - * | <-- wcf
+LC89 -> - - - - - - - - - - - - - * | - - * * - - - - | <-- write_ena
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'D':
+
+                                     Logic cells placed in LAB 'D'
+        +--------------------------- LC57 cas0L
+        | +------------------------- LC64 cas0U
+        | | +----------------------- LC59 cas1L
+        | | | +--------------------- LC61 cas1U
+        | | | | +------------------- LC63 cnt0
+        | | | | | +----------------- LC50 cnt10
+        | | | | | | +--------------- LC55 cnt16
+        | | | | | | | +------------- LC60 cnt18
+        | | | | | | | | +----------- LC54 cnt26
+        | | | | | | | | | +--------- LC49 dram_a8
+        | | | | | | | | | | +------- LC51 dram_a9
+        | | | | | | | | | | | +----- LC53 dram_a10
+        | | | | | | | | | | | | +--- LC56 dram_a11
+        | | | | | | | | | | | | | +- LC62 wdf
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'D'
+LC      | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'D':
+LC63 -> * * * * * - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC56 -> - - - - - - - - - - - * - - | * - - * - - - - | <-- dram_a11
+
+Pin
+83   -> - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+80   -> - - - - - - * * * - - - * - | - - - * - * * * | <-- n64_aleh
+81   -> - - - - * * * * * - - - * - | - - * * * * * * | <-- n64_alel
+74   -> - - - - * * * * * - - - * - | - * * * * * * * | <-- n64_cold_reset
+LC100-> * * * * - - - - - - - - - - | - - - * * - - - | <-- cas
+LC106-> * * * * - - - - - - - - - - | - - - * - - * - | <-- casr
+LC90 -> * * * * - - - - - - - - - - | * - - * * * * - | <-- cnt2
+LC39 -> - - - - - - - - - * - - - - | * - - * - - - - | <-- cnt11
+LC36 -> - - - - - - - - - - * - - - | * - - * - - - - | <-- cnt12
+LC105-> - - - - - - - - - * - - - - | * - - * - - - - | <-- cnt21
+LC96 -> - - - - - - - - - - * - - - | - * - * - - - - | <-- cnt22
+LC107-> - - - - - - - - - - - * - - | - * - * - - - - | <-- cnt23
+LC13 -> - - - - * - * - - - - - * - | - * - * * * - - | <-- epp_data0
+LC8  -> - - - - - * - * * - - - - - | - * * * - * - - | <-- epp_data2
+LC29 -> - - - - - - - - - - - - - * | - - * * - * - - | <-- epp_data6
+LC102-> - - - - * - - - - - - - - - | - - * * * * * - | <-- inc
+LC118-> - - - - * - - - - - - - - - | - - * * * * * - | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+LC12 -> - - - - - * - - - - - - - - | - - * * * - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+LC7  -> - - - - - - * * - - - - - - | - - - * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+LC4  -> - - - - - - - - * - - - * - | - - - * - - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_3
+LC2  -> - - - - - - - - - - - - - * | - - * * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+LC28 -> * * * * * * * * * - - - * * | * - * * * * * * | <-- mode
+LC124-> - - - - - - - - - * * * - - | - - - * * - * - | <-- mx
+LC83 -> - - - - * - * - - - - - - - | * - - * - - - - | <-- n64_data0
+LC86 -> - - - - - - - * - - - - - - | * - - * - * - - | <-- n64_data2
+LC19 -> - - - - - - - - - - - - * - | * - - * * - - - | <-- n64_data8
+LC46 -> - - - - - * - - * - - - - - | * - - * - - - - | <-- n64_data10
+LC35 -> - - - - - - - - - - - - - * | - - - * - - - - | <-- we
+LC89 -> - - - - - - - - - - - - - * | - - * * - - - - | <-- write_ena
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'E':
+
+                                 Logic cells placed in LAB 'E'
+        +----------------------- LC71 cnt5
+        | +--------------------- LC79 cnt8
+        | | +------------------- LC80 dram_a0
+        | | | +----------------- LC77 dram_a1
+        | | | | +--------------- LC75 dram_a2
+        | | | | | +------------- LC73 dram_a3
+        | | | | | | +----------- LC72 dram_a4
+        | | | | | | | +--------- LC69 dram_a5
+        | | | | | | | | +------- LC67 dram_a6
+        | | | | | | | | | +----- LC65 dram_a7
+        | | | | | | | | | | +--- LC78 epp_rga0
+        | | | | | | | | | | | +- LC70 ewe
+        | | | | | | | | | | | | 
+        | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | |   that feed LAB 'E'
+LC      | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'E':
+LC71 -> * * - - * - - - - - - - | * - - - * * * - | <-- cnt5
+LC79 -> - * - - - - - * - - - - | * - - - * - - - | <-- cnt8
+
+Pin
+83   -> - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+5    -> - - - - - - - - - - * - | * * * - * - - * | <-- epp_write
+81   -> * * - - - - - - - - - - | - - * * * * * * | <-- n64_alel
+74   -> * * - - - - - - - - - - | - * * * * * * * | <-- n64_cold_reset
+LC114-> - - - - - - - - - - - * | - * * - * - * - | <-- as
+LC100-> - - - - - - - - - - - * | - - - * * - - - | <-- cas
+LC63 -> * * - - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC42 -> * * - - - - - - - - - - | - - * - * * * * | <-- cnt1
+LC90 -> * * - - - - - - - - - - | * - - * * * * - | <-- cnt2
+LC109-> * * * - - - - - - - - - | * - - - * * * - | <-- cnt3
+LC82 -> * * - * - - - - - - - - | * - - - * * * - | <-- cnt4
+LC95 -> - * - - - * - - - - - - | - * - - * * * - | <-- cnt6
+LC98 -> - * - - - - * - - - - - | - * - - * - * - | <-- cnt7
+LC113-> - - - - - - - - * - - - | - - - - * - - * | <-- cnt9
+LC50 -> - - - - - - - - - * - - | * - - - * - - - | <-- cnt10
+LC44 -> - - * - - - - - - - - - | * - - - * - - - | <-- cnt13
+LC33 -> - - - * - - - - - - - - | - * - - * - - - | <-- cnt14
+LC48 -> - - - - * - - - - - - - | - * - - * - - - | <-- cnt15
+LC55 -> - - - - - * - - - - - - | * - - - * - - - | <-- cnt16
+LC122-> - - - - - - * - - - - - | - - - - * - - * | <-- cnt17
+LC60 -> - - - - - - - * - - - - | * - - - * - - - | <-- cnt18
+LC110-> - - - - - - - - * - - - | * - - - * - - - | <-- cnt19
+LC92 -> - - - - - - - - - * - - | * - - - * - - - | <-- cnt20
+LC13 -> - * - - - - - - - - * - | - * - * * * - - | <-- epp_data0
+LC3  -> * - - - - - - - - - - - | - - * - * * * * | <-- epp_data5
+LC20 -> - - - - - - - - - - * - | - * - - * - - - | <-- epp_ss~4
+LC102-> * * - - - - - - - - - - | - - * * * * * - | <-- inc
+LC118-> * - - - - - - - - - - - | - - * * * * * - | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+LC12 -> - * - - - - - - - - - - | - - * * * - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+LC28 -> * * - - - - - - - - - - | * - * * * * * * | <-- mode
+LC124-> - - * * * * * * * * - - | - - - * * - * - | <-- mx
+LC93 -> * - - - - - - - - - - - | * - - - * - * - | <-- n64_data5
+LC19 -> - * - - - - - - - - - - | * - - * * - - - | <-- n64_data8
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'F':
+
+                                     Logic cells placed in LAB 'F'
+        +--------------------------- LC90 cnt2
+        | +------------------------- LC82 cnt4
+        | | +----------------------- LC95 cnt6
+        | | | +--------------------- LC92 cnt20
+        | | | | +------------------- LC96 cnt22
+        | | | | | +----------------- LC81 enable
+        | | | | | | +--------------- LC83 n64_data0
+        | | | | | | | +------------- LC85 n64_data1
+        | | | | | | | | +----------- LC86 n64_data2
+        | | | | | | | | | +--------- LC88 n64_data3
+        | | | | | | | | | | +------- LC91 n64_data4
+        | | | | | | | | | | | +----- LC93 n64_data5
+        | | | | | | | | | | | | +--- LC94 n64_data6
+        | | | | | | | | | | | | | +- LC89 write_ena
+        | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | |   that feed LAB 'F'
+LC      | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'F':
+LC90 -> * * * - - - - - - - - - - - | * - - * * * * - | <-- cnt2
+LC82 -> - * * - - - - - - - - - - - | * - - - * * * - | <-- cnt4
+LC95 -> - - * - - - - - - - - - - - | - * - - * * * - | <-- cnt6
+LC86 -> * - - - - - - - - - - - - - | * - - * - * - - | <-- n64_data2
+LC91 -> - * - * - - - - - - - - - - | * - - - - * - - | <-- n64_data4
+LC94 -> - - * - * - - - - - - - - - | - * - - - * - - | <-- n64_data6
+
+Pin
+83   -> - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+80   -> - - - * * - - - - - - - - - | - - - * - * * * | <-- n64_aleh
+81   -> * * * * * - - - - - - - - - | - - * * * * * * | <-- n64_alel
+74   -> * * * * * - - - - - - - - - | - * * * * * * * | <-- n64_cold_reset
+LC63 -> * * * - - - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC42 -> * * * - - - - - - - - - - - | - - * - * * * * | <-- cnt1
+LC109-> - * * - - - - - - - - - - - | * - - - * * * - | <-- cnt3
+LC71 -> - - * - - - - - - - - - - - | * - - - * * * - | <-- cnt5
+LC13 -> - - - - - * * - - - - - - - | - * - * * * - - | <-- epp_data0
+LC11 -> - - - - - - - * - - - - - - | - * * - - * - * | <-- epp_data1
+LC8  -> * - - - - - - - * - - - - * | - * * * - * - - | <-- epp_data2
+LC6  -> - - - - - - - - - * - - - - | - - * - - * * - | <-- epp_data3
+LC5  -> - * - * - - - - - - * - - - | - - * - - * - - | <-- epp_data4
+LC3  -> - - - - - - - - - - - * - - | - - * - * * * * | <-- epp_data5
+LC29 -> - - * - * - - - - - - - * - | - - * * - * - - | <-- epp_data6
+LC102-> * * * - - - - - - - - - - - | - - * * * * * - | <-- inc
+LC118-> * * * - - - - - - - - - - - | - - * * * * * - | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+LC7  -> - - - * * - - - - - - - - - | - - - * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+LC2  -> - - - - - * - - - - - - - * | - - * * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+LC28 -> * * * * * - - - - - - - - - | * - * * * * * * | <-- mode
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'G':
+
+                                       Logic cells placed in LAB 'G'
+        +----------------------------- LC100 cas
+        | +--------------------------- LC106 casr
+        | | +------------------------- LC109 cnt3
+        | | | +----------------------- LC98 cnt7
+        | | | | +--------------------- LC110 cnt19
+        | | | | | +------------------- LC105 cnt21
+        | | | | | | +----------------- LC107 cnt23
+        | | | | | | | +--------------- LC102 inc
+        | | | | | | | | +------------- LC97 n64_data7
+        | | | | | | | | | +----------- LC104 os_event_cart
+        | | | | | | | | | | +--------- LC103 ras
+        | | | | | | | | | | | +------- LC111 rasr
+        | | | | | | | | | | | | +----- LC99 ras0
+        | | | | | | | | | | | | | +--- LC101 ras1
+        | | | | | | | | | | | | | | +- LC108 x4
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'G'
+LC      | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'G':
+LC106-> - * - - - - - - - - - * - - - | - - - * - - * - | <-- casr
+LC109-> - - * * - - - - - - - - - - - | * - - - * * * - | <-- cnt3
+LC98 -> - - - * - - - - - - - - - - - | - * - - * - * - | <-- cnt7
+LC102-> - - * * - - - - - - - - - - - | - - * * * * * - | <-- inc
+LC97 -> - - - * - - * - - - - - - - - | - * - - - - * - | <-- n64_data7
+LC103-> * - - - - - - * - - - - * * - | - - * - - - * * | <-- ras
+LC111-> - - - - - - - - - - - - * * - | - - - - - - * - | <-- rasr
+LC108-> - * - - - - - - - - - * - - * | - * - - - - * - | <-- x4
+
+Pin
+83   -> - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+1    -> - - - - - - - - - * - - - - - | - * - - - - * - | <-- epp_init
+80   -> - - - - * * * - - - - - - - - | - - - * - * * * | <-- n64_aleh
+81   -> - - * * * * * - - - - - - - - | - - * * * * * * | <-- n64_alel
+74   -> - - * * * * * - - * - - - - - | - * * * * * * * | <-- n64_cold_reset
+76   -> - - - - - - - - - * - - - - - | - - * - - - * * | <-- n64_write
+LC114-> * - - - - - - - - - * - - - - | - * * - * - * - | <-- as
+LC63 -> - - * * - - - - - - - - - - - | * * * * * * * * | <-- cnt0
+LC42 -> - - * * - - - - - - - - * * - | - - * - * * * * | <-- cnt1
+LC90 -> - - * * - - - - - - - - - - - | * - - * * * * - | <-- cnt2
+LC82 -> - - - * - - - - - - - - - - - | * - - - * * * - | <-- cnt4
+LC71 -> - - - * - - - - - - - - - - - | * - - - * * * - | <-- cnt5
+LC95 -> - - - * - - - - - - - - - - - | - * - - * * * - | <-- cnt6
+LC6  -> - - * - * - - - - * - - - - - | - - * - - * * - | <-- epp_data3
+LC3  -> - - - - - * - - - - - - - - - | - - * - * * * * | <-- epp_data5
+LC27 -> - - - * - - * - * - - - - - - | - - * - - - * - | <-- epp_data7
+LC118-> - - * * - - - - - - - - - - - | - - * * * * * - | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+LC7  -> - - - - * * * - - - - - - - - | - - - * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+LC2  -> - - - - - - - - - * - - - - - | - - * * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+LC28 -> - - * * * * * - - - - - - - - | * - * * * * * * | <-- mode
+LC124-> * - - - - - - * - - - - - - - | - - - * * - * - | <-- mx
+LC88 -> - - * - * - - - - - - - - - - | * - - - - - * - | <-- n64_data3
+LC93 -> - - - - - * - - - - - - - - - | * - - - * - * - | <-- n64_data5
+LC121-> - * - - - - - - - - * - - - - | - - - - - - * - | <-- refresh
+LC26 -> - * - - - - - - - - - * - - * | - * - - - - * - | <-- x2
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** LOGIC CELL INTERCONNECTIONS **
+
+Logic Array Block 'H':
+
+                                       Logic cells placed in LAB 'H'
+        +----------------------------- LC114 as
+        | +--------------------------- LC113 cnt9
+        | | +------------------------- LC122 cnt17
+        | | | +----------------------- LC126 cnt25
+        | | | | +--------------------- LC128 epp_as
+        | | | | | +------------------- LC118 |lpm_decode:dc|altshift:external_latency_ffs|points0_0
+        | | | | | | +----------------- LC117 |lpm_mux:epp_mux|muxlut:111|muxlut:57|result_node~1
+        | | | | | | | +--------------- LC119 |lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node~fit~in1
+        | | | | | | | | +------------- LC124 mx
+        | | | | | | | | | +----------- LC115 ndrambuf
+        | | | | | | | | | | +--------- LC120 n64_data0~1
+        | | | | | | | | | | | +------- LC121 refresh
+        | | | | | | | | | | | | +----- LC123 rom_read
+        | | | | | | | | | | | | | +--- LC125 rom_write
+        | | | | | | | | | | | | | | +- LC116 wcf
+        | | | | | | | | | | | | | | | 
+        | | | | | | | | | | | | | | |   Other LABs fed by signals
+        | | | | | | | | | | | | | | |   that feed LAB 'H'
+LC      | | | | | | | | | | | | | | | | A B C D E F G H |     Logic cells that feed LAB 'H':
+LC113-> - - - - - - - * - - - - - - - | - - - - * - - * | <-- cnt9
+LC122-> - - - - - - - * - - - - - - - | - - - - * - - * | <-- cnt17
+LC126-> - - - - - - - * - - - - - - - | - - - - - - - * | <-- cnt25
+LC128-> * - - - * - - - - - * - - - - | - - * - - - - * | <-- epp_as
+LC116-> * - - - - - - - - * - * * * * | * - * - - - - * | <-- wcf
+
+Pin
+83   -> - - - - - - - - - - - - - - - | - - - - - - - - | <-- clk
+18   -> - - - - - - * - - - - - - - - | - - - - - - - * | <-- epp_data_stb
+1    -> - - - - - - - - - - - - - - - | - * - - - - * - | <-- epp_init
+5    -> - - - - * * * - - - * - - - - | * * * - * - - * | <-- epp_write
+80   -> - - * * - - - - - - - * - - - | - - - * - * * * | <-- n64_aleh
+81   -> - * * * - - - - - * - - - - - | - - * * * * * * | <-- n64_alel
+74   -> * * * * - - - - - * - * * * - | - * * * * * * * | <-- n64_cold_reset
+75   -> * - - - - - - - - * - - * - - | - - - - - - - * | <-- n64_read
+76   -> * - - - - - - - - * - - - * * | - - * - - - * * | <-- n64_write
+LC41 -> * - - - - - - - - * - * * * * | - - * - - - - * | <-- cart_on
+LC63 -> - - - - - - - * - - - - - - - | * * * * * * * * | <-- cnt0
+LC42 -> - - - - - - - * - - - - - - - | - - * - * * * * | <-- cnt1
+LC54 -> * - - - - - - - - * - * * * * | * - * - - - - * | <-- cnt26
+LC24 -> - - - - * - - - - - - * - - - | - * - - - - - * | <-- epp_data_stb
+LC11 -> - * * * - - - - - - - - - - - | - * * - - * - * | <-- epp_data1
+LC3  -> - - - - - - - - - - - - - - * | - - * - * * * * | <-- epp_data5
+LC78 -> - - - - - * - * - - - * - - - | * * - - - - - * | <-- epp_rga0
+LC30 -> - - - - - * - * - - - * - - - | * * - - - - - * | <-- epp_rga1
+LC18 -> - - - - - * - * - - - * - - - | * * - - - - - * | <-- epp_rga2
+LC23 -> - - - - * - - - - - - - - - - | - * - - - - - * | <-- epp_ss~2
+LC32 -> - - - - - * - - - - - - - - - | * * - - - - - * | <-- epp_ss~3
+LC12 -> - * - - - - - - - - - - - - - | - - * * * - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_1
+LC7  -> - - * - - - - - - - - - - - - | - - - * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_2
+LC4  -> - - - * - - - - - - - - - - - | - - - * - - - * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_3
+LC2  -> - - - - - - - - - - - - - - * | - - * * - * * * | <-- |lpm_decode:dc|altshift:external_latency_ffs|points0_5
+LC28 -> * * * * - - - - - * * * - - - | * - * * * * * * | <-- mode
+LC85 -> - - * - - - - * - - - - - - - | - - * - - - - * | <-- n64_data1
+LC17 -> - * - * - - - * - - - - - - - | - - - - - - - * | <-- n64_data9
+LC103-> - - - - - - - - * - - - - - - | - - * - - - * * | <-- ras
+
+
+* = The logic cell or pin is an input to the logic cell (or LAB) through the PIA.
+- = The logic cell or pin is not an input to the logic cell (or LAB).
+
+
+Device-Specific Information:                e:\pro\nintendo64\plm\uploader.rpt
+uploader
+
+** EQUATIONS **
+
+clk      : INPUT;
+epp_init : INPUT;
+epp_write : INPUT;
+n64_aleh : INPUT;
+n64_alel : INPUT;
+n64_cold_reset : INPUT;
+n64_read : INPUT;
+n64_write : INPUT;
+
+-- Node name is 'as' from file "uploader.tdf" line 403, column 6
+-- Equation name is 'as', type is buried 
+as       = LCELL( _EQ001 $  GND);
+  _EQ001 = !cart_on & !mode &  n64_cold_reset & !n64_read & !wcf
+         # !cnt26 & !mode &  n64_cold_reset & !n64_read & !wcf
+         # !cart_on & !mode &  n64_cold_reset & !n64_write & !wcf
+         # !cnt26 & !mode &  n64_cold_reset & !n64_write & !wcf
+         #  epp_as &  mode;
+
+-- Node name is 'cart_on' from file "uploader.tdf" line 48, column 11
+-- Equation name is 'cart_on', type is buried 
+-- cart_on lends parallel expanders to cnt1 
+cart_on  = DFFE( epp_data1 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _N057);
+
+-- Node name is 'cas' from file "uploader.tdf" line 51, column 8
+-- Equation name is 'cas', type is buried 
+cas      = DFFE( _EQ002 $  GND, GLOBAL( clk),  mx,  VCC,  VCC);
+  _EQ002 =  as &  ras;
+
+-- Node name is 'casr' from file "uploader.tdf" line 51, column 16
+-- Equation name is 'casr', type is buried 
+casr     = DFFE( _EQ003 $  GND, GLOBAL( clk),  VCC,  VCC,  _EQ004);
+  _EQ003 = !casr &  refresh;
+  _EQ004 =  x2 &  x4;
+
+-- Node name is 'cas0L' = ':652' from file "uploader.tdf" line 299, column 3
+-- Equation name is 'cas0L', type is output 
+cas0L    = _N029~NOT;
+_N029~NOT = LCELL( _EQ005 $  GND);
+  _EQ005 = !casr & !cnt0 &  mode
+         # !cas & !casr
+         # !casr &  cnt2;
+
+-- Node name is 'cas0U' = ':664' from file "uploader.tdf" line 302, column 3
+-- Equation name is 'cas0U', type is output 
+cas0U    = _N027~NOT;
+_N027~NOT = LCELL( _EQ006 $  GND);
+  _EQ006 = !casr &  cnt0 &  mode
+         # !cas & !casr
+         # !casr &  cnt2;
+
+-- Node name is 'cas1L' = ':673' from file "uploader.tdf" line 305, column 3
+-- Equation name is 'cas1L', type is output 
+cas1L    = _N028~NOT;
+_N028~NOT = LCELL( _EQ007 $  GND);
+  _EQ007 = !casr & !cnt0 &  mode
+         # !cas & !casr
+         # !casr & !cnt2;
+
+-- Node name is 'cas1U' = ':683' from file "uploader.tdf" line 308, column 3
+-- Equation name is 'cas1U', type is output 
+cas1U    = _N026~NOT;
+_N026~NOT = LCELL( _EQ008 $  GND);
+  _EQ008 = !casr &  cnt0 &  mode
+         # !cas & !casr
+         # !casr & !cnt2;
+
+-- Node name is 'cnt0' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt0', type is buried 
+-- cnt0 borrows parallel expanders from wdf 
+cnt0     = DFFE( _EQ009 $  GND, GLOBAL( clk), !_EQ010,  VCC,  _EQ011);
+  _EQ009 =  epp_data0 & !inc &  mode
+         # !inc & !mode &  n64_data0
+         #  cnt0 &  inc & !mode
+         # !cnt0 &  inc &  mode;
+  _EQ010 = !mode & !n64_cold_reset;
+  _EQ011 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt1' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt1', type is buried 
+-- cnt1 borrows parallel expanders from cart_on 
+cnt1     = DFFE( _EQ012 $  GND, GLOBAL( clk), !_EQ013,  VCC,  _EQ014);
+  _EQ012 =  epp_data1 & !inc &  mode
+         # !inc & !mode &  n64_data1
+         # !cnt0 &  cnt1 &  inc &  mode
+         # !cnt1 &  inc & !mode
+         #  cnt0 & !cnt1 &  inc;
+  _EQ013 = !mode & !n64_cold_reset;
+  _EQ014 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt2' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt2', type is buried 
+-- cnt2 borrows parallel expanders from write_ena 
+cnt2     = DFFE( _EQ015 $  _EQ016, GLOBAL( clk), !_EQ017,  VCC,  _EQ018);
+  _EQ015 =  epp_data2 & !inc &  mode
+         # !cnt1 &  cnt2 &  inc
+         # !cnt0 &  cnt2 &  inc &  mode
+         #  cnt0 &  cnt1 & !cnt2 &  inc
+         #  cnt1 & !cnt2 &  inc & !mode;
+  _EQ016 = !inc & !mode &  n64_data2;
+  _EQ017 = !mode & !n64_cold_reset;
+  _EQ018 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt3' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt3', type is buried 
+-- cnt3 borrows parallel expanders from x4 
+cnt3     = DFFE( _EQ019 $  GND, GLOBAL( clk), !_EQ020,  VCC,  _EQ021);
+  _EQ019 =  epp_data3 & !inc &  mode
+         # !inc & !mode &  n64_data3
+         # !cnt0 &  cnt3 &  inc &  mode
+         #  cnt1 &  cnt2 & !cnt3 &  inc &  _X004
+         #  cnt3 &  inc &  _X005;
+  _X004  = EXP(!cnt0 &  mode);
+  _X005  = EXP( cnt1 &  cnt2);
+  _EQ020 = !mode & !n64_cold_reset;
+  _EQ021 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt4' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt4', type is buried 
+-- cnt4 borrows parallel expanders from enable 
+cnt4     = DFFE( _EQ022 $  GND, GLOBAL( clk), !_EQ023,  VCC,  _EQ024);
+  _EQ022 =  epp_data4 & !inc &  mode
+         # !inc & !mode &  n64_data4
+         # !cnt0 &  cnt4 &  inc &  mode
+         #  cnt4 &  inc &  _X006
+         #  cnt1 &  cnt2 &  cnt3 & !cnt4 &  inc &  _X004;
+  _X006  = EXP( cnt1 &  cnt2 &  cnt3);
+  _X004  = EXP(!cnt0 &  mode);
+  _EQ023 = !mode & !n64_cold_reset;
+  _EQ024 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt5' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt5', type is buried 
+-- cnt5 borrows parallel expanders from ewe 
+cnt5     = TFFE( _EQ025, GLOBAL( clk), !_EQ026,  VCC,  _EQ027);
+  _EQ025 = !cnt5 &  epp_data5 & !inc &  mode
+         # !cnt5 & !inc & !mode &  n64_data5
+         #  cnt5 & !epp_data5 & !inc &  mode
+         #  cnt5 & !inc & !mode & !n64_data5
+         #  cnt1 &  cnt2 &  cnt3 &  cnt4 &  inc &  _X004;
+  _X004  = EXP(!cnt0 &  mode);
+  _EQ026 = !mode & !n64_cold_reset;
+  _EQ027 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt6' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt6', type is buried 
+-- cnt6 borrows parallel expanders from _N007 
+cnt6     = TFFE( _EQ028, GLOBAL( clk), !_EQ029,  VCC,  _EQ030);
+  _EQ028 = !cnt6 &  epp_data6 & !inc &  mode
+         # !cnt6 & !inc & !mode &  n64_data6
+         #  cnt6 & !epp_data6 & !inc &  mode
+         #  cnt6 & !inc & !mode & !n64_data6
+         #  cnt1 &  cnt2 &  cnt3 &  cnt4 &  cnt5 &  inc &  _X004;
+  _X004  = EXP(!cnt0 &  mode);
+  _EQ029 = !mode & !n64_cold_reset;
+  _EQ030 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt7' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt7', type is buried 
+-- cnt7 borrows parallel expanders from _N008 
+cnt7     = TFFE( _EQ031, GLOBAL( clk), !_EQ032,  VCC,  _EQ033);
+  _EQ031 = !cnt7 &  epp_data7 & !inc &  mode
+         # !cnt7 & !inc & !mode &  n64_data7
+         #  cnt7 & !epp_data7 & !inc &  mode
+         #  cnt7 & !inc & !mode & !n64_data7
+         #  cnt1 &  cnt2 &  cnt3 &  cnt4 &  cnt5 &  cnt6 &  inc &  _X004;
+  _X004  = EXP(!cnt0 &  mode);
+  _EQ032 = !mode & !n64_cold_reset;
+  _EQ033 =  _X001 &  _X002 &  _X003;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X002  = EXP(!inc &  mode & !_N066);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+
+-- Node name is 'cnt8' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt8', type is buried 
+-- cnt8 borrows parallel expanders from epp_rga0 
+cnt8     = TFFE( _EQ034, GLOBAL( clk), !_EQ035,  VCC,  _EQ036);
+  _EQ034 = !cnt8 &  epp_data0 & !inc &  mode
+         # !cnt8 & !inc & !mode &  n64_data8
+         #  cnt8 & !epp_data0 & !inc &  mode
+         #  cnt8 & !inc & !mode & !n64_data8
+         #  cnt1 &  cnt2 &  cnt3 &  cnt4 &  cnt5 &  cnt6 &  cnt7 &  inc & 
+              _X004;
+  _X004  = EXP(!cnt0 &  mode);
+  _EQ035 = !mode & !n64_cold_reset;
+  _EQ036 =  _X001 &  _X003 &  _X007;
+  _X001  = EXP(!inc & !mode & !n64_cold_reset);
+  _X003  = EXP(!inc & !mode & !n64_alel);
+  _X007  = EXP(!inc &  mode & !_N073);
+
+-- Node name is 'cnt9' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt9', type is buried 
+cnt9     = DFFE( _EQ037 $  GND, GLOBAL( clk), !_EQ038,  VCC,  _EQ039);
+  _EQ037 = !mode &  n64_data9
+         #  epp_data1 &  mode;
+  _EQ038 = !mode & !n64_cold_reset;
+  _EQ039 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt10' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt10', type is buried 
+cnt10    = DFFE( _EQ040 $  GND, GLOBAL( clk), !_EQ041,  VCC,  _EQ042);
+  _EQ040 = !mode &  n64_data10
+         #  epp_data2 &  mode;
+  _EQ041 = !mode & !n64_cold_reset;
+  _EQ042 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt11' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt11', type is buried 
+cnt11    = DFFE( _EQ043 $  GND, GLOBAL( clk), !_EQ044,  VCC,  _EQ045);
+  _EQ043 = !mode &  n64_data11
+         #  epp_data3 &  mode;
+  _EQ044 = !mode & !n64_cold_reset;
+  _EQ045 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt12' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt12', type is buried 
+cnt12    = DFFE( _EQ046 $  GND, GLOBAL( clk), !_EQ047,  VCC,  _EQ048);
+  _EQ046 = !mode &  n64_data12
+         #  epp_data4 &  mode;
+  _EQ047 = !mode & !n64_cold_reset;
+  _EQ048 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt13' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt13', type is buried 
+cnt13    = DFFE( _EQ049 $  GND, GLOBAL( clk), !_EQ050,  VCC,  _EQ051);
+  _EQ049 = !mode &  n64_data13
+         #  epp_data5 &  mode;
+  _EQ050 = !mode & !n64_cold_reset;
+  _EQ051 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt14' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt14', type is buried 
+cnt14    = DFFE( _EQ052 $  GND, GLOBAL( clk), !_EQ053,  VCC,  _EQ054);
+  _EQ052 = !mode &  n64_data14
+         #  epp_data6 &  mode;
+  _EQ053 = !mode & !n64_cold_reset;
+  _EQ054 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt15' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt15', type is buried 
+cnt15    = DFFE( _EQ055 $  GND, GLOBAL( clk), !_EQ056,  VCC,  _EQ057);
+  _EQ055 = !mode &  n64_data15
+         #  epp_data7 &  mode;
+  _EQ056 = !mode & !n64_cold_reset;
+  _EQ057 =  _X008 &  _X009 &  _X010;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X010  = EXP( mode & !_N073);
+
+-- Node name is 'cnt16' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt16', type is buried 
+cnt16    = DFFE( _EQ058 $  GND, GLOBAL( clk), !_EQ059,  VCC,  _EQ060);
+  _EQ058 = !mode &  n64_data0
+         #  epp_data0 &  mode;
+  _EQ059 = !mode & !n64_cold_reset;
+  _EQ060 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt17' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt17', type is buried 
+cnt17    = DFFE( _EQ061 $  GND, GLOBAL( clk), !_EQ062,  VCC,  _EQ063);
+  _EQ061 = !mode &  n64_data1
+         #  epp_data1 &  mode;
+  _EQ062 = !mode & !n64_cold_reset;
+  _EQ063 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt18' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt18', type is buried 
+cnt18    = DFFE( _EQ064 $  GND, GLOBAL( clk), !_EQ065,  VCC,  _EQ066);
+  _EQ064 = !mode &  n64_data2
+         #  epp_data2 &  mode;
+  _EQ065 = !mode & !n64_cold_reset;
+  _EQ066 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt19' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt19', type is buried 
+cnt19    = DFFE( _EQ067 $  GND, GLOBAL( clk), !_EQ068,  VCC,  _EQ069);
+  _EQ067 = !mode &  n64_data3
+         #  epp_data3 &  mode;
+  _EQ068 = !mode & !n64_cold_reset;
+  _EQ069 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt20' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt20', type is buried 
+cnt20    = DFFE( _EQ070 $  GND, GLOBAL( clk), !_EQ071,  VCC,  _EQ072);
+  _EQ070 = !mode &  n64_data4
+         #  epp_data4 &  mode;
+  _EQ071 = !mode & !n64_cold_reset;
+  _EQ072 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt21' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt21', type is buried 
+cnt21    = DFFE( _EQ073 $  GND, GLOBAL( clk), !_EQ074,  VCC,  _EQ075);
+  _EQ073 = !mode &  n64_data5
+         #  epp_data5 &  mode;
+  _EQ074 = !mode & !n64_cold_reset;
+  _EQ075 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt22' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt22', type is buried 
+cnt22    = DFFE( _EQ076 $  GND, GLOBAL( clk), !_EQ077,  VCC,  _EQ078);
+  _EQ076 = !mode &  n64_data6
+         #  epp_data6 &  mode;
+  _EQ077 = !mode & !n64_cold_reset;
+  _EQ078 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt23' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt23', type is buried 
+cnt23    = DFFE( _EQ079 $  GND, GLOBAL( clk), !_EQ080,  VCC,  _EQ081);
+  _EQ079 = !mode &  n64_data7
+         #  epp_data7 &  mode;
+  _EQ080 = !mode & !n64_cold_reset;
+  _EQ081 =  _X008 &  _X009 &  _X011 &  _X012;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X012  = EXP( mode & !_N080);
+
+-- Node name is 'cnt25' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt25', type is buried 
+cnt25    = DFFE( _EQ082 $  GND, GLOBAL( clk), !_EQ083,  VCC,  _EQ084);
+  _EQ082 = !mode &  n64_data9
+         #  epp_data1 &  mode;
+  _EQ083 = !mode & !n64_cold_reset;
+  _EQ084 =  _X008 &  _X009 &  _X011 &  _X013;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X013  = EXP( mode & !_N051);
+
+-- Node name is 'cnt26' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'cnt26', type is buried 
+cnt26    = DFFE( _EQ085 $  GND, GLOBAL( clk), !_EQ086,  VCC,  _EQ087);
+  _EQ085 = !mode &  n64_data10
+         #  epp_data2 &  mode;
+  _EQ086 = !mode & !n64_cold_reset;
+  _EQ087 =  _X008 &  _X009 &  _X011 &  _X013;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X013  = EXP( mode & !_N051);
+
+-- Node name is 'dram_a0' = '|lpm_mux:amux|muxlut:95|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a0', type is output 
+ dram_a0 = LCELL( _EQ088 $  GND);
+  _EQ088 =  cnt13 & !mx
+         #  cnt3 &  mx;
+
+-- Node name is 'dram_a1' = '|lpm_mux:amux|muxlut:108|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a1', type is output 
+ dram_a1 = LCELL( _EQ089 $  GND);
+  _EQ089 =  cnt14 & !mx
+         #  cnt4 &  mx;
+
+-- Node name is 'dram_a2' = '|lpm_mux:amux|muxlut:121|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a2', type is output 
+ dram_a2 = LCELL( _EQ090 $  GND);
+  _EQ090 =  cnt15 & !mx
+         #  cnt5 &  mx;
+
+-- Node name is 'dram_a3' = '|lpm_mux:amux|muxlut:134|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a3', type is output 
+ dram_a3 = LCELL( _EQ091 $  GND);
+  _EQ091 =  cnt16 & !mx
+         #  cnt6 &  mx;
+
+-- Node name is 'dram_a4' = '|lpm_mux:amux|muxlut:147|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a4', type is output 
+ dram_a4 = LCELL( _EQ092 $  GND);
+  _EQ092 =  cnt17 & !mx
+         #  cnt7 &  mx;
+
+-- Node name is 'dram_a5' = '|lpm_mux:amux|muxlut:160|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a5', type is output 
+ dram_a5 = LCELL( _EQ093 $  GND);
+  _EQ093 =  cnt18 & !mx
+         #  cnt8 &  mx;
+
+-- Node name is 'dram_a6' = '|lpm_mux:amux|muxlut:173|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a6', type is output 
+ dram_a6 = LCELL( _EQ094 $  GND);
+  _EQ094 =  cnt19 & !mx
+         #  cnt9 &  mx;
+
+-- Node name is 'dram_a7' = '|lpm_mux:amux|muxlut:186|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a7', type is output 
+ dram_a7 = LCELL( _EQ095 $  GND);
+  _EQ095 =  cnt20 & !mx
+         #  cnt10 &  mx;
+
+-- Node name is 'dram_a8' = '|lpm_mux:amux|muxlut:199|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a8', type is output 
+ dram_a8 = LCELL( _EQ096 $  GND);
+  _EQ096 =  cnt21 & !mx
+         #  cnt11 &  mx;
+
+-- Node name is 'dram_a9' = '|lpm_mux:amux|muxlut:212|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a9', type is output 
+ dram_a9 = LCELL( _EQ097 $  GND);
+  _EQ097 =  cnt22 & !mx
+         #  cnt12 &  mx;
+
+-- Node name is 'dram_a10' = '|lpm_mux:amux|muxlut:225|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'dram_a10', type is output 
+ dram_a10 = LCELL( _EQ098 $  GND);
+  _EQ098 =  dram_a11 & !mx
+         #  cnt23 &  mx;
+
+-- Node name is 'dram_a11' = 'cnt24' from file "uploader.tdf" line 46, column 4
+-- Equation name is 'dram_a11', type is output 
+ dram_a11 = DFFE( _EQ099 $  GND, GLOBAL( clk), !_EQ100,  VCC,  _EQ101);
+  _EQ099 = !mode &  n64_data8
+         #  epp_data0 &  mode;
+  _EQ100 = !mode & !n64_cold_reset;
+  _EQ101 =  _X008 &  _X009 &  _X011 &  _X013;
+  _X008  = EXP(!mode & !n64_alel);
+  _X009  = EXP(!mode & !n64_cold_reset);
+  _X011  = EXP(!mode & !n64_aleh);
+  _X013  = EXP( mode & !_N051);
+
+-- Node name is 'enable' from file "uploader.tdf" line 49, column 1
+-- Equation name is 'enable', type is buried 
+-- enable lends parallel expanders to cnt4 
+enable   = DFFE( epp_data0 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _N057);
+
+-- Node name is 'epp_astb' from file "uploader.tdf" line 38, column 10
+-- Equation name is 'epp_astb', location is IOC_N_65, type is buried.
+epp_addr_stb : INPUT;
+epp_astb = DFFE(epp_addr_stb, GLOBAL( clk),  VCC,  VCC,  _EQ102);
+  _EQ102 =  x2 &  x4;
+
+-- Node name is 'epp_as' from file "uploader.tdf" line 35, column 1
+-- Equation name is 'epp_as', type is buried 
+epp_as   = DFFE( _EQ103 $  GND, GLOBAL( clk), !epp_dstb,  VCC,  VCC);
+  _EQ103 =  epp_as &  epp_write
+         #  epp_ss~2;
+
+-- Node name is 'epp_busy' = 'epp_ss~6' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_busy', type is output 
+epp_busy = epp_ss~6~NOT;
+epp_ss~6~NOT = DFFE( _EQ104 $  VCC, GLOBAL( clk),  VCC,  epp_init,  _EQ105);
+  _EQ104 = !epp_busy & !epp_ss~1 &  epp_ss~2 & !epp_ss~3 & !epp_ss~4
+         # !epp_busy & !epp_ss~1 & !epp_ss~3 & !epp_ss~4 &  epp_ss~5
+         #  epp_astb &  epp_busy &  epp_dstb & !epp_ss~1 & !epp_ss~3 & 
+             !epp_ss~4;
+  _EQ105 =  x2 &  x4;
+
+-- Node name is 'epp_dstb' from file "uploader.tdf" line 38, column 1
+-- Equation name is 'epp_dstb', location is IOC_N_64, type is buried.
+epp_data_stb : INPUT;
+epp_dstb = DFFE(epp_data_stb, GLOBAL( clk),  VCC,  VCC,  _EQ106);
+  _EQ106 =  x2 &  x4;
+
+-- Node name is 'epp_data0' = '|lpm_mux:epp_mux|muxlut:111|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data0', type is bidir 
+-- _N017 borrows parallel expanders from _N073 
+epp_data0 = TRI(_N017,  _N109);
+_N017    = LCELL( _EQ107 $  _EQ108);
+  _EQ107 =  cnt0 &  epp_rga2 &  n64_data0
+         #  cnt8 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt0 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt16 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  dram_a11 &  epp_rga0 &  epp_rga1 & !epp_rga2;
+  _EQ108 = !cnt0 &  epp_rga2 &  n64_data8;
+
+-- Node name is 'epp_data1' = '|lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data1', type is bidir 
+epp_data1 = TRI(_N018,  _N109);
+_N018    = LCELL( _N110 $  GND);
+
+-- Node name is 'epp_data2' = '|lpm_mux:epp_mux|muxlut:147|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data2', type is bidir 
+-- _N019 borrows parallel expanders from _N080 
+epp_data2 = TRI(_N019,  _N109);
+_N019    = LCELL( _EQ109 $  _EQ110);
+  _EQ109 =  cnt0 &  epp_rga2 &  n64_data2
+         #  cnt10 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt2 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt18 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  cnt26 &  epp_rga0 &  epp_rga1 & !epp_rga2;
+  _EQ110 = !cnt0 &  epp_rga2 &  n64_data10;
+
+-- Node name is 'epp_data3' = '|lpm_mux:epp_mux|muxlut:165|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data3', type is bidir 
+epp_data3 = TRI(_N020,  _N109);
+_N020    = LCELL( _EQ111 $  GND);
+  _EQ111 = !cnt0 &  epp_rga2 &  n64_data11
+         #  cnt0 &  epp_rga2 &  n64_data3
+         #  cnt11 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt3 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt19 & !epp_rga0 &  epp_rga1 & !epp_rga2;
+
+-- Node name is 'epp_data4' = '|lpm_mux:epp_mux|muxlut:183|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data4', type is bidir 
+-- _N021 borrows parallel expanders from _N051 
+epp_data4 = TRI(_N021,  _N109);
+_N021    = LCELL( _EQ112 $  _EQ113);
+  _EQ112 =  cnt0 &  epp_rga2 &  n64_data4
+         #  cnt12 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt4 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt20 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  epp_rga0 &  epp_rga1 & !epp_rga2 &  mode;
+  _EQ113 = !cnt0 &  epp_rga2 &  n64_data12;
+
+-- Node name is 'epp_data5' = '|lpm_mux:epp_mux|muxlut:201|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data5', type is bidir 
+-- _N022 borrows parallel expanders from _N057 
+epp_data5 = TRI(_N022,  _N109);
+_N022    = LCELL( _EQ114 $  _EQ115);
+  _EQ114 =  cnt0 &  epp_rga2 &  n64_data5
+         #  cnt13 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt5 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt21 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  epp_rga0 &  epp_rga1 & !epp_rga2 &  wcf;
+  _EQ115 = !cnt0 &  epp_rga2 &  n64_data13;
+
+-- Node name is 'epp_data6' = '|lpm_mux:epp_mux|muxlut:219|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data6', type is bidir 
+-- _N023 borrows parallel expanders from mode 
+epp_data6 = TRI(_N023,  _N109);
+_N023    = LCELL( _EQ116 $  _EQ117);
+  _EQ116 =  cnt0 &  epp_rga2 &  n64_data6
+         #  cnt14 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt6 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt22 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  epp_rga0 &  epp_rga1 & !epp_rga2 &  wdf;
+  _EQ117 = !cnt0 &  epp_rga2 &  n64_data14;
+
+-- Node name is 'epp_data7' = '|lpm_mux:epp_mux|muxlut:237|muxlut:57|result_node' from file "muxlut.tdf" line 128, column 40
+-- Equation name is 'epp_data7', type is bidir 
+-- _N024 borrows parallel expanders from x2 
+epp_data7 = TRI(_N024,  _N109);
+_N024    = LCELL( _EQ118 $  _EQ119);
+  _EQ118 =  cnt0 &  epp_rga2 &  n64_data7
+         #  cnt15 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt7 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt23 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  epp_rga0 &  epp_rga1 & !epp_rga2 &  n64_cold_reset;
+  _EQ119 = !cnt0 &  epp_rga2 &  n64_data15;
+
+-- Node name is 'epp_rga0' from file "uploader.tdf" line 39, column 8
+-- Equation name is 'epp_rga0', type is buried 
+-- epp_rga0 lends parallel expanders to cnt8 
+epp_rga0 = DFFE( epp_data0 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ120);
+  _EQ120 =  epp_ss~4 & !epp_write;
+
+-- Node name is 'epp_rga1' from file "uploader.tdf" line 39, column 8
+-- Equation name is 'epp_rga1', type is buried 
+epp_rga1 = DFFE( epp_data1 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ121);
+  _EQ121 =  epp_ss~4 & !epp_write;
+
+-- Node name is 'epp_rga2' from file "uploader.tdf" line 39, column 8
+-- Equation name is 'epp_rga2', type is buried 
+epp_rga2 = DFFE( epp_data2 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ122);
+  _EQ122 =  epp_ss~4 & !epp_write;
+
+-- Node name is 'epp_ss~1' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_ss~1', type is buried 
+-- epp_ss~1 lends parallel expanders to epp_ss~2 
+epp_ss~1 = DFFE( epp_ss~2 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ123);
+  _EQ123 =  x2 &  x4;
+
+-- Node name is 'epp_ss~2' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_ss~2', type is buried 
+-- epp_ss~2 borrows parallel expanders from epp_ss~1 
+epp_ss~2 = DFFE( _EQ124 $  VCC, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ125);
+  _EQ124 =  epp_rga1
+         #  epp_rga0
+         # !epp_ss~5
+         # !epp_rga2
+         #  epp_dstb;
+  _EQ125 =  x2 &  x4;
+
+-- Node name is 'epp_ss~3' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_ss~3', type is buried 
+epp_ss~3 = DFFE( _EQ126 $  VCC, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ127);
+  _EQ126 = !epp_rga0 & !epp_rga1 &  epp_rga2
+         # !epp_ss~5
+         #  epp_dstb;
+  _EQ127 =  x2 &  x4;
+
+-- Node name is 'epp_ss~4' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_ss~4', type is buried 
+epp_ss~4 = DFFE( _EQ128 $  VCC, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ129);
+  _EQ128 =  epp_astb
+         # !epp_ss~5
+         # !epp_dstb;
+  _EQ129 =  x2 &  x4;
+
+-- Node name is 'epp_ss~5' from file "uploader.tdf" line 41, column 1
+-- Equation name is 'epp_ss~5', type is buried 
+epp_ss~5 = DFFE( _EQ130 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _EQ131);
+  _EQ130 =  epp_astb &  epp_busy &  epp_dstb
+         #  epp_astb &  epp_dstb &  epp_ss~5;
+  _EQ131 =  x2 &  x4;
+
+-- Node name is 'ewe' from file "uploader.tdf" line 51, column 26
+-- Equation name is 'ewe', type is buried 
+-- ewe lends parallel expanders to cnt5 
+ewe      = DFFE( as $  GND, GLOBAL( clk),  cas,  VCC,  VCC);
+
+-- Node name is 'inc' from file "uploader.tdf" line 51, column 12
+-- Equation name is 'inc', type is buried 
+inc      = DFFE( _EQ132 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ132 =  mx & !ras;
+
+-- Node name is 'mode' from file "uploader.tdf" line 49, column 8
+-- Equation name is 'mode', type is buried 
+-- mode lends parallel expanders to _N023 
+mode     = DFFE( enable $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC, !as);
+
+-- Node name is 'mx' from file "uploader.tdf" line 51, column 5
+-- Equation name is 'mx', type is buried 
+mx       = DFFE( ras $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is 'ndrambuf' = ':706' from file "uploader.tdf" line 366, column 4
+-- Equation name is 'ndrambuf', type is output 
+ndrambuf = _N047~NOT;
+_N047~NOT = LCELL( _EQ133 $  GND);
+  _EQ133 =  cart_on &  cnt26 & !n64_alel
+         # !n64_alel &  wcf
+         # !n64_alel &  n64_read &  n64_write
+         # !n64_cold_reset
+         #  mode;
+
+-- Node name is 'n64_data0~1' from file "uploader.tdf" line 274, column 10
+-- Equation name is 'n64_data0~1', type is buried 
+-- synthesized logic cell 
+_N108    = LCELL( _EQ134 $  GND);
+  _EQ134 =  epp_as & !epp_write &  mode;
+
+-- Node name is 'n64_data0' 
+-- Equation name is 'n64_data0', type is bidir 
+n64_data0 = TRI(_N001,  _N108);
+_N001    = LCELL( epp_data0 $  GND);
+
+-- Node name is 'n64_data1' 
+-- Equation name is 'n64_data1', type is bidir 
+n64_data1 = TRI(_N002,  _N108);
+_N002    = LCELL( epp_data1 $  GND);
+
+-- Node name is 'n64_data2' 
+-- Equation name is 'n64_data2', type is bidir 
+n64_data2 = TRI(_N003,  _N108);
+_N003    = LCELL( epp_data2 $  GND);
+
+-- Node name is 'n64_data3' 
+-- Equation name is 'n64_data3', type is bidir 
+n64_data3 = TRI(_N004,  _N108);
+_N004    = LCELL( epp_data3 $  GND);
+
+-- Node name is 'n64_data4' 
+-- Equation name is 'n64_data4', type is bidir 
+n64_data4 = TRI(_N005,  _N108);
+_N005    = LCELL( epp_data4 $  GND);
+
+-- Node name is 'n64_data5' 
+-- Equation name is 'n64_data5', type is bidir 
+n64_data5 = TRI(_N006,  _N108);
+_N006    = LCELL( epp_data5 $  GND);
+
+-- Node name is 'n64_data6' 
+-- Equation name is 'n64_data6', type is bidir 
+-- _N007 lends parallel expanders to cnt6 
+n64_data6 = TRI(_N007,  _N108);
+_N007    = LCELL( epp_data6 $  GND);
+
+-- Node name is 'n64_data7' 
+-- Equation name is 'n64_data7', type is bidir 
+-- _N008 lends parallel expanders to cnt7 
+n64_data7 = TRI(_N008,  _N108);
+_N008    = LCELL( epp_data7 $  GND);
+
+-- Node name is 'n64_data8' 
+-- Equation name is 'n64_data8', type is bidir 
+n64_data8 = TRI(_N009,  _N108);
+_N009    = LCELL( epp_data0 $  GND);
+
+-- Node name is 'n64_data9' 
+-- Equation name is 'n64_data9', type is bidir 
+n64_data9 = TRI(_N010,  _N108);
+_N010    = LCELL( epp_data1 $  GND);
+
+-- Node name is 'n64_data10' 
+-- Equation name is 'n64_data10', type is bidir 
+n64_data10 = TRI(_N011,  _N108);
+_N011    = LCELL( epp_data2 $  GND);
+
+-- Node name is 'n64_data11' 
+-- Equation name is 'n64_data11', type is bidir 
+n64_data11 = TRI(_N012,  _N108);
+_N012    = LCELL( epp_data3 $  GND);
+
+-- Node name is 'n64_data12' 
+-- Equation name is 'n64_data12', type is bidir 
+n64_data12 = TRI(_N013,  _N108);
+_N013    = LCELL( epp_data4 $  GND);
+
+-- Node name is 'n64_data13' 
+-- Equation name is 'n64_data13', type is bidir 
+n64_data13 = TRI(_N014,  _N108);
+_N014    = LCELL( epp_data5 $  GND);
+
+-- Node name is 'n64_data14' 
+-- Equation name is 'n64_data14', type is bidir 
+n64_data14 = TRI(_N015,  _N108);
+_N015    = LCELL( epp_data6 $  GND);
+
+-- Node name is 'n64_data15' 
+-- Equation name is 'n64_data15', type is bidir 
+n64_data15 = TRI(_N016,  _N108);
+_N016    = LCELL( epp_data7 $  GND);
+
+-- Node name is 'os_event_cart' = 'oce' from file "uploader.tdf" line 35, column 8
+-- Equation name is 'os_event_cart', type is output 
+os_event_cart = oce~NOT;
+oce~NOT  = DFFE( VCC $  GND, GLOBAL( clk), !_EQ135,  epp_init,  _EQ136);
+  _EQ135 =  epp_data3 &  _N057;
+  _EQ136 =  n64_cold_reset & !n64_write;
+
+-- Node name is 'ras' from file "uploader.tdf" line 51, column 1
+-- Equation name is 'ras', type is buried 
+ras      = DFFE( _EQ137 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ137 =  as & !refresh;
+
+-- Node name is 'rasr' from file "uploader.tdf" line 51, column 21
+-- Equation name is 'rasr', type is buried 
+rasr     = DFFE( _EQ138 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ138 =  casr & !x2
+         #  casr & !x4;
+
+-- Node name is 'ras0' = ':638' from file "uploader.tdf" line 294, column 5
+-- Equation name is 'ras0', type is output 
+ras0     = _N031~NOT;
+_N031~NOT = LCELL( _EQ139 $  GND);
+  _EQ139 = !ras & !rasr
+         #  cnt1 & !rasr;
+
+-- Node name is 'ras1' = ':641' from file "uploader.tdf" line 296, column 4
+-- Equation name is 'ras1', type is output 
+ras1     = _N030~NOT;
+_N030~NOT = LCELL( _EQ140 $  GND);
+  _EQ140 = !ras & !rasr
+         # !cnt1 & !rasr;
+
+-- Node name is 'refresh' from file "uploader.tdf" line 409, column 11
+-- Equation name is 'refresh', type is buried 
+!refresh = refresh~NOT;
+refresh~NOT = LCELL( _EQ141 $  GND);
+  _EQ141 = !cart_on & !mode & !n64_aleh &  n64_cold_reset & !wcf
+         # !cnt26 & !mode & !n64_aleh &  n64_cold_reset & !wcf
+         # !epp_dstb & !epp_rga0 & !epp_rga1 &  epp_rga2 &  mode;
+
+-- Node name is 'rom_read' = ':710' from file "uploader.tdf" line 369, column 21
+-- Equation name is 'rom_read', type is output 
+rom_read = _N044~NOT;
+_N044~NOT = LCELL( _EQ142 $  GND);
+  _EQ142 = !cart_on & !wcf
+         # !cnt26 & !wcf
+         # !n64_cold_reset
+         #  n64_read;
+
+-- Node name is 'rom_write' = ':708' from file "uploader.tdf" line 368, column 21
+-- Equation name is 'rom_write', type is output 
+rom_write = _N045~NOT;
+_N045~NOT = LCELL( _EQ143 $  GND);
+  _EQ143 = !cart_on & !wcf
+         # !cnt26 & !wcf
+         #  n64_write
+         # !n64_cold_reset;
+
+-- Node name is 'wcf' from file "uploader.tdf" line 47, column 5
+-- Equation name is 'wcf', type is buried 
+wcf      = DFFE( _EQ144 $  GND, GLOBAL( clk), !_EQ145, !_EQ146, !n64_write);
+  _EQ144 =  cart_on &  cnt26
+         #  wcf;
+  _EQ145 = !epp_data5 &  _N057;
+  _EQ146 =  epp_data5 &  _N057;
+
+-- Node name is 'wdf' from file "uploader.tdf" line 47, column 1
+-- Equation name is 'wdf', type is buried 
+-- wdf lends parallel expanders to cnt0 
+wdf      = DFFE( _EQ147 $  GND, GLOBAL( clk), !_EQ148, !_EQ149, !we);
+  _EQ147 = !mode &  write_ena;
+  _EQ148 = !epp_data6 &  _N057;
+  _EQ149 =  epp_data6 &  _N057;
+
+-- Node name is 'we' = 'iwe' from file "uploader.tdf" line 50, column 1
+-- Equation name is 'we', type is output 
+ we      = DFFE( _EQ150 $  VCC, GLOBAL( clk),  VCC,  ras,  VCC);
+  _EQ150 =  as & !cart_on & !ewe & !mode &  n64_cold_reset & !n64_write & 
+             !wcf &  write_ena
+         #  as & !cnt26 & !ewe & !mode &  n64_cold_reset & !n64_write & !wcf & 
+              write_ena
+         #  as &  epp_as & !epp_write & !ewe &  mode;
+
+-- Node name is 'write_ena' from file "uploader.tdf" line 48, column 1
+-- Equation name is 'write_ena', type is buried 
+-- write_ena lends parallel expanders to cnt2 
+write_ena = DFFE( epp_data2 $  GND, GLOBAL( clk), GLOBAL( epp_init),  VCC,  _N057);
+
+-- Node name is 'x2' from file "uploader.tdf" line 36, column 1
+-- Equation name is 'x2', type is buried 
+-- x2 lends parallel expanders to _N024 
+x2       = TFFE( VCC, GLOBAL( clk),  VCC,  VCC,  VCC);
+
+-- Node name is 'x4' from file "uploader.tdf" line 36, column 4
+-- Equation name is 'x4', type is buried 
+-- x4 lends parallel expanders to cnt3 
+x4       = TFFE( VCC, GLOBAL( clk),  VCC,  VCC,  x2);
+
+-- Node name is '|lpm_decode:dc|altshift:external_latency_ffs|points0_0' from file "altshift.tdf" line 45, column 9
+-- Equation name is '_N066', type is buried 
+-- _N066 lends parallel expanders to _N110 
+_N066    = DFFE( _EQ151 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ151 = !epp_rga0 & !epp_rga1 & !epp_rga2 &  epp_ss~3 & !epp_write;
+
+-- Node name is '|lpm_decode:dc|altshift:external_latency_ffs|points0_1' from file "altshift.tdf" line 45, column 9
+-- Equation name is '_N073', type is buried 
+-- _N073 lends parallel expanders to _N017 
+_N073    = DFFE( _EQ152 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ152 =  epp_rga0 & !epp_rga1 & !epp_rga2 &  epp_ss~3 & !epp_write;
+
+-- Node name is '|lpm_decode:dc|altshift:external_latency_ffs|points0_2' from file "altshift.tdf" line 45, column 9
+-- Equation name is '_N080', type is buried 
+-- _N080 lends parallel expanders to _N019 
+_N080    = DFFE( _EQ153 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ153 = !epp_rga0 &  epp_rga1 & !epp_rga2 &  epp_ss~3 & !epp_write;
+
+-- Node name is '|lpm_decode:dc|altshift:external_latency_ffs|points0_3' from file "altshift.tdf" line 45, column 9
+-- Equation name is '_N051', type is buried 
+-- _N051 lends parallel expanders to _N021 
+_N051    = DFFE( _EQ154 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ154 =  epp_rga0 &  epp_rga1 & !epp_rga2 &  epp_ss~3 & !epp_write;
+
+-- Node name is '|lpm_decode:dc|altshift:external_latency_ffs|points0_5' from file "altshift.tdf" line 45, column 9
+-- Equation name is '_N057', type is buried 
+-- _N057 lends parallel expanders to _N022 
+_N057    = DFFE( _EQ155 $  GND, GLOBAL( clk),  VCC,  VCC,  VCC);
+  _EQ155 =  epp_rga0 & !epp_rga1 &  epp_rga2 &  epp_ss~3 & !epp_write;
+
+-- Node name is '|lpm_mux:epp_mux|muxlut:111|muxlut:57|result_node~1' from file "muxlut.tdf" line 128, column 40
+-- Equation name is '_N109', type is buried 
+-- synthesized logic cell 
+_N109    = LCELL( _EQ156 $  GND);
+  _EQ156 = !epp_data_stb &  epp_write;
+
+-- Node name is '|lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node~fit~in1' from file "muxlut.tdf" line 128, column 40
+-- Equation name is '_N110', type is buried 
+-- _N110 borrows parallel expanders from _N066 
+-- synthesized logic cell 
+_N110    = LCELL( _EQ157 $  _EQ158);
+  _EQ157 =  cnt0 &  epp_rga2 &  n64_data1
+         #  cnt9 &  epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt1 & !epp_rga0 & !epp_rga1 & !epp_rga2
+         #  cnt17 & !epp_rga0 &  epp_rga1 & !epp_rga2
+         #  cnt25 &  epp_rga0 &  epp_rga1 & !epp_rga2;
+  _EQ158 = !cnt0 &  epp_rga2 &  n64_data9;
+
+
+
+--     Shareable expanders that are duplicated in multiple LABs:
+--    _X001 occurs in LABs --CDEFG-
+--    _X002 occurs in LABs --CDEFG-
+--    _X003 occurs in LABs --CDEFG-
+--    _X004 occurs in LABs ----EFG-
+--    _X008 occurs in LABs --CD-FGH
+--    _X009 occurs in LABs --CD-FGH
+--    _X010 occurs in LABs --CD---H
+--    _X011 occurs in LABs ---D-FGH
+--    _X012 occurs in LABs ---D-FGH
+--    _X013 occurs in LABs ---D---H
+
+
+
+
+Project Information                         e:\pro\nintendo64\plm\uploader.rpt
+
+** COMPILATION SETTINGS & TIMES **
+
+Processing Menu Commands
+------------------------
+
+Design Doctor                             = off
+
+Logic Synthesis:
+
+   Synthesis Type Used                    = Multi-Level
+
+   Default Synthesis Style                = FAST
+
+      Logic option settings in 'FAST' style for 'MAX7000S' family
+
+      DECOMPOSE_GATES                     = on
+      DUPLICATE_LOGIC_EXTRACTION          = off
+      MINIMIZATION                        = full
+      MULTI_LEVEL_FACTORING               = on
+      NOT_GATE_PUSH_BACK                  = on
+      PARALLEL_EXPANDERS                  = on
+      REDUCE_LOGIC                        = on
+      REFACTORIZATION                     = off
+      REGISTER_OPTIMIZATION               = on
+      RESYNTHESIZE_NETWORK                = on
+      SLOW_SLEW_RATE                      = off
+      SOFT_BUFFER_INSERTION               = on
+      SUBFACTOR_EXTRACTION                = off
+      TURBO_BIT                           = on
+      XOR_SYNTHESIS                       = on
+      IGNORE_SOFT_BUFFERS                 = off
+      USE_LPM_FOR_AHDL_OPERATORS          = off
+
+   Other logic synthesis settings:
+
+      Automatic Global Clock              = on
+      Automatic Global Clear              = on
+      Automatic Global Preset             = on
+      Automatic Global Output Enable      = on
+      Automatic Fast I/O                  = on
+      Automatic Register Packing          = off
+      Automatic Open-Drain Pins           = off
+      Automatic Implement in EAB          = off
+      One-Hot State Machine Encoding      = on
+      Optimize                            = 5
+
+Default Timing Specifications: None
+
+Cut All Bidir Feedback Timing Paths       = on
+Cut All Clear & Preset Timing Paths       = on
+
+Ignore Timing Assignments                 = off
+
+Functional SNF Extractor                  = off
+
+Linked SNF Extractor                      = off
+Timing SNF Extractor                      = on
+Optimize Timing SNF                       = off
+Generate AHDL TDO File                    = off
+Fitter Settings                           = NORMAL
+Smart Recompile                           = off
+Total Recompile                           = off
+
+Interfaces Menu Commands
+------------------------
+
+EDIF Netlist Writer                       = off
+Verilog Netlist Writer                    = off
+VHDL Netlist Writer                       = off
+
+Compilation Times
+-----------------
+
+   Compiler Netlist Extractor             00:00:05
+   Database Builder                       00:00:00
+   Logic Synthesizer                      00:00:03
+   Partitioner                            00:00:00
+   Fitter                                 00:01:04
+   --------------------------             --------
+   Total Time                             00:01:12
+
+
+Memory Allocated
+-----------------
+
+Peak memory allocated during compilation  = 6,183K

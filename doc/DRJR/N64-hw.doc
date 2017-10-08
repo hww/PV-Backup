@@ -1,0 +1,503 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1049{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f27\froman\fcharset238\fprq2 Times New Roman CE;}{\f28\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f30\froman\fcharset161\fprq2 Times New Roman Greek;}{\f31\froman\fcharset162\fprq2 Times New Roman Tur;}{\f32\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f33\fswiss\fcharset238\fprq2 Arial CE;}{\f34\fswiss\fcharset204\fprq2 Arial Cyr;}{\f36\fswiss\fcharset161\fprq2 Arial Greek;}{\f37\fswiss\fcharset162\fprq2 Arial Tur;}{\f38\fswiss\fcharset186\fprq2 Arial Baltic;}{\f39\fmodern\fcharset238\fprq1 Courier New CE;}{\f40\fmodern\fcharset204\fprq1 Courier New Cyr;}{\f42\fmodern\fcharset161\fprq1 Courier New Greek;}{\f43\fmodern\fcharset162\fprq1 Courier New Tur;}{\f44\fmodern\fcharset186\fprq1 Courier New Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\widctlpar\adjustright \fs20\lang1049\cgrid \snext0 Обычный;}{\s1\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\f1\fs28\lang1049\kerning28\cgrid \sbasedon0 \snext0 заголовок 1;}{\s2\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \b\i\f1\lang1049\cgrid \sbasedon0 \snext0 заголовок 2;}{\s3\sb240\sa60\keepn\nowidctlpar\widctlpar\adjustright \f1\lang1049\cgrid \sbasedon0 \snext0 заголовок 3;}{\*\cs10 \additive Основной шрифт;}{\s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1049\cgrid \sbasedon0 \snext15 Текст;}}{\*\listtable{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid64301334}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid116684172}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid216087378}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid290092386}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid405566810}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid432865679}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid471824797}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid519010389}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid543299607}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid551699480}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid575164046}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid612858611}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid685711699}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid753862477}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid782186088}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid903560749}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1020204953}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1071781075}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1178033708}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1235892595}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1259800417}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1340044396}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1428577761}{\list\listtemplateid68747265\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li360\jclisttab\tx360 }{\listname ;}\listid1489980791}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1820919268}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1828323480}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1945571582}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1961179672}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1975022454}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1991712253}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid1993176501}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid2015257721}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid2029863255}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid2051567105}{\list\listtemplateid2021917270\listsimple{\listlevel\levelnfc23\leveljc0\levelfollow0\levelstartat0\levelspace0\levelindent0{\leveltext\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li600\jclisttab\tx600 }{\listname ;}\listid2112973491}}{\*\listoverridetable{\listoverride\listid1489980791\listoverridecount0\ls1}{\listoverride\listid405566810\listoverridecount0\ls2}{\listoverride\listid2112973491\listoverridecount0\ls3}{\listoverride\listid543299607\listoverridecount0\ls4}{\listoverride\listid1428577761\listoverridecount0\ls5}{\listoverride\listid1071781075\listoverridecount0\ls6}{\listoverride\listid519010389\listoverridecount0\ls7}{\listoverride\listid753862477\listoverridecount0\ls8}{\listoverride\listid1340044396\listoverridecount0\ls9}{\listoverride\listid685711699\listoverridecount0\ls10}{\listoverride\listid551699480\listoverridecount0\ls11}{\listoverride\listid216087378\listoverridecount0\ls12}{\listoverride\listid2029863255\listoverridecount0\ls13}{\listoverride\listid1993176501\listoverridecount0\ls14}{\listoverride\listid2051567105\listoverridecount0\ls15}{\listoverride\listid1945571582\listoverridecount0\ls16}{\listoverride\listid575164046\listoverridecount0\ls17}{\listoverride\listid1961179672\listoverridecount0\ls18}{\listoverride\listid1991712253\listoverridecount0\ls19}{\listoverride\listid782186088\listoverridecount0\ls20}{\listoverride\listid1820919268\listoverridecount0\ls21}{\listoverride\listid471824797\listoverridecount0\ls22}{\listoverride\listid1178033708\listoverridecount0\ls23}{\listoverride\listid432865679\listoverridecount0\ls24}{\listoverride\listid116684172\listoverridecount0\ls25}{\listoverride\listid1020204953\listoverridecount0\ls26}{\listoverride\listid1828323480\listoverridecount0\ls27}{\listoverride\listid64301334\listoverridecount0\ls28}{\listoverride\listid1975022454\listoverridecount0\ls29}{\listoverride\listid1259800417\listoverridecount0\ls30}{\listoverride\listid1235892595\listoverridecount0\ls31}{\listoverride\listid612858611\listoverridecount0\ls32}{\listoverride\listid290092386\listoverridecount0\ls33}{\listoverride\listid2015257721\listoverridecount0\ls34}{\listoverride\listid903560749\listoverridecount0\ls35}}{\info{\title LaC's n64 hardware dox}{\author Valery}{\operator Valery}{\creatim\yr1999\mo6\dy19\hr11\min4}{\revtim\yr1999\mo6\dy19\hr11\min4}{\printim\yr1999\mo6\dy19\hr10\min56}{\version2}{\edmins0}{\nofpages10}{\nofwords3001}{\nofchars17110}{\*\company MusicLab}{\nofcharsws21012}{\vern73}}\paperw11906\paperh16838\margl1152\margr1152 \widowctrl\ftnbj\aenddoc\formshade\viewkind1\viewscale117\viewzk2\pgbrdrhead\pgbrdrfoot \fet0\sectd \linex0\headery709\footery709\colsx709\endnhere\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang{\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang{\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \s1\qc\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel0\adjustright \b\f1\fs28\lang1049\kerning28\cgrid {LaC's n64 hardware dox... v0.5 (public release)
+\par }\pard\plain \s3\qc\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\lang1049\cgrid {release notes
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1049\cgrid {
+\par   This little doc is my attempt to make the n64 coding scene a little
+\par better I hope. It is a compilation of stuff i've been working on for some
+\par months... a result of alot of reversing of several games compiled with
+\par libultra, and some help from certain people.   It is mainly for people who
+\par wish to code without using a developement library (like libultra). It is
+\par specfically for doing intros,trainers, etc... to attach to roms. It is very
+\par simplistic, and assumes you have some knowledge already. In other words this
+\par doc isnt really meant for people just starting. You should probably have read
+\par the libultra docs and be familiar with the n64 hardware... and the purpose of
+\par things like the AI,PI,SI,VI etc...
+\par I suppose some emulation author could find use of this too.
+\par  Some people will probably be mad I released this doc, but I guess since
+\par nothing is really happening in the n64 scene it might get things moving?
+\par Especially from people that really want to hack. Also I have noticed some
+\par really crappy and inaccurate info being released which basically looks like
+\par stuff ripped from czn intros or something and contains no real knowledge. Yes
+\par all you freedom of information people... you want info... hack it yourself.
+\par Or read this doc, then hack some more ;)
+\par Also I can't guarantee the 100% accuracy of any of this document. Also I liked
+\par to be greeted if you are using my dox or my source code in your work.
+\par }{\i 
+\par }{\b\i  NOTE:
+\par }{\i    SOME symbols in the follow text will reference symbols #define'd in RCP.H
+\par    or r4300.h so make sure you look there when you are confused. Yes I know t
+\par    hey are part of the standard devkit and some people dont have it... but i'm
+\par }\pard \s15\nowidctlpar\widctlpar\brdrb\brdrs\brdrw15\brsp240 \adjustright {\i    sure you can find these files if you really need to.
+\par }\pard \s15\nowidctlpar\widctlpar\adjustright {\i\lang1033 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {-VI  (video interface)
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1049\cgrid {
+\par   Accessing the video on the n64 is very easy (like most things in this doc)
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {initialization:
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {     The video hardware is initialized by simply writing all the necessary
+\par      values to the vi regs.  I'm only going to discuss one mode here, but u
+\par      can easily find the values for other modes by just printing out reg
+\par      values to the screen after initing your favorite mode with libultra.  
+\par      You can also alter values of course to make your own modes.  That I will
+\par      not discuss here.  The one i'm discussing is the simple 320x240 RGBA
+\par      16bit non-antialiasing mode.
+\par 
+\par      The base address of the VI regs are mapped at 0xa4400000, so to simply
+\par      write a value to a reg in r4300 asm would be like this:
+\par        ;;this is just an example but it happens to be the write to the
+\par        ;;VI_H_WIDTH_REG defined in RCP.H
+\par        lui      at,0xa440     ;at=0xa4400000
+\par        li       t0,0x140      ;t0=0x140
+\par        sw       t0,0x8(at)    ;write t0 to reg at $at+0x8 
+\par 
+\par \page 
+\par       in C:
+\par 
+\par        IO_WRITE(VI_H_WIDTH_REG,0x140);  //IO_WRITE and IO_READ are in r4300.h
+\par 
+\par       Ok to initialize this mode here are the values to write for each reg:
+\par 
+\par   -> (VI_CONTROL_REG, 0x0000320e)
+\par   -> (VI_DRAM_ADDR_REG,0)
+\par   -> (VI_H_WIDTH_REG,0x140)
+\par   -> (VI_V_INTR_REG,0x2)
+\par   -> (VI_V_CURRENT_LINE_REG,0x0)
+\par   -> (VI_TIMING_REG,0x03e52239) 
+\par   -> (VI_V_SYNC_REG,0x0000020d)
+\par   -> (VI_H_SYNC_REG,0x00000c15)
+\par   -> (VI_H_SYNC_LEAP_REG,0x0c150c15)
+\par   -> (VI_H_VIDEO_REG,0x006c02ec)
+\par   -> (VI_V_VIDEO_REG,0x002501ff)
+\par   -> (VI_V_BURST_REG,0x000e0204)
+\par   -> (VI_X_SCALE_REG,0x200);
+\par   -> (VI_Y_SCALE_REG,0x01000400)
+\par 
+\par     All the values are pretty obvious and dont need much explaining. And with
+\par     a little hacking you can come up with your own modes.
+\par 
+\par     If you've managed to get this far you know that the video screen is just
+\par     showing zebra stripes or some garbage. The reason for this is you have
+\par     not set the frame buffer for this video mode.  This is what
+\par     osViSwapBuffer() is for (if you have used libultra). to set your frame
+\par     buffer simply write the rdram address of the buffer to VI_DRAM_ADDR_REG
+\par     or just change the init code to have it set it up.
+\par     Now you can simply write your graphics to the buffer and they'll be
+\par     updated.
+\par }{\i 
+\par     }{\b\i NOTE:}{\i  There is ALOT of other things you can tweek, change, by messing with
+\par     the VI regs... mess around... figure it out. 
+\par     Also note that there can be cache problems with the video if you are using
+\par     a virtual address like 0x80200000 in your VI_DRAM_ADDR_REG, try using the
+\par     physical address 0xa0200000 instead or make sure you are writing back and
+\par     invalidatiing the cache lines. if you are confused about physical and
+\par     virtual addresses or how the cache works, read the r4300 man... and if you
+\par     still don't understand it totally, join the club.
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end init
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {vertical retrace wait:
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {     pseudo code:
+\par      while ( VI_CURRENT_REG != 512 )  \{wait\}  // I got this value from bpoint
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end retrace wait
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {\lang1033 
+\par \page }{-AI  (audio interface)
+\par }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par   The audio interface is probably the easiest thing to do.
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {initialization:
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     None needed.  Altho I suppose you can include setting the sound frequency
+\par     and/or enabling the AI_CONTROL_REG as initialization (step #4 below)
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end init
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {setting frequency:
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Set the dac rate
+\par        write to AI_DACRATE_REG this value: (VI_NTSC_CLOCK/freq)-1
+\par                                                 ^could be pal
+\par     2. Set the bitrate (4bit, 8bit, or 16bit)
+\par        write to the AI_BITRATE_REG the value: bitrate-1
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end frequency
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {sending sound buffer
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Before sending a buffer, its a good idea to make sure one isnt already
+\par        being played.  Simply read AI_STATUS_REG then AND it with
+\par        AI_STATUS_FIFO_FULL.  if the result is true... then wait.
+\par 
+\par     2. Write the 64bit aligned address of the sound buffer to AI_DRAM_ADDR_REG
+\par 
+\par     3. Write the length of the buffer be played to AI_LEN_REG
+\par        NOTE: this length must be multiple of 8, no larger than 262144 bytes.
+\par 
+\par     4. Write AI_CONTROL_DMA_ON to the AI_CONTROL_REG (only needed once)
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end sound buffer     
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par }{\i   }{\b\i NOTE:}{\i  If you have read the libultra manuals you will notice when it
+\par         discusses the AI routines (osAi.man) it says the AI regs are double
+\par         buffered. This is important to realize that you can send one buffer
+\par         while another is playing. Also note that the AI_LEN_REG counts down
+\par         to 0 as the current buffer is being played. This can be useful to tell
+\par         how much of the buffer is left.}{
+\par }{\lang1033 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {\lang1033 \page }{-PI  (peripheral interface)
+\par }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {init pif:  ( you should do this before you do anything! )
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Simply write 0x8 to PIF_RAM_START+0x3c
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end init pif
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {PI DMA transfer 
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Wait for previous dma transfer to finish (see next explanation)
+\par     2. Write the physical dram address of the dma transfer to PI_DRAM_ADDR_REG
+\par        NOTE: To convert from a virtual address to physical, simply
+\par              AND the address with 0x1fffffff.
+\par     3. Write the physical cart address to PI_CART_ADDR_REG.
+\par     4. Write the length-1 of the dma transfer to PI_WR_LEN_REG
+\par        this is from cart->rdram change this to RD   ^  for the other way
+\par        also note you must write a 0x2 to PI_STATUS_REG in order to write to
+\par        the cart space (0xb0000000) 
+\par }{\i     }{\b\i NOTE:}{\i  The cart addr must be 2 byte aligned, and the rdram addres must
+\par           8-byte aligned. Once again make sure you write back the cache lines
+\par           and invalidate the cache lines if needed, or you will run into
+\par           trouble.}{
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end PI DMA transfer
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {PI DMA wait
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Read PI_STATUS_REG then AND it with 0x3, if its true... then wait until
+\par        it is not true.
+\par 
+\par     }{\b\i NOTE:}{\i  Look at RCP.H for more information on the PI_STATUS_REG and the PI
+\par           in general.
+\par }{
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end PI DMA wait
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {-reading and writing the new sram chip (DS1) -
+\par }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par   Sram is mapped at 0xa8000000.
+\par   The trick is that you cannot write to it directly, you must us the PI.
+\par   Actually it is possible to write to it directly, but I dont know how because
+\par   it needs to be timed carefully.
+\par   Its a little tricky which requires writing some values into some PI regs
+\par   to initialize the PI correctly for the type of transfer protocol the sram
+\par   needs for successful data transfer.
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {Init the PI for sram
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       1. write 0x05 to the PI_BSD_DOM2_LAT_REG.
+\par       2. write 0x0c to the PI_BSD_DOM2_PWD_REG.
+\par       3. write 0x0d to the PI_BSD_DOM2_PGS_REG.
+\par       4. write 0x02 to the PI_BSD_DOM2_RLS_REG.
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {End init PI for sram
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par   Now you should be able to use the PI to transfer between rdram and sram.
+\par   (refer to the dox above concerning PI, but replace the ROM address with
+\par   sram address 0xa8000000).
+\par 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {-SI  (serial interface)
+\par }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par    The SI is very similar to the PI for obvious reasons. It is used mainly for
+\par    accessing the joyport and pifram... which will be dicussed in the next
+\par    section.
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {SI DMA transfer
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {    1. Wait for previous dma transfer to finish (see next explanation)
+\par 
+\par     2. Write the physical dram address of the dma transfer to SI_DRAM_ADDR_REG
+\par 
+\par     3. Write PIF_RAM_START to the SI_PIF_ADDR_RD64B_REG or the
+\par       SI_PIF_ADDR_WR64B_REG, depending on what you wish to do (read or write).
+\par       This will cause a 64B read or write between pif_ram and rdram.
+\par 
+\par }{\i     }{\b\i NOTE:}{\i  The SI addr must be 2 byte aligned, and the rdram addres must
+\par           8-byte aligned. Once again make sure you write back the cache lines
+\par           and invalidate the cache lines if needed, or you will run into
+\par           trouble.
+\par }{
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end SI DMA tranfer
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {SI DMA wait
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par     1. Read SI_STATUS_REG then AND it with 0x3, if its true... then wait until
+\par        it is not true.
+\par 
+\par }{\b\i     NOTE:}{\i  Look at RCP.H for more information on the SI_STATUS_REG and the SI
+\par           in general.}{
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end SI DMA wait
+\par }\pard \s15\nowidctlpar\widctlpar\brdrb\brdrs\brdrw15\brsp20 {\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {\lang1033 
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {\lang1033 
+\par }\pard\plain \s2\sb240\sa60\keepn\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\outlinelevel1\adjustright \b\i\f1\lang1049\cgrid {-PIF Usage-  (controller reading/detection)
+\par }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par    If you have done research and peeked at the RCP.h file you should
+\par    already know some things about the pif.  The SI is used to send commands
+\par    to the pif ram that tell the pif what to do.  The SI is also used to read
+\par    the results of those commands back. You can tell the pif to do alot of 
+\par    stuff. for instance... reading joysticks, reading mempacks, detecting
+\par    joysticks, detecting mempacks, activating the rumblepack, detecting the
+\par    rumble pack, reading cartridge eeprom... etc.  In this version of the
+\par    document I will only cover reading joysticks and detection.
+\par 
+\par    Below is a very brief and not so detailed view of pif command structure
+\par    and an example of using them to perform some operations.
+\par 
+\par 
+\par \page    first this is how pif ram is setup:}{\lang1033 
+\par }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9072\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {[64byte block] at 0xbfc007c0 (1fc007c0)
+\par    \{              command       data recv
+\par     channel 1  -  00 00 00 00 : 00 00 00 00 - 8 bytes 
+\par     channel 2  -  00 00 00 00 : 00 00 00 00 - 8 bytes
+\par     channel 3  -  00 00 00 00 : 00 00 00 00 - 8 bytes
+\par     channel 4  -  00 00 00 00 : 00 00 00 00 - 8 bytes
+\par     channel 5  -  00 00 00 00 : 00 00 00 00 - 8 bytes
+\par                   00 00 00 00 : 00 00 00 00 - 8 bytes  (dummy data)
+\par                   00 00 00 00 : 00 00 00 00 - 8 bytes  (dummy data)
+\par                   00 00 00 00 : 00 00 00 00 - 8 bytes  (dummy data)
+\par    \}                                     ^^pif status control byte}{\lang1033 \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\lang1033 \row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {\lang1033 
+\par }{   This is how you should visualize it for operations I describe below. For
+\par    other stuff it is setup differently... but in all cases it is just
+\par    64 bytes.
+\par 
+\par    Each channel can contain a command in the first 4 bytes (the left column).
+\par 
+\par    Each command has a structure like so:
+\par 
+\par }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx2268\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx8505\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {   byte 1 \cell  0xff for new command | 0xfe for end of commands \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx2268\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx8505\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   byte 2 \cell  number of bytes to send\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   byte 3 \cell  number of bytes to recieve\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx2268\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx8505\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   byte 4 \cell  Command Type\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\f2 \row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par    Command Types:
+\par 
+\par }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1985\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4678\pard \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {   00 \cell  get status\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1985\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4678\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   01 \cell  read button values\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   02 \cell  read from mempack\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   03 \cell  write to mempack\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   ff \cell  reset controller\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   04 \cell  read eeprom\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft851\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1985\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4678\pard\plain \s15\qj\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {   05 \cell  write eeprom\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\f2 \row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par    Here is an example on how to build a command for reading a joystick:
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {Init the joysticks for reading
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par      send the pif command block to pif_ram using the SI DMA}{\lang1033 
+\par 
+\par }\trowd \trgaph108\trrh2887\trleft-108\trkeep\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4678\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9708\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {     such a block to read 4 joys: 
+\par       [64byte block]              
+\par       \{    command    data        
+\par      joy1  ff010401 - ffffffff    
+\par      joy2  ff010401 - ffffffff    
+\par      joy3  ff010401 - ffffffff    
+\par      joy4  ff010401 - ffffffff    
+\par            fe000000 - 00000000    
+\par            00000000 - 00000000    
+\par            00000000 - 00000000    
+\par            00000000 - 00000001    
+\par       \}                           \cell   such a block to read 1 joy:
+\par    [64byte block]
+\par    \{
+\par   joy1  ff010401 - ffffffff
+\par         00000000 - ffffffff
+\par         00000000 - ffffffff
+\par         00000000 - ffffffff
+\par         fe000000 - 00000000  
+\par         00000000 - 00000000
+\par         00000000 - 00000000
+\par         00000000 - 00000001
+\par     \}\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par       after sending this the joystick values will now be updated in pif RAM}{\lang1033 
+\par 
+\par }{\i       }{\b\i NOTE:}{\i  make sure you put the ffffffff in the data column, otherwise it
+\par             will cause errors.}{
+\par 
+\par      ff010401 is the command that reads the joystick values.
+\par      |
+\par      ff is basically a flag for a new command.
+\par      01 says we are going to send 1 byte (the command type).
+\par      04 says we are going to read 4 bytes (into the data column)
+\par      01 is the command type (read button values).
+\par 
+\par      You will notice the 5th channel command is fe, this command signals
+\par      the end of the command block.  The 00000001 tells the pif there is a new
+\par      command block to be processed.  Without this the command block will not 
+\par      be executed. 
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end Init joysticks
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {Read Joysticks
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {        The joy values can be read from the spaces marked by 0xFFFFFFFF in the
+\par         block above.  Of course you must first DMA from pif ram back to rdram.
+\par         Or you can just read the data directly by making a pointer to
+\par         0xbfc007c0 (start of the pif_ram), although I would not recommend that
+\par         method.
+\par         Here would be a sufficient C code to read in a controller's values:
+\par 
+\par         void siReadJoy(int cont,OSContPad *p)
+\par         \{                                     
+\par          unsigned char pif_block[64];
+\par          si_DMA_from_pif (pif_block); 
+\par          memcpy (p,pif_block+((cont*8)+4),4);
+\par         \}
+\par 
+\par         The OSContPad structure is in the libultra header file OS.H
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end Read Joysticks
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {Detecting if Joysticks are connected
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       This is very easy and can be done after you send any command to read
+\par       or write something to the controllers.  Whenever you try and execute a
+\par       command on a channel and that device on the channel (like a joystick)
+\par       is not present the pif will write an error value to the command column
+\par       that the error occured in. For instance... lets say you did the example
+\par       above and you tried to read controller values.  Well if you tried to
+\par       read the controller values for all four joystick channels you will
+\par       notice that if you don't have a joystick physically plugged in to the
+\par       port(s) you are reading from, then no values will appear.  Well I think
+\par       this is an obvious result.  But also notice that the pif will put an
+\par       error value into the upper 4 bits of the 3rd byte in the command column.
+\par 
+\par       The Error values are as follows:
+\par 
+\par }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1276\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {\lang1033  }{0 \cell  no error, operation successful.\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1276\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {\lang1033  }{8 \cell  error, device not present for specified command.\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1276\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {\lang1033  }{4 \cell  error, unable to send/recieve the number bytes for command type.\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\f2 \row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par 
+\par       This would be an example of the result of trying to read 4 controllers
+\par       (like in above example) and only a joystick in port 3 is connected:}{\lang1033 
+\par \page 
+\par }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       [64byte block] read from pif ram  
+\par       \{    command    data              
+\par      joy1  ff018401 - ffffffff      <--- 8 is the error code for device
+\par      joy2  ff018401 - ffffffff     }{\lang1033   }{    not present.
+\par      joy3  ff010401 - 00000000      <--- read was successful on this 
+\par      joy4  ff018401 - ffffffff           channel, no buttons being pressed
+\par            fe000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par       \}                                 
+\par      \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par 
+\par       This would be an example of the result of trying to read 5 bytes for the
+\par       read joystick command:  (all 4 joysticks are connected)}{\lang1033 
+\par 
+\par }\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       [64byte block] sent to pif ram    |
+\par       \{    command    data              |
+\par      joy1  ff010501 - ffffffff     <---
+\par      joy2  ff010501 - ffffffff     <--- note we tried to read 5 instead
+\par      joy3  ff010501 - ffffffff     <--- of 4.  The device only allows you
+\par      joy4  ff010501 - ffffffff     <--- to read 4 bytes with that command
+\par            fe000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000001          
+\par       \}                                 
+\par      \cell }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par 
+\par }\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       [64byte block] read from pif ram  
+\par       \{    command    data              
+\par      joy1  ff014501 - 00000000    <--- (note that no buttons are being
+\par      joy2  ff014501 - 00000000    <---  pressed on any controller)
+\par      joy3  ff014501 - 00000000    <--- notice the 4. It is the error
+\par      joy4  ff014501 - 00000000    <--- code for send/recieve.
+\par            fe000000 - 00000000              
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par       \}                                 
+\par       \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par 
+\par       }{\b\i NOTE:}{\i  Even though we tried to read an extra byte for the buttons values
+\par             the button values will still appear... but the error code will
+\par             still be generated because there is only 4 bytes to be read, not
+\par             5.}{
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end Detecting if Joysticks are connected 
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par \page 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {Getting controller status
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par      ff010300 is the command used to get the controller status.
+\par      |
+\par      ff is basically a flag for a new command.
+\par      01 says we are going to send 1 byte (the command type).
+\par      03 says we are going to read 3 bytes (into the data column)
+\par      00 is the command type (get controller status).
+\par 
+\par      Here is and example of reading the status from 4 controllers
+\par      Only the first two controllers are actually plugged in.
+\par      There is a pack in the 1st controller and there is no pack in the second
+\par      controller.
+\par }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       [64byte block] sent to pif ram    
+\par       \{    command    data              
+\par      joy1  ff010300 - ffffffff          
+\par      joy2  ff010300 - ffffffff          
+\par      joy3  ff010300 - ffffffff          
+\par      joy4  ff010300 - ffffffff          
+\par            fe000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000001          
+\par       \}                                      \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx9710\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par       [64byte block] read from pif ram  
+\par       \{    command    data              
+\par      joy1  ff010300 - 050001ff    <--- notice only 3 bytes were read
+\par      joy2  ff010300 - 050002ff    <--- that is why the last byte is 
+\par      joy3  ff018300 - ffffffff         still ff                     
+\par      joy4  ff018300 - ffffffff                                    
+\par            fe000000 - 00000000              
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par            00000000 - 00000000          
+\par       \}                                      \cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par     The first two bytes in the data column is the controller type.  I'm not
+\par     exactly sure what use this is... do steering wheels have a different
+\par     controller type? ;) I dunno.
+\par     The 3rd byte is useful.  Its for detecting if there is something plugged
+\par     into the mempack slot on the controller.}{\lang1033 
+\par 
+\par }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1560\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4536\pard \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {    1 \cell  pack present\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\row }\trowd \trgaph108\trleft567\trbrdrt\brdrs\brdrw10 \trbrdrl\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrh\brdrs\brdrw10 \trbrdrv\brdrs\brdrw10 \clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx1560\clvertalt\clbrdrt\brdrs\brdrw10 \clbrdrl\brdrs\brdrw10 \clbrdrb\brdrs\brdrw10 \clbrdrr\brdrs\brdrw10 \cltxlrtb \cellx4536\pard\plain \s15\nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {    2 \cell  nothing plugged in\cell }\pard\plain \nowidctlpar\widctlpar\intbl{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \fs20\lang1049\cgrid {\f2 \row }\pard\plain \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright \f2\fs20\lang1049\cgrid {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end Getting controller status
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {reading/writing cart eeprom
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par       COMING NEXT RELEASE
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end reading/writing cart eeprom
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {reading/writing mempack eeprom
+\par }\pard \s15\nowidctlpar\widctlpar{\*\pn \pnlvlcont\ilvl0\ls0\pnrnot0\pndec }\adjustright {      COMING NEXT RELEASE}{\lang1033 
+\par 
+\par {\pntext\pard\plain\s15 \f3\fs20\cgrid \loch\af3\dbch\af0\hich\f3 \'b7\tab}}\pard \s15\fi-360\li600\nowidctlpar\widctlpar\brdrb\brdrs\brdrw15\brsp360 \jclisttab\tx600{\*\pn \pnlvlblt\ilvl0\ls2\pnrnot0\pnf3\pnindent600\pnhang{\pntxtb \'b7}}\ls2\adjustright {end reading/writing mempack eeprom
+\par }\pard \s15\nowidctlpar\widctlpar\adjustright {\lang1033 
+\par }\pard\plain \s3\qc\sb240\sa60\keepn\nowidctlpar\widctlpar\outlinelevel2\adjustright \f1\lang1049\cgrid {Future
+\par }\pard\plain \s15\nowidctlpar\widctlpar\adjustright \f2\fs20\lang1049\cgrid {
+\par   I know this document isnt much as it stands but I plan on adding some rsp
+\par info into it and of course any other info I currently havent included as time 
+\par permits.
+\par Also all my source code for the stuff in this doc might get released.
+\par but right now everything is meant to build with SN's assembler and linker. i
+\par wish to recode it so it compiles with a freeware assembler... so once I do
+\par that I will release source... or maybe before ;)
+\par }\pard \s15\nowidctlpar\widctlpar\brdrb\brdrs\brdrw15\brsp20 \adjustright {
+\par }\pard \s15\nowidctlpar\widctlpar\adjustright {\lang1033 
+\par }\pard \s15\qc\nowidctlpar\widctlpar\adjustright {greets to people who helped me with some stuff!
+\par }\pard \s15\nowidctlpar\widctlpar\adjustright {
+\par }\pard \s15\qc\nowidctlpar\widctlpar\brdrb\brdrs\brdrw15\brsp20 \adjustright {nagra, bpoint, hartec, jovis, wild_fire, datawiz}{\lang1033 
+\par 
+\par }\pard \s15\nowidctlpar\widctlpar\adjustright {\lang1033 
+\par }{Questions & Comments: about anything except where to get a devkit or libultra
+\par or roms or header file or whatever.  In other words if you have a question
+\par about stuff in this doc and you are fairly intelligent, or you have a question
+\par about how to implement things in your n64 program or emulator...
+\par 
+\par contact LaC on IRC efnet in #n64dev
+\par or if you must:
+\par 
+\par EMAIL: LaC@dextrose.com
+\par 
+\par }}

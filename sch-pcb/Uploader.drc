@@ -1,0 +1,973 @@
+E:\Pro\Nintendo64\Uploader.drc:
+
+Net Class To Net Class Clearances (in   mm):
+--------------------------------------------
+Net Class Names     Pad-Pad  Pad-Line Line-Line   Pad-Via  Via-Line   Via-Via
+
+
+
+Net Clearances (In   mm):
+-------------------------
+Net Name            Pad-Pad  Pad-Line Line-Line   Pad-Via  Via-Line   Via-Via
+
+
+
+Net Class Clearances (in   mm):
+-------------------------------
+Net Class Name      Pad-Pad  Pad-Line Line-Line   Pad-Via  Via-Line   Via-Via
+
+
+Layer Name          Pad-Pad  Pad-Line Line-Line   Pad-Via  Via-Line   Via-Via
+
+Top                    0.30      0.30      0.30      0.30      0.30      0.30
+Bottom                 0.30      0.30      0.30      0.30      0.30      0.30
+
+DRC Report Options:
+-------------------
+
+Net List Compare:       Off
+Clearance Violations:   On
+Text Violations:        On
+Net List Violations:    On
+Unrouted Nets:          On
+Unconnected Pins:       On
+Net Length Violations:  On
+Silk Violations:        On
+Copper Pour Violations: On
+Plane Violations:       On
+Component Violations:   On
+Drill Violations:       On
+
+DRC Errors:
+-----------
+
+
+NETLIST VIOLATIONS:
+
+Error: Net GND not routed.
+   * Net GND partition 1 contains:
+   * Pad C3-B at ( 43.18, 45.72) mm
+   * Pad U4-2 at ( 39.37,106.68) mm
+   * Pad C8-MINUS at ( 39.37,102.87) mm
+   * Pad C1-B at ( 45.72,102.87) mm
+   * Pad U5-3 at ( 43.97, 80.59) mm
+   * Pad C7-B at ( 95.25, 97.16) mm
+   * Pad 3-B at (109.22,100.97) mm
+   * Pad C6-B at ( 99.70, 83.82) mm
+   * Pad P2-50 at ( 62.23, 16.51) mm
+   * Pad P2-25 at ( 62.23, 16.51) mm
+   * Pad U7-10 at (130.81,106.84) mm
+   * Pad U7-2 at (130.79,116.92) mm
+   * Pad U3-42 at ( 92.71,101.60) mm
+   * Pad U3-32 at (105.41,101.60) mm
+   * Pad U3-19 at (102.87, 83.82) mm
+   * Pad P1-25 at (143.81,101.68) mm
+   * Pad U6-1 at ( 45.72,127.00) mm
+   * Pad U6-72 at (139.70,124.46) mm
+   * Net GND partition 2 contains:
+   * Pad C4-B at ( 85.73, 80.01) mm
+   * Pad U3-84 at ( 87.63, 76.20) mm
+   * Pad U3-82 at ( 85.09, 76.20) mm
+   * Pad U3-2 at ( 90.17, 76.20) mm
+   * Net GND partition 3 contains:
+   * Pad 2-B at ( 82.55,107.95) mm
+   * Pad C5-B at ( 80.65, 97.16) mm
+   * Pad U3-59 at ( 77.47, 96.52) mm
+   * Pad U3-47 at ( 85.09,104.14) mm
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at ( 67.31, 16.51):( 67.31, 49.50) mm [Bottom layer]
+   * Via at ( 67.27, 23.93) mm
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at ( 69.85, 16.51):( 69.85, 51.50) mm [Bottom layer]
+   * Via at ( 69.83, 23.93) mm
+   * Net GND partition 4 contains:
+   * Pad P3-25 at ( 62.56, 56.52) mm
+   * Pad P3-23 at ( 67.56, 56.52) mm
+   * Pad P3-22 at ( 70.06, 56.52) mm
+   * Pad P3-47 at ( 70.06, 51.44) mm
+   * Pad P3-48 at ( 67.56, 51.44) mm
+   * Pad P3-50 at ( 62.08, 51.48) mm
+   * Pad P2-48 at ( 67.31, 16.51) mm
+   * Pad P2-23 at ( 67.31, 16.51) mm
+   * Pad P2-47 at ( 69.85, 16.51) mm
+   * Pad P2-22 at ( 69.85, 16.51) mm
+   * Pad U2-10 at ( 66.04, 31.75) mm
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at (110.00, 51.50):(110.00, 56.46) mm [Bottom layer]
+   * Line at (110.49, 16.51):(110.49, 50.80) mm [Bottom layer]
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at (110.08, 51.52):(110.06, 51.50) mm [Bottom layer]
+   * Line at (110.49, 16.51):(110.49, 50.80) mm [Bottom layer]
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at (110.06, 51.50):(110.00, 51.50) mm [Bottom layer]
+   * Line at (110.49, 16.51):(110.49, 50.80) mm [Bottom layer]
+Warning: Objects in Net GND are physically connected but not routed point-to-po
+int.
+   * Line at (110.49, 16.51):(110.49, 50.80) mm [Bottom layer]
+   * Pad P3-31 at (110.06, 51.44) mm
+   * Net GND partition 5 contains:
+   * Pad P3-6 at (110.06, 56.52) mm
+   * Pad P3-2 at (120.06, 56.52) mm
+   * Pad P3-1 at (122.56, 56.52) mm
+   * Pad P3-26 at (122.56, 51.44) mm
+   * Pad P3-27 at (120.06, 51.44) mm
+   * Pad P3-31 at (110.06, 51.44) mm
+   * Pad P2-6 at (110.49, 16.51) mm
+   * Pad P2-2 at (120.65, 16.51) mm
+   * Pad P2-1 at (123.19, 16.51) mm
+   * Pad U3-7 at ( 97.79, 73.66) mm
+   * Pad C2-B at (119.38, 45.72) mm
+   * Pad U1-10 at (142.24, 30.48) mm
+   * Pad 4-B at ( 97.79, 69.85) mm
+   * Net GND partition 6 contains:
+   * Pad P2-31 at (110.49, 16.51) mm
+   * Net GND partition 7 contains:
+   * Pad P2-27 at (120.65, 16.51) mm
+   * Net GND partition 8 contains:
+   * Pad P2-26 at (123.19, 16.51) mm
+   * Net GND partition 9 contains:
+   * Pad U3-72 at ( 74.93, 78.74) mm
+   * Pad 1-A at ( 69.85, 81.28) mm
+   * Net GND partition 10 contains:
+   * Pad P1-19 at (143.81, 85.06) mm
+   * Net GND partition 11 contains:
+   * Pad P1-20 at (143.81, 87.83) mm
+   * Net GND partition 12 contains:
+   * Pad P1-21 at (143.81, 90.60) mm
+   * Net GND partition 13 contains:
+   * Pad P1-22 at (143.81, 93.37) mm
+   * Net GND partition 14 contains:
+   * Pad P1-23 at (143.81, 96.14) mm
+   * Net GND partition 15 contains:
+   * Pad P1-24 at (143.81, 98.91) mm
+   * Net GND partition 16 contains:
+   * Pad U6-39 at ( 97.79,127.00) mm
+   * Net GND partition 17 contains:
+   * Pad U8-2 at ( 67.07, 67.31) mm
+Error 1 -- Net GND connected to uncommitted pin at:
+   * Pad U4-4 at ( 39.37,124.10) mm
+Warning: Objects in Net VCC are physically connected but not routed point-to-po
+int.
+   * Line at (123.28, 66.13):(123.19, 93.98) mm [Bottom layer]
+   * Pad R17-A at (123.19, 81.28) mm
+Warning: Objects in Net VCC are physically connected but not routed point-to-po
+int.
+   * Line at (123.28, 66.13):(123.19, 93.98) mm [Bottom layer]
+   * Pad R15-A at (123.19, 76.20) mm
+Warning: Objects in Net VCC are physically connected but not routed point-to-po
+int.
+   * Line at (123.28, 66.13):(123.19, 93.98) mm [Bottom layer]
+   * Pad R14-A at (123.19, 68.58) mm
+Error: Net VCC not routed.
+   * Net VCC partition 1 contains:
+   * Pad D3-A at ( 45.72, 76.20) mm
+   * Pad U4-3 at ( 41.91,109.22) mm
+   * Pad C1-A at ( 45.72,105.41) mm
+   * Pad C7-A at ( 90.17, 97.16) mm
+   * Pad C4-A at ( 80.65, 80.01) mm
+   * Pad 2-A at ( 77.47,107.95) mm
+   * Pad 3-A at (109.22, 95.89) mm
+   * Pad C6-A at ( 99.70, 78.74) mm
+   * Pad C5-A at ( 85.73, 97.16) mm
+   * Pad U7-4 at (130.79,114.38) mm
+   * Pad U3-78 at ( 80.01, 76.20) mm
+   * Pad U3-66 at ( 74.93, 86.36) mm
+   * Pad U3-53 at ( 77.47,104.14) mm
+   * Pad U3-43 at ( 90.17,104.14) mm
+   * Pad U3-26 at (105.41, 93.98) mm
+   * Pad U3-13 at (102.87, 76.20) mm
+   * Pad U3-3 at ( 92.71, 73.66) mm
+   * Pad 1-B at ( 69.85, 86.36) mm
+   * Pad U6-10 at ( 57.15,124.46) mm
+   * Pad U6-30 at ( 82.55,124.46) mm
+   * Pad U6-59 at (123.19,127.00) mm
+   * Pad R16-A at (123.19, 66.04) mm
+   * Pad R14-A at (123.19, 68.58) mm
+   * Pad R15-A at (123.19, 76.20) mm
+   * Pad R17-A at (123.19, 81.28) mm
+   * Pad 4-A at ( 92.71, 69.85) mm
+   * Pad U8-4 at ( 52.07, 74.81) mm
+   * Pad U8-1 at ( 52.07, 67.31) mm
+   * Net VCC partition 2 contains:
+   * Pad U3-38 at ( 97.79,101.60) mm
+Error: Net PD0 not routed.
+   * Net PD0 partition 1 contains:
+   * Pad U3-6 at ( 95.25, 76.20) mm
+   * Net PD0 partition 2 contains:
+   * Pad R2-B at (129.95, 71.12) mm
+Error: Net PD1 not routed.
+   * Net PD1 partition 1 contains:
+   * Pad U3-8 at ( 97.79, 76.20) mm
+   * Net PD1 partition 2 contains:
+   * Pad R3-B at (129.95, 73.66) mm
+Error: Net PD2 not routed.
+   * Net PD2 partition 1 contains:
+   * Pad U3-9 at (100.33, 73.66) mm
+   * Net PD2 partition 2 contains:
+   * Pad R4-B at (129.95, 78.74) mm
+Error: Net PD3 not routed.
+   * Net PD3 partition 1 contains:
+   * Pad U3-10 at (100.33, 76.20) mm
+   * Net PD3 partition 2 contains:
+   * Pad R5-B at (129.95, 83.82) mm
+Error: Net PD4 not routed.
+   * Net PD4 partition 1 contains:
+   * Pad U3-11 at (102.87, 73.66) mm
+   * Net PD4 partition 2 contains:
+   * Pad R6-B at (129.95, 86.36) mm
+Error: Net PD6 not routed.
+   * Net PD6 partition 1 contains:
+   * Pad U3-15 at (102.87, 78.74) mm
+   * Net PD6 partition 2 contains:
+   * Pad R8-B at (129.95, 91.44) mm
+Error: Net PD7 not routed.
+   * Net PD7 partition 1 contains:
+   * Pad U3-16 at (105.41, 81.28) mm
+   * Net PD7 partition 2 contains:
+   * Pad R9-B at (129.95, 93.98) mm
+Error: Net BUSY not routed.
+   * Net BUSY partition 1 contains:
+   * Pad U3-17 at (102.87, 81.28) mm
+   * Net BUSY partition 2 contains:
+   * Pad R10-B at (129.95, 97.79) mm
+Error: Net ADSTB not routed.
+   * Net ADSTB partition 1 contains:
+   * Pad U3-20 at (105.41, 86.36) mm
+   * Net ADSTB partition 2 contains:
+   * Pad R13-B at (129.95, 81.28) mm
+   * Pad R17-B at (126.59, 81.28) mm
+Error: Net NINIT not routed.
+   * Net NINIT partition 1 contains:
+   * Pad U3-1 at ( 90.17, 73.66) mm
+   * Net NINIT partition 2 contains:
+   * Pad R12-B at (129.95, 76.20) mm
+   * Pad R15-B at (126.59, 76.20) mm
+Error: Net NWRITE not routed.
+   * Net NWRITE partition 1 contains:
+   * Pad U3-5 at ( 95.25, 73.66) mm
+   * Net NWRITE partition 2 contains:
+   * Pad R1-B at (129.95, 68.58) mm
+   * Pad R14-B at (126.59, 68.58) mm
+Error: Net DSTB not routed.
+   * Net DSTB partition 1 contains:
+   * Pad U3-18 at (105.41, 83.82) mm
+   * Net DSTB partition 2 contains:
+   * Pad R11-B at (129.95, 66.04) mm
+   * Pad R16-B at (126.59, 66.04) mm
+Error: Net /WE not routed.
+   * Net /WE partition 1 contains:
+   * Pad U3-31 at (102.87, 99.06) mm
+   * Net /WE partition 2 contains:
+   * Pad R21-A at (107.95,134.62) mm
+Error: Net /CAS0L not routed.
+   * Net /CAS0L partition 1 contains:
+   * Pad U3-36 at (100.33,101.60) mm
+   * Net /CAS0L partition 2 contains:
+   * Pad R18-A at ( 99.06,118.11) mm
+Error: Net /CAS0U not routed.
+   * Net /CAS0U partition 1 contains:
+   * Pad U3-33 at (102.87,104.14) mm
+   * Net /CAS0U partition 2 contains:
+   * Pad R19-A at (102.87,134.62) mm
+Error: Net /CAS1L not routed.
+   * Net /CAS1L partition 1 contains:
+   * Pad U3-35 at (100.33,104.14) mm
+   * Net /CAS1L partition 2 contains:
+   * Pad R20-A at (100.33,134.62) mm
+Error: Net /CAS1U not routed.
+   * Net /CAS1U partition 1 contains:
+   * Pad U3-34 at (102.87,101.60) mm
+   * Net /CAS1U partition 2 contains:
+   * Pad R24-A at (101.60,118.11) mm
+Error: Net AD0 not routed.
+   * Net AD0 partition 1 contains:
+   * Pad U2-18 at ( 48.26, 39.37) mm
+   * Pad U6-2 at ( 46.99,124.46) mm
+   * Pad U6-3 at ( 48.26,127.00) mm
+   * Net AD0 partition 2 contains:
+   * Pad U3-54 at ( 74.93,101.60) mm
+Error: Net AD1 not routed.
+   * Net AD1 partition 1 contains:
+   * Pad U2-17 at ( 50.80, 39.37) mm
+   * Pad U6-4 at ( 49.53,124.46) mm
+   * Pad U6-5 at ( 50.80,127.00) mm
+   * Net AD1 partition 2 contains:
+   * Pad U3-55 at ( 77.47,101.60) mm
+Error: Net AD2 not routed.
+   * Net AD2 partition 1 contains:
+   * Pad U2-16 at ( 53.34, 39.37) mm
+   * Pad U6-6 at ( 52.07,124.46) mm
+   * Pad U6-7 at ( 53.34,127.00) mm
+   * Net AD2 partition 2 contains:
+   * Pad U3-56 at ( 74.93, 99.06) mm
+Error: Net AD3 not routed.
+   * Net AD3 partition 1 contains:
+   * Pad U2-15 at ( 55.88, 39.37) mm
+   * Pad U6-8 at ( 54.61,124.46) mm
+   * Pad U6-9 at ( 55.88,127.00) mm
+   * Net AD3 partition 2 contains:
+   * Pad U3-57 at ( 77.47, 99.06) mm
+Error: Net AD4 not routed.
+   * Net AD4 partition 1 contains:
+   * Pad U2-14 at ( 58.42, 39.37) mm
+   * Net AD4 partition 2 contains:
+   * Pad U3-58 at ( 74.93, 96.52) mm
+   * Net AD4 partition 3 contains:
+   * Pad U6-20 at ( 69.85,124.46) mm
+   * Pad U6-21 at ( 71.12,127.00) mm
+Error: Net AD5 not routed.
+   * Net AD5 partition 1 contains:
+   * Pad U2-13 at ( 60.96, 39.37) mm
+   * Net AD5 partition 2 contains:
+   * Pad U3-60 at ( 74.93, 93.98) mm
+   * Net AD5 partition 3 contains:
+   * Pad U6-22 at ( 72.39,124.46) mm
+   * Pad U6-23 at ( 73.66,127.00) mm
+Error: Net AD6 not routed.
+   * Net AD6 partition 1 contains:
+   * Pad U2-12 at ( 63.50, 39.37) mm
+   * Net AD6 partition 2 contains:
+   * Pad U3-61 at ( 77.47, 93.98) mm
+   * Net AD6 partition 3 contains:
+   * Pad U6-24 at ( 74.93,124.46) mm
+   * Pad U6-25 at ( 76.20,127.00) mm
+Error: Net AD7 not routed.
+   * Net AD7 partition 1 contains:
+   * Pad U2-11 at ( 66.04, 39.37) mm
+   * Net AD7 partition 2 contains:
+   * Pad U3-63 at ( 77.47, 91.44) mm
+   * Net AD7 partition 3 contains:
+   * Pad U6-26 at ( 77.47,124.46) mm
+   * Pad U6-27 at ( 78.74,127.00) mm
+Error: Net AD8 not routed.
+   * Net AD8 partition 1 contains:
+   * Pad U3-21 at (102.87, 86.36) mm
+   * Net AD8 partition 2 contains:
+   * Pad U1-18 at (124.46, 38.10) mm
+   * Net AD8 partition 3 contains:
+   * Pad U6-49 at (110.49,127.00) mm
+   * Pad U6-50 at (111.76,124.46) mm
+Error: Net AD9 not routed.
+   * Net AD9 partition 1 contains:
+   * Pad U3-22 at (105.41, 88.90) mm
+   * Net AD9 partition 2 contains:
+   * Pad U1-17 at (127.00, 38.10) mm
+   * Net AD9 partition 3 contains:
+   * Pad U6-51 at (113.03,127.00) mm
+   * Pad U6-52 at (114.30,124.46) mm
+Error: Net AD10 not routed.
+   * Net AD10 partition 1 contains:
+   * Pad U3-24 at (105.41, 91.44) mm
+   * Net AD10 partition 2 contains:
+   * Pad U1-16 at (129.54, 38.10) mm
+   * Net AD10 partition 3 contains:
+   * Pad U6-53 at (115.57,127.00) mm
+   * Pad U6-54 at (116.84,124.46) mm
+Error: Net AD12 not routed.
+   * Net AD12 partition 1 contains:
+   * Pad U3-27 at (102.87, 93.98) mm
+   * Net AD12 partition 2 contains:
+   * Pad U1-14 at (134.62, 38.10) mm
+   * Net AD12 partition 3 contains:
+   * Pad U6-57 at (120.65,127.00) mm
+   * Pad U6-58 at (121.92,124.46) mm
+Error: Net AD11 not routed.
+   * Net AD11 partition 1 contains:
+   * Pad U3-25 at (102.87, 91.44) mm
+   * Net AD11 partition 2 contains:
+   * Pad U1-15 at (132.08, 38.10) mm
+   * Net AD11 partition 3 contains:
+   * Pad U6-55 at (118.11,127.00) mm
+   * Pad U6-56 at (119.38,124.46) mm
+Error: Net AD13 not routed.
+   * Net AD13 partition 1 contains:
+   * Pad U3-28 at (105.41, 96.52) mm
+   * Net AD13 partition 2 contains:
+   * Pad U1-13 at (137.16, 38.10) mm
+   * Net AD13 partition 3 contains:
+   * Pad U6-61 at (125.73,127.00) mm
+   * Pad U6-60 at (124.46,124.46) mm
+Error: Net AD14 not routed.
+   * Net AD14 partition 1 contains:
+   * Pad U3-29 at (102.87, 96.52) mm
+   * Net AD14 partition 2 contains:
+   * Pad U1-12 at (139.70, 38.10) mm
+   * Net AD14 partition 3 contains:
+   * Pad U6-63 at (128.27,127.00) mm
+   * Pad U6-62 at (127.00,124.46) mm
+Error: Net AD15 not routed.
+   * Net AD15 partition 1 contains:
+   * Pad U3-30 at (105.41, 99.06) mm
+   * Net AD15 partition 2 contains:
+   * Pad U1-11 at (142.24, 38.10) mm
+   * Net AD15 partition 3 contains:
+   * Pad U6-65 at (130.81,127.00) mm
+   * Pad U6-64 at (129.54,124.46) mm
+Error: Net MA0 not routed.
+   * Net MA0 partition 1 contains:
+   * Pad U3-52 at ( 80.01,101.60) mm
+   * Net MA0 partition 2 contains:
+   * Pad R27-A at ( 59.69,118.11) mm
+Error: Net MA1 not routed.
+   * Net MA1 partition 1 contains:
+   * Pad U3-51 at ( 80.01,104.14) mm
+   * Net MA1 partition 2 contains:
+   * Pad R28-A at ( 60.96,134.62) mm
+Error: Net MA2 not routed.
+   * Net MA2 partition 1 contains:
+   * Pad U3-50 at ( 82.55,101.60) mm
+   * Net MA2 partition 2 contains:
+   * Pad R29-A at ( 62.23,118.11) mm
+Error: Net MA3 not routed.
+   * Net MA3 partition 1 contains:
+   * Pad U3-49 at ( 82.55,104.14) mm
+   * Net MA3 partition 2 contains:
+   * Pad R30-A at ( 63.50,134.62) mm
+Error: Net MA4 not routed.
+   * Net MA4 partition 1 contains:
+   * Pad U3-48 at ( 85.09,101.60) mm
+   * Net MA4 partition 2 contains:
+   * Pad R31-A at ( 64.77,118.11) mm
+Error: Net MA5 not routed.
+   * Net MA5 partition 1 contains:
+   * Pad U3-46 at ( 87.63,101.60) mm
+   * Net MA5 partition 2 contains:
+   * Pad R32-A at ( 66.04,134.62) mm
+Error: Net MA6 not routed.
+   * Net MA6 partition 1 contains:
+   * Pad U3-45 at ( 87.63,104.14) mm
+   * Net MA6 partition 2 contains:
+   * Pad R33-A at ( 67.31,118.11) mm
+Error: Net MA7 not routed.
+   * Net MA7 partition 1 contains:
+   * Pad U3-44 at ( 90.17,101.60) mm
+   * Net MA7 partition 2 contains:
+   * Pad R34-A at ( 80.01,118.11) mm
+Error: Net MA8 not routed.
+   * Net MA8 partition 1 contains:
+   * Pad U3-41 at ( 92.71,104.14) mm
+   * Net MA8 partition 2 contains:
+   * Pad R35-A at ( 83.82,134.62) mm
+Error: Net MA9 not routed.
+   * Net MA9 partition 1 contains:
+   * Pad U3-40 at ( 95.25,101.60) mm
+   * Net MA9 partition 2 contains:
+   * Pad R36-A at ( 85.09,118.11) mm
+Error: Net MA10 not routed.
+   * Net MA10 partition 1 contains:
+   * Pad U3-39 at ( 95.25,104.14) mm
+   * Net MA10 partition 2 contains:
+   * Pad R37-A at ( 68.58,134.62) mm
+Error: Net MA11 not routed.
+   * Net MA11 partition 1 contains:
+   * Pad U3-37 at ( 97.79,104.14) mm
+   * Net MA11 partition 2 contains:
+   * Pad R38-A at ( 81.28,134.62) mm
+Error: Net /RAS0 not routed.
+   * Net /RAS0 partition 1 contains:
+   * Pad U3-64 at ( 74.93, 88.90) mm
+   * Net /RAS0 partition 2 contains:
+   * Pad R22-A at ( 87.63,118.11) mm
+Error: Net /RAS1 not routed.
+   * Net /RAS1 partition 1 contains:
+   * Pad U3-65 at ( 77.47, 88.90) mm
+   * Net /RAS1 partition 2 contains:
+   * Pad R23-A at ( 86.36,134.62) mm
+Error: Net /READ not routed.
+   * Net /READ partition 1 contains:
+   * Pad P2-10 at (100.33, 16.51) mm
+   * Net /READ partition 2 contains:
+   * Pad U2-1 at ( 43.18, 31.75) mm
+   * Net /READ partition 3 contains:
+   * Pad U3-75 at ( 77.47, 73.66) mm
+   * Net /READ partition 4 contains:
+   * Pad U1-1 at (119.38, 30.48) mm
+Error: Net CON49 not routed.
+   * Net CON49 partition 1 contains:
+   * Pad P2-49 at ( 64.77, 16.51) mm
+   * Net CON49 partition 2 contains:
+   * Pad P3-49 at ( 65.06, 51.44) mm
+Error: Net CON24 not routed.
+   * Net CON24 partition 1 contains:
+   * Pad P3-24 at ( 65.06, 56.52) mm
+   * Net CON24 partition 2 contains:
+   * Pad P2-24 at ( 64.77, 16.51) mm
+Error: Net NAD0 not routed.
+   * Net NAD0 partition 1 contains:
+   * Pad P3-28 at (117.56, 51.44) mm
+   * Pad P2-28 at (118.11, 16.51) mm
+   * Net NAD0 partition 2 contains:
+   * Pad U2-2 at ( 45.72, 31.75) mm
+Error: Net NAD1 not routed.
+   * Net NAD1 partition 1 contains:
+   * Pad P3-29 at (115.06, 51.44) mm
+   * Pad P2-29 at (115.57, 16.51) mm
+   * Net NAD1 partition 2 contains:
+   * Pad U2-3 at ( 48.26, 31.75) mm
+Error: Net NAD2 not routed.
+   * Net NAD2 partition 1 contains:
+   * Pad P3-30 at (112.56, 51.44) mm
+   * Pad P2-30 at (113.03, 16.51) mm
+   * Net NAD2 partition 2 contains:
+   * Pad U2-4 at ( 50.80, 31.75) mm
+Error: Net NAD8 not routed.
+   * Net NAD8 partition 1 contains:
+   * Pad P3-16 at ( 85.06, 56.52) mm
+   * Net NAD8 partition 2 contains:
+   * Pad P2-16 at ( 85.09, 16.51) mm
+   * Net NAD8 partition 3 contains:
+   * Pad U1-2 at (121.92, 30.48) mm
+Error: Net NAD9 not routed.
+   * Net NAD9 partition 1 contains:
+   * Pad P3-15 at ( 87.56, 56.52) mm
+   * Net NAD9 partition 2 contains:
+   * Pad P2-15 at ( 87.63, 16.51) mm
+   * Net NAD9 partition 3 contains:
+   * Pad U1-3 at (124.46, 30.48) mm
+Error: Net NAD10 not routed.
+   * Net NAD10 partition 1 contains:
+   * Pad P3-12 at ( 95.06, 56.52) mm
+   * Net NAD10 partition 2 contains:
+   * Pad P2-12 at ( 95.25, 16.51) mm
+   * Net NAD10 partition 3 contains:
+   * Pad U1-4 at (127.00, 30.48) mm
+Error: Net NAD11 not routed.
+   * Net NAD11 partition 1 contains:
+   * Pad P3-11 at ( 97.56, 56.52) mm
+   * Net NAD11 partition 2 contains:
+   * Pad P2-11 at ( 97.79, 16.51) mm
+   * Net NAD11 partition 3 contains:
+   * Pad U1-5 at (129.54, 30.48) mm
+Error: Net NAD12 not routed.
+   * Net NAD12 partition 1 contains:
+   * Pad P3-7 at (107.56, 56.52) mm
+   * Net NAD12 partition 2 contains:
+   * Pad P2-7 at (107.95, 16.51) mm
+   * Net NAD12 partition 3 contains:
+   * Pad U1-6 at (132.08, 30.48) mm
+Error: Net NAD13 not routed.
+   * Net NAD13 partition 1 contains:
+   * Pad P3-5 at (112.56, 56.52) mm
+   * Net NAD13 partition 2 contains:
+   * Pad P2-5 at (113.03, 16.51) mm
+   * Pad U1-7 at (134.62, 30.48) mm
+Error: Net NAD14 not routed.
+   * Net NAD14 partition 1 contains:
+   * Pad P3-4 at (115.06, 56.52) mm
+   * Net NAD14 partition 2 contains:
+   * Pad P2-4 at (115.57, 16.51) mm
+   * Pad U1-8 at (137.16, 30.48) mm
+Error: Net NAD15 not routed.
+   * Net NAD15 partition 1 contains:
+   * Pad P3-3 at (117.56, 56.52) mm
+   * Net NAD15 partition 2 contains:
+   * Pad P2-3 at (118.11, 16.51) mm
+   * Pad U1-9 at (139.70, 30.48) mm
+Error: Net CON21 not routed.
+   * Net CON21 partition 1 contains:
+   * Pad P3-21 at ( 72.56, 56.52) mm
+   * Net CON21 partition 2 contains:
+   * Pad P2-21 at ( 72.39, 16.51) mm
+Error: Net CON19 not routed.
+   * Net CON19 partition 1 contains:
+   * Pad P3-19 at ( 77.56, 56.52) mm
+   * Net CON19 partition 2 contains:
+   * Pad P2-19 at ( 77.47, 16.51) mm
+Warning: Objects in Net 3.3V are physically connected but not routed point-to-p
+oint.
+   * Line at ( 82.63, 23.93):( 82.63, 56.44) mm [Bottom layer]
+   * Pad P3-42 at ( 82.56, 51.44) mm
+Error: Net 3.3V not routed.
+   * Net 3.3V partition 1 contains:
+   * Pad P3-17 at ( 82.56, 56.52) mm
+   * Pad P3-42 at ( 82.56, 51.44) mm
+   * Pad P2-42 at ( 82.55, 16.51) mm
+   * Pad P2-17 at ( 82.55, 16.51) mm
+   * Net 3.3V partition 2 contains:
+   * Pad P3-9 at (102.56, 56.52) mm
+   * Pad P3-34 at (102.56, 51.44) mm
+   * Pad P2-34 at (102.87, 16.51) mm
+   * Pad P2-9 at (102.87, 16.51) mm
+Error: Net /WRITE not routed.
+   * Net /WRITE partition 1 contains:
+   * Pad P2-8 at (105.41, 16.51) mm
+   * Net /WRITE partition 2 contains:
+   * Pad U3-76 at ( 77.47, 76.20) mm
+Error: Net COLD.RES not routed.
+   * Net COLD.RES partition 1 contains:
+   * Pad P3-20 at ( 75.06, 56.52) mm
+   * Net COLD.RES partition 2 contains:
+   * Pad P2-20 at ( 74.93, 16.51) mm
+   * Net COLD.RES partition 3 contains:
+   * Pad U3-74 at ( 74.93, 76.20) mm
+Error: Net ALEL not routed.
+   * Net ALEL partition 1 contains:
+   * Pad P3-33 at (105.06, 51.44) mm
+   * Pad P2-33 at (105.41, 16.51) mm
+   * Net ALEL partition 2 contains:
+   * Pad U3-81 at ( 85.09, 73.66) mm
+Error: Net ALEH not routed.
+   * Net ALEH partition 1 contains:
+   * Pad P3-35 at (100.06, 51.44) mm
+   * Pad P2-35 at (100.33, 16.51) mm
+   * Net ALEH partition 2 contains:
+   * Pad U3-80 at ( 82.55, 76.20) mm
+Error: Net CLK not routed.
+   * Net CLK partition 1 contains:
+   * Pad U3-83 at ( 87.63, 73.66) mm
+   * Net CLK partition 2 contains:
+   * Pad U8-3 at ( 67.07, 74.81) mm
+Error: Net /RAMBUF not routed.
+   * Net /RAMBUF partition 1 contains:
+   * Pad U2-19 at ( 45.72, 39.37) mm
+   * Net /RAMBUF partition 2 contains:
+   * Pad U3-73 at ( 77.47, 78.74) mm
+   * Net /RAMBUF partition 3 contains:
+   * Pad U1-19 at (121.92, 38.10) mm
+Error: Net PD5 not routed.
+   * Net PD5 partition 1 contains:
+   * Pad U3-12 at (105.41, 76.20) mm
+   * Net PD5 partition 2 contains:
+   * Pad R7-B at (129.95, 88.90) mm
+Error: Net TDO not routed.
+   * Net TDO partition 1 contains:
+   * Pad U7-3 at (128.25,114.38) mm
+   * Net TDO partition 2 contains:
+   * Pad U3-71 at ( 77.47, 81.28) mm
+Error: Net TCK not routed.
+   * Net TCK partition 1 contains:
+   * Pad U7-1 at (128.27,116.84) mm
+   * Net TCK partition 2 contains:
+   * Pad U3-62 at ( 74.93, 91.44) mm
+Error: Net TMS not routed.
+   * Net TMS partition 1 contains:
+   * Pad U7-5 at (128.25,111.84) mm
+   * Net TMS partition 2 contains:
+   * Pad U3-23 at (102.87, 88.90) mm
+Error: Net TDI not routed.
+   * Net TDI partition 1 contains:
+   * Pad U7-9 at (128.25,106.76) mm
+   * Net TDI partition 2 contains:
+   * Pad U3-14 at (105.41, 78.74) mm
+Warning: Width violation tests were not performed because
+         of missing Width rule.
+
+11 warning(s) detected.
+78 error(s) detected.
+
+CLEARANCE VIOLATIONS:
+
+Error 2 -- Clearance Violation between:
+   * Line at ( 67.31, 16.51):( 67.31, 49.50) mm [Bottom layer]
+   * Pad U2-11 at ( 66.04, 39.37) mm [Bottom layer]
+   * Calculated Clearance: 0.01mm.
+   * Rule: Layer{Bottom}.PadToLineClearance=0.30mm
+Error 3 -- Clearance Violation between:
+   * Pad P1-5 at (140.97, 80.92) mm [Bottom layer]
+   * Line at (135.11, 79.61):(143.75, 79.61) mm [Bottom layer]
+   * Calculated Clearance: 0.28mm.
+   * Rule: Layer{Bottom}.PadToLineClearance=0.30mm
+Error 4 -- Clearance Violation between:
+   * Line at (119.38, 38.10):(119.38, 43.18) mm [Top layer]
+   * Via at (118.11, 39.37) mm [Top layer]
+   * Calculated Clearance: 0.26mm.
+   * Rule: Layer{Top}.ViaToLineClearance=0.30mm
+
+0 warning(s) detected.
+3 error(s) detected.
+
+UNCONNECTED PINS:
+
+Error 5 -- Unconnected pin:
+   * Pad U3-70 at ( 74.93, 81.28) mm
+Error 6 -- Unconnected pin:
+   * Pad U3-69 at ( 77.47, 83.82) mm
+Error 7 -- Unconnected pin:
+   * Pad U3-68 at ( 74.93, 83.82) mm
+Error 8 -- Unconnected pin:
+   * Pad U3-67 at ( 77.47, 86.36) mm
+Error 9 -- Unconnected pin:
+   * Pad U3-4 at ( 92.71, 76.20) mm
+Error 10 -- Unconnected pin:
+   * Pad P2-39 at ( 90.17, 16.51) mm
+Error 11 -- Unconnected pin:
+   * Pad P2-18 at ( 80.01, 16.51) mm
+Error 12 -- Unconnected pin:
+   * Pad P2-14 at ( 90.17, 16.51) mm
+Error 13 -- Unconnected pin:
+   * Pad P3-18 at ( 80.06, 56.52) mm
+Error 14 -- Unconnected pin:
+   * Pad P3-14 at ( 90.06, 56.52) mm
+Error 15 -- Unconnected pin:
+   * Pad P3-39 at ( 90.06, 51.44) mm
+Error 16 -- Unconnected pin:
+   * Pad U6-36 at ( 90.17,124.46) mm
+Error 17 -- Unconnected pin:
+   * Pad U6-37 at ( 95.25,127.00) mm
+Error 18 -- Unconnected pin:
+   * Pad U6-67 at (133.35,127.00) mm
+Error 19 -- Unconnected pin:
+   * Pad U6-69 at (135.89,127.00) mm
+Error 20 -- Unconnected pin:
+   * Pad U6-71 at (138.43,127.00) mm
+Error 21 -- Unconnected pin:
+   * Pad U6-11 at ( 58.42,127.00) mm
+Error 22 -- Unconnected pin:
+   * Pad U6-35 at ( 88.90,127.00) mm
+Error 23 -- Unconnected pin:
+   * Pad U6-38 at ( 96.52,124.46) mm
+Error 24 -- Unconnected pin:
+   * Pad U6-46 at (106.68,124.46) mm
+Error 25 -- Unconnected pin:
+   * Pad U6-48 at (109.22,124.46) mm
+Error 26 -- Unconnected pin:
+   * Pad U6-66 at (132.08,124.46) mm
+Error 27 -- Unconnected pin:
+   * Pad U6-68 at (134.62,124.46) mm
+Error 28 -- Unconnected pin:
+   * Pad U6-70 at (137.16,124.46) mm
+Error 29 -- Unconnected pin:
+   * Pad U5-2 at ( 39.97, 85.09) mm
+Error 30 -- Unconnected pin:
+   * Pad U7-7 at (128.25,109.30) mm
+Error 31 -- Unconnected pin:
+   * Pad U7-8 at (130.79,109.30) mm
+Error 32 -- Unconnected pin:
+   * Pad U7-6 at (130.79,111.84) mm
+Error 33 -- Unconnected pin:
+   * Pad P1-(unused) at (142.39,109.98) mm
+Error 34 -- Unconnected pin:
+   * Pad P1-(unused) at (142.39, 62.94) mm
+Error 35 -- Unconnected pin:
+   * Pad P1-15 at (143.81, 73.99) mm
+Error 36 -- Unconnected pin:
+   * Pad P1-18 at (143.81, 82.30) mm
+Error 37 -- Unconnected pin:
+   * Pad P1-13 at (140.97,103.07) mm
+Error 38 -- Unconnected pin:
+   * Pad P1-12 at (140.97,100.30) mm
+Error 39 -- Unconnected pin:
+   * Pad P1-10 at (140.97, 94.77) mm
+
+35 error(s) detected.
+
+NETLIST LENGTH VIOLATIONS:
+
+Warning: Net length violation tests were not performed because
+         of missing MinNetLength and MaxNetLength rules.
+
+1 warning(s) detected.
+0 error(s) detected.
+
+SILK SCREEN CLEARANCE VIOLATIONS:
+
+Error 40 -- Clearance Violation between:
+   * Attribute at (147.80, 60.33) mm [Top Silk layer]
+   * Text=DB25M
+   * Pad P1-(unused) at (142.39, 62.94) mm
+   * Calculated Clearance: 0.07mm.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 41 -- Clearance Violation between:
+   * Text at (100.81, 75.57) mm [Top Silk layer]
+   * Text=A
+   * Pad U3-10 at (100.33, 76.20) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 42 -- Clearance Violation between:
+   * Text at (100.81, 75.57) mm [Top Silk layer]
+   * Text=A
+   * Pad U3-8 at ( 97.79, 76.20) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 43 -- Clearance Violation between:
+   * Attribute at ( 45.24,127.00) mm [Top Silk layer]
+   * Text=TO-220AB
+   * Pad U6-2 at ( 46.99,124.46) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 44 -- Clearance Violation between:
+   * Attribute at ( 45.24,127.00) mm [Top Silk layer]
+   * Text=TO-220AB
+   * Pad U6-1 at ( 45.72,127.00) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 45 -- Clearance Violation between:
+   * Attribute at ( 45.24,127.00) mm [Top Silk layer]
+   * Text=TO-220AB
+   * Pad U6-3 at ( 48.26,127.00) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 46 -- Clearance Violation between:
+   * Line at ( 34.24,127.15):( 44.50,127.15) mm [Top Silk layer]
+   * Pad U4-4 at ( 39.37,124.10) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 47 -- Clearance Violation between:
+   * Attribute at ( 34.29,106.20) mm [Top Silk layer]
+   * Text=C8
+   * Pad U4-1 at ( 36.83,109.22) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 48 -- Clearance Violation between:
+   * Arc at ( 40.64,102.87):( 40.64,102.87) mm [Top Silk layer]
+   * Pad C8-PLUS at ( 36.83,102.87) mm
+   * Calculated Clearance: 0.24mm.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 49 -- Clearance Violation between:
+   * Attribute at ( 37.43, 90.17) mm [Top Silk layer]
+   * Text=U5
+   * Pad D1-K at ( 36.83, 93.98) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 50 -- Clearance Violation between:
+   * Line at ( 46.97, 80.59):( 32.97, 80.59) mm [Top Silk layer]
+   * Pad U5-3 at ( 43.97, 80.59) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 51 -- Clearance Violation between:
+   * Line at ( 46.97, 89.59):( 46.97, 80.59) mm [Top Silk layer]
+   * Pad U5-1 at ( 46.99, 85.09) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 52 -- Clearance Violation between:
+   * Text at ( 77.47, 78.89) mm [Top Silk layer]
+   * Text=A
+   * Pad U3-73 at ( 77.47, 78.74) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 53 -- Clearance Violation between:
+   * Text at ( 77.47, 78.89) mm [Top Silk layer]
+   * Text=A
+   * Pad U3-71 at ( 77.47, 81.28) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 54 -- Clearance Violation between:
+   * Line at (150.21,121.98):( 35.21,121.98) mm [Top Silk layer]
+   * Pad U4-4 at ( 39.37,124.10) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 55 -- Clearance Violation between:
+   * Attribute at ( 40.16, 68.58) mm [Top Silk layer]
+   * Text=D2
+   * Pad D4-A at ( 43.18, 64.77) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 56 -- Clearance Violation between:
+   * Attribute at ( 41.12, 54.61) mm [Top Silk layer]
+   * Text=D4
+   * Pad D2-A at ( 38.10, 58.42) mm
+   * Calculated Clearance: Touching.
+   * Rule: Design.SilkscreenClearance=12.0mil
+Error 57 -- Clearance Violation between:
+   * Attribute at ( 43.66, 66.04) mm [Top Silk layer]
+   * Text=D3
+   * Pad D4-A at ( 43.18, 64.77) mm
+   * Calculated Clearance: 0.24mm.
+   * Rule: Design.SilkscreenClearance=12.0mil
+
+0 warning(s) detected.
+18 error(s) detected.
+
+COPPER POUR VIOLATIONS:
+
+Error 58 -- Copper pour unpoured:
+   * Copper Pour at ( 78.74, 77.47),(101.60, 77.47),(101.60,100.33),...mm [Top 
+layer]
+Error 59 -- Copper pour unpoured:
+   * Copper Pour at ( 33.02,139.70),( 33.02,135.89),(152.40,135.89),...mm [Top 
+layer]
+Error 60 -- Copper pour unpoured:
+   * Copper Pour at ( 62.23, 20.32),( 62.23, 27.94),( 41.91, 27.94),...mm [Top 
+layer]
+Error 61 -- Copper pour unconnected to a net:
+   * Copper Pour at ( 62.23, 20.32),( 62.23, 27.94),( 41.91, 27.94),...mm [Top 
+layer]
+Error 62 -- Copper pour unpoured:
+   * Copper Pour at ( 62.23, 24.13),( 69.85, 24.13),( 69.85, 57.15),...mm [Top 
+layer]
+Error 63 -- Copper pour unpoured:
+   * Copper Pour at (142.24,106.68),(142.24, 95.25),(142.24, 83.82),...mm [Top 
+layer]
+Error 64 -- Copper pour unconnected to a net:
+   * Copper Pour at (142.24,106.68),(142.24, 95.25),(142.24, 83.82),...mm [Top 
+layer]
+Error 65 -- Copper pour unpoured:
+   * Copper Pour at ( 62.23, 20.32),( 62.23, 27.94),( 41.91, 27.94),...mm [Bott
+om layer]
+Error 66 -- Copper pour unconnected to a net:
+   * Copper Pour at ( 62.23, 20.32),( 62.23, 27.94),( 41.91, 27.94),...mm [Bott
+om layer]
+Error 67 -- Copper pour unpoured:
+   * Copper Pour at ( 62.23, 20.32),( 62.23, 27.94),( 41.91, 27.94),...mm [Bott
+om layer]
+Error 68 -- Copper pour unpoured:
+   * Copper Pour at (142.24,106.68),(142.24, 83.82),(148.59, 83.82),...mm [Bott
+om layer]
+Error 69 -- Copper pour unpoured:
+   * Copper Pour at (142.24,106.68),(142.24, 83.82),(148.59, 83.82),...mm [Bott
+om layer]
+Error 70 -- Copper pour unconnected to a net:
+   * Copper Pour at (142.24,106.68),(142.24, 83.82),(148.59, 83.82),...mm [Bott
+om layer]
+
+13 error(s) detected.
+
+PLANE VIOLATIONS:
+
+
+0 warning(s) detected.
+0 error(s) detected.
+
+COMPONENT VIOLATIONS:
+
+
+0 error(s) detected.
+
+DRILL VIOLATIONS:
+
+Error 71 -- Hole Clearance Violation between:
+   * Pad (Default) at 92.56mm 56.52mm and
+   * Via (Default) at 92.50mm 56.46mm.
+   * Calculated clearance: 0.00mm.
+   * Rule: Design.HoleToHoleClearance=13.0mil
+
+Error 72 -- Hole Clearance Violation between:
+   * Pad (Default) at 92.56mm 51.44mm and
+   * Via (Default) at 92.50mm 51.50mm.
+   * Calculated clearance: 0.00mm.
+   * Rule: Design.HoleToHoleClearance=13.0mil
+
+
+0 warning(s) detected.
+2 error(s) detected.
+
+PSEUDO PATTERNS:
+
+
+0 error(s) detected.
+
+DRC Summary:
+------------
+
+Clearance Violations:   3
+Text Violations:        0
+Net List Violations:    1
+Unrouted Nets:          77
+Unconnected Pins:       35
+Net Length Violations:  0
+Silk Violations:        18
+Copper Pour Violations: 13
+Plane Violations:       0
+Component Violations:   0
+Drill Violations:       2
+Pseudo Patterns:        0
+
+-------------------------------------------------------------------------------
+
+29-Aug-99  09:09                                                     Page    1
+

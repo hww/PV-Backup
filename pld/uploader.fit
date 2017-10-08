@@ -1,0 +1,153 @@
+-- MAX+plus II Compiler Fit File      
+-- Version 8.3 4/02/98                
+-- Compiled: 10/06/99 05:01:21        
+
+-- Copyright (C) 1988-1998 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+CHIP "uploader"
+BEGIN
+
+    DEVICE = "EPM7128SLC84-10";
+    UNROUTED;
+
+    "clk"                          : INPUT_PIN  = 83     ;
+    "epp_addr_stb"                 : INPUT_PIN  = 20     ; -- LC21
+    "epp_data_stb"                 : INPUT_PIN  = 18     ; -- LC24
+    "epp_init"                     : INPUT_PIN  = 1      ;
+    "epp_write"                    : INPUT_PIN  = 5      ; -- LC14
+    "n64_aleh"                     : INPUT_PIN  = 80     ; -- LC126
+    "n64_alel"                     : INPUT_PIN  = 81     ; -- LC128
+    "n64_cold_reset"               : INPUT_PIN  = 74     ; -- LC117
+    "n64_read"                     : INPUT_PIN  = 75     ; -- LC118
+    "n64_write"                    : INPUT_PIN  = 76     ; -- LC120
+    "cas0L"                        : OUTPUT_PIN = 36     ; -- LC57
+    "cas0U"                        : OUTPUT_PIN = 33     ; -- LC64
+    "cas1L"                        : OUTPUT_PIN = 35     ; -- LC59
+    "cas1U"                        : OUTPUT_PIN = 34     ; -- LC61
+    "dram_a0"                      : OUTPUT_PIN = 52     ; -- LC80
+    "dram_a1"                      : OUTPUT_PIN = 51     ; -- LC77
+    "dram_a2"                      : OUTPUT_PIN = 50     ; -- LC75
+    "dram_a3"                      : OUTPUT_PIN = 49     ; -- LC73
+    "dram_a4"                      : OUTPUT_PIN = 48     ; -- LC72
+    "dram_a5"                      : OUTPUT_PIN = 46     ; -- LC69
+    "dram_a6"                      : OUTPUT_PIN = 45     ; -- LC67
+    "dram_a7"                      : OUTPUT_PIN = 44     ; -- LC65
+    "dram_a8"                      : OUTPUT_PIN = 41     ; -- LC49
+    "dram_a9"                      : OUTPUT_PIN = 40     ; -- LC51
+    "dram_a10"                     : OUTPUT_PIN = 39     ; -- LC53
+    "dram_a11"                     : OUTPUT_PIN = 37     ; -- LC56
+    "epp_busy"                     : OUTPUT_PIN = 17     ; -- LC25
+    "ndrambuf"                     : OUTPUT_PIN = 73     ; -- LC115
+    "os_event_cart"                : OUTPUT_PIN = 67     ; -- LC104
+    "ras0"                         : OUTPUT_PIN = 64     ; -- LC99
+    "ras1"                         : OUTPUT_PIN = 65     ; -- LC101
+    "rom_read"                     : OUTPUT_PIN = 77     ; -- LC123
+    "rom_write"                    : OUTPUT_PIN = 79     ; -- LC125
+    "we"                           : OUTPUT_PIN = 31     ; -- LC35
+    "epp_data0"                    : BIDIR_PIN  = 6      ; -- LC13
+    "epp_data1"                    : BIDIR_PIN  = 8      ; -- LC11
+    "epp_data2"                    : BIDIR_PIN  = 9      ; -- LC8
+    "epp_data3"                    : BIDIR_PIN  = 10     ; -- LC6
+    "epp_data4"                    : BIDIR_PIN  = 11     ; -- LC5
+    "epp_data5"                    : BIDIR_PIN  = 12     ; -- LC3
+    "epp_data6"                    : BIDIR_PIN  = 15     ; -- LC29
+    "epp_data7"                    : BIDIR_PIN  = 16     ; -- LC27
+    "n64_data0"                    : BIDIR_PIN  = 54     ; -- LC83
+    "n64_data1"                    : BIDIR_PIN  = 55     ; -- LC85
+    "n64_data2"                    : BIDIR_PIN  = 56     ; -- LC86
+    "n64_data3"                    : BIDIR_PIN  = 57     ; -- LC88
+    "n64_data4"                    : BIDIR_PIN  = 58     ; -- LC91
+    "n64_data5"                    : BIDIR_PIN  = 60     ; -- LC93
+    "n64_data6"                    : BIDIR_PIN  = 61     ; -- LC94
+    "n64_data7"                    : BIDIR_PIN  = 63     ; -- LC97
+    "n64_data8"                    : BIDIR_PIN  = 21     ; -- LC19
+    "n64_data9"                    : BIDIR_PIN  = 22     ; -- LC17
+    "n64_data10"                   : BIDIR_PIN  = 24     ; -- LC46
+    "n64_data11"                   : BIDIR_PIN  = 25     ; -- LC45
+    "n64_data12"                   : BIDIR_PIN  = 27     ; -- LC43
+    "n64_data13"                   : BIDIR_PIN  = 28     ; -- LC40
+    "n64_data14"                   : BIDIR_PIN  = 29     ; -- LC38
+    "n64_data15"                   : BIDIR_PIN  = 30     ; -- LC37
+    "as"                           : LOCATION   = LC114  ;
+    "cart_on"                      : LOCATION   = LC41   ;
+    "cas"                          : LOCATION   = LC100  ;
+    "casr"                         : LOCATION   = LC106  ;
+    "cnt0"                         : LOCATION   = LC63   ;
+    "cnt1"                         : LOCATION   = LC42   ;
+    "cnt2"                         : LOCATION   = LC90   ;
+    "cnt3"                         : LOCATION   = LC109  ; -- PIN 70
+    "cnt4"                         : LOCATION   = LC82   ;
+    "cnt5"                         : LOCATION   = LC71   ;
+    "cnt6"                         : LOCATION   = LC95   ;
+    "cnt7"                         : LOCATION   = LC98   ;
+    "cnt8"                         : LOCATION   = LC79   ;
+    "cnt9"                         : LOCATION   = LC113  ;
+    "cnt10"                        : LOCATION   = LC50   ;
+    "cnt11"                        : LOCATION   = LC39   ;
+    "cnt12"                        : LOCATION   = LC36   ;
+    "cnt13"                        : LOCATION   = LC44   ;
+    "cnt14"                        : LOCATION   = LC33   ;
+    "cnt15"                        : LOCATION   = LC48   ; -- PIN 23
+    "cnt16"                        : LOCATION   = LC55   ;
+    "cnt17"                        : LOCATION   = LC122  ;
+    "cnt18"                        : LOCATION   = LC60   ;
+    "cnt19"                        : LOCATION   = LC110  ;
+    "cnt20"                        : LOCATION   = LC92   ;
+    "cnt21"                        : LOCATION   = LC105  ; -- PIN 68
+    "cnt22"                        : LOCATION   = LC96   ; -- PIN 62
+    "cnt23"                        : LOCATION   = LC107  ; -- PIN 69
+    "cnt25"                        : LOCATION   = LC126  ; -- PIN 80
+    "cnt26"                        : LOCATION   = LC54   ;
+    "enable"                       : LOCATION   = LC81   ;
+    "epp_as"                       : LOCATION   = LC128  ; -- PIN 81
+    "epp_astb"                     : LOCATION   = IOC_20   ; -- LC21  -- epp_addr_stb
+    "epp_dstb"                     : LOCATION   = IOC_18   ; -- LC24  -- epp_data_stb
+    "epp_rga0"                     : LOCATION   = LC78   ;
+    "epp_rga1"                     : LOCATION   = LC30   ;
+    "epp_rga2"                     : LOCATION   = LC18   ;
+    "epp_ss~1"                     : LOCATION   = LC22   ;
+    "epp_ss~2"                     : LOCATION   = LC23   ;
+    "epp_ss~3"                     : LOCATION   = LC32   ; -- PIN 14
+    "epp_ss~4"                     : LOCATION   = LC20   ;
+    "epp_ss~5"                     : LOCATION   = ANY    ;
+    "epp_ss~5"                     : UNROUTED ;
+    "ewe"                          : LOCATION   = LC70   ;
+    "inc"                          : LOCATION   = LC102  ;
+    "|lpm_decode:dc|altshift:external_latency_ffs|points0_0" : LOCATION   = LC118  ; -- PIN 75
+    "|lpm_decode:dc|altshift:external_latency_ffs|points0_1" : LOCATION   = LC12   ;
+    "|lpm_decode:dc|altshift:external_latency_ffs|points0_2" : LOCATION   = LC7    ;
+    "|lpm_decode:dc|altshift:external_latency_ffs|points0_3" : LOCATION   = LC4    ;
+    "|lpm_decode:dc|altshift:external_latency_ffs|points0_5" : LOCATION   = LC2    ;
+    "|lpm_mux:epp_mux|muxlut:111|muxlut:57|result_node~1" : LOCATION   = LC117  ; -- PIN 74
+    "|lpm_mux:epp_mux|muxlut:129|muxlut:57|result_node~fit~in1" : LOCATION   = LC119  ;
+    "mode"                         : LOCATION   = LC28   ;
+    "mx"                           : LOCATION   = LC124  ;
+    "n64_data0~1"                  : LOCATION   = LC120  ; -- PIN 76
+    "ras"                          : LOCATION   = LC103  ;
+    "rasr"                         : LOCATION   = LC111  ;
+    "refresh"                      : LOCATION   = LC121  ;
+    "wcf"                          : LOCATION   = LC116  ;
+    "wdf"                          : LOCATION   = LC62   ;
+    "write_ena"                    : LOCATION   = LC89   ;
+    "x2"                           : LOCATION   = LC26   ;
+    "x4"                           : LOCATION   = LC108  ;
+
+END;
