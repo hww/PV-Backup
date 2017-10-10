@@ -1,0 +1,110 @@
+// Debug module routines
+
+
+#define PUTCHAR_BUF_START   (unsigned long)0xb3FFFE00
+#define PUTCHAR_BUF_LENGTH  (unsigned long)0x00000200
+#define PUTCHAR_SCF	    (unsigned long)0xb4000000
+#define PUTCHAR_BUF	    (unsigned long)(PUTCHAR_BUF_START - 4)
+
+void WritePI (unsigned long , unsigned long );
+unsigned long ReadPI ( unsigned long  );
+void EndPrintf (void);
+
+
+ // Global variables
+char __str[128];
+char __strbuffer[512];
+unsigned long dbgnum;
+ // Routines
+
+#include <os.h>
+//***********************************************************
+// Init debug mode 
+//***********************************************************
+void InitDebug (void)
+   {
+   unsigned long i;
+
+  // Clear debug memory area
+   for (i=0; i<0x200; i+=4) WritePI (PUTCHAR_BUF_START + i,(unsigned long)0 );
+   WritePI(PUTCHAR_BUF,(unsigned long)0x12345678);
+   __strbuffer[0]=(char)0;
+   dbgnum=0;
+   }
+//***********************************************************
+// Printf data to PC
+//***********************************************************
+void __PrintStr (char* str)
+   {
+	char* ptr;
+	ptr=__strbuffer;
+	while(*ptr) ptr++;
+	while( *ptr++=*str++ );
+   }
+
+#define Print(x...) ({ sprintf(__str, x); __PrintStr(__str); })
+#define EPrint(x...) ({ sprintf(__str, x); __PrintStr(__str); EndPrint(); })
+//***********************************************************
+// Exchange procedure
+//***********************************************************
+#define EndPrint  EndPrintf
+
+void EndPrintf (void)
+   {
+   unsigned long temp;
+   unsigned long n;
+   unsigned long* ptr;
+
+   dbgnum++;   	
+   n = 0;
+   ptr = (unsigned long*) __strbuffer;
+   
+   while(n<512)
+   {
+   	temp=*ptr++;
+   	WritePI((unsigned long)(PUTCHAR_BUF_START+n),temp);
+   	n+=4;
+   }
+   
+   temp = ReadPI((unsigned long)PUTCHAR_BUF); 			// read dramm
+   WritePI((unsigned long) PUTCHAR_SCF,(unsigned long) temp);   // set off dram
+   while (ReadPI((unsigned long)PUTCHAR_BUF) != temp ){}; 	// wait for dramm
+   
+  // Set putchar output storage address to beginning
+  __strbuffer[0]=(char)0;
+   }
+//***********************************************************
+// Write PI interface
+//***********************************************************
+
+void WritePI (unsigned long addr, unsigned long c)
+   {
+
+   // Align address to 4 byte boundary.
+   // Unaligned addresses will cause a permanent loop.
+
+   addr &=0xbffffffc;
+
+   // Wait for parallel interface not busy
+   do {} while (*(volatile unsigned long *) (0xa4600010) & 3);
+
+   *(unsigned long *)(addr) = c;
+   }
+//***********************************************************
+// Read PI Interface
+//***********************************************************
+
+unsigned long ReadPI ( unsigned long addr )
+   {
+
+   // Align address to 4 byte boundary.
+   // Unaligned addresses will cause a permanent loop.
+
+   addr &=0xbffffffc;
+
+   // Wait for parallel interface not busy
+   do {} while (*(volatile unsigned long *) (0xa4600010) & 3);
+
+   return *(unsigned long *)(addr);
+   }
+

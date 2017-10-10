@@ -1,0 +1,413 @@
+-------------------------------------------------------------------------------
+INCLUDE "lpm_add_sub";
+INCLUDE "lpm_mux";
+INCLUDE "lpm_counter"; 
+INCLUDE "lpm_decode";
+
+SUBDESIGN uploader
+-------------------------------------------------------------------------------
+(
+-------------------------------------------------------------------------------
+-- 40 mhz oscilator 25 ns
+	clk												: INPUT;
+-- epp interface pins
+	epp_write, epp_data_stb,epp_addr_stb,epp_init	: INPUT;
+	epp_busy										: OUTPUT;
+	epp_data[7..0]									: BIDIR;
+-- n64 interface
+	n64_write,n64_read,n64_aleh,n64_alel			: INPUT;
+	n64_cold_reset									: INPUT;
+	n64_data[15..0]									: BIDIR;
+	ndrambuf										: OUTPUT;
+-- rom interface
+	rom_write,rom_read								: OUTPUT;
+-- dram interface
+	dram_a[11..0]									: OUTPUT;
+	ras0,ras1,cas0L,cas1L,cas0U,cas1U,we			: OUTPUT;
+)
+
+-------------------------------------------------------------------------------
+-- begin of variable section
+-------------------------------------------------------------------------------
+VARIABLE
+
+reset,nreset		: NODE;
+epp_as				: DFFE;
+x2,x4				: DFFE;
+clk_4,pc			: NODE;
+epp_dstb,epp_astb 	: DFFE;
+epp_rga[2..0]		: DFFE;
+epp_wra				: NODE;
+epp_ss				: MACHINE WITH STATES (	s0,s1,sa,sd,sr,sr1);
+as					: NODE;
+epp_wrg[5..0]		: NODE;
+rg_write			: NODE;
+epp_input			: NODE;
+cnt[26..0]			: DFFE; --addres
+wdf,wcf				: DFFE; --written dram, written cart
+write_ena,cart_on	: DFFE; --mode
+enable,mode			: DFFE; --mode
+iwe					: DFFE;
+ras,mx,cas,inc,casr,rasr,ewe 	: DFFE;
+read,write,rdwr,aleh,alel	: NODE;
+refresh,dram_wr				: NODE;
+o_data[15..0], dram_output	: NODE;
+area_b4						: NODE;
+cart_cs, dram_cs			: NODE;
+rg_cs4						: NODE;
+dc		: lpm_decode 
+   WITH (LPM_WIDTH = 3, LPM_DECODES = 6, LPM_PIPELINE = 1);
+
+epp_mux : lpm_mux  
+   WITH (LPM_WIDTH = 8 , LPM_SIZE = 5, LPM_WIDTHS = 3, LPM_PIPELINE=0);
+
+epp_bmux : lpm_mux  
+   WITH (LPM_WIDTH = 8 , LPM_SIZE = 2, LPM_WIDTHS = 1, LPM_PIPELINE=0);
+
+dmux 	: lpm_mux  
+   WITH (LPM_WIDTH = 29 , LPM_SIZE = 2, LPM_WIDTHS = 1, LPM_PIPELINE=0);
+
+incmux 	: lpm_mux  
+   WITH (LPM_WIDTH = 9 , LPM_SIZE = 2, LPM_WIDTHS = 1, LPM_PIPELINE=0);
+
+add :lpm_add_sub 
+   WITH (LPM_WIDTH = 9, LPM_REPRESENTATION = "UNSIGNED", LPM_DIRECTION = "ADD", 
+		LPM_PIPELINE = 0, ONE_INPUT_IS_CONSTANT = "YES" );
+amux 	: lpm_mux  
+   WITH (LPM_WIDTH = 12 , LPM_SIZE = 2, LPM_WIDTHS = 1, LPM_PIPELINE=0);
+
+BEGIN
+
+-------------------------------------------------------------------------------
+-- List of registers Device
+-------------------------------------------------------------------------------
+-- cnt[7..0]	r w a[7..0]
+-- cnt[15..8]	r w a[15..8]
+-- cnt[23..16]	r w a[23..16]
+-- cnt[26..14]	  w a[26..24]
+--
+--     				a[8..1] support count of address
+--
+-- rg_3 		r   d[2..0] a[26..24]
+--					d3 don't use 
+--					d4 pc	1 = pc can work with DRAMM
+--					d5 wcf  1 = was write cart b4000000-b7ffffff
+--					d6 wdf  1 = was write dramm
+--					d7 rst  1 = power on n64
+--
+-- data_o			r w data
+-- rg_mode			  w mode
+--
+--					d0=1 enable PC mode, DRAMM connect to PC
+--      		    d1=0 cart ROM off from n64
+--      	 	      =1 cart ROM on in b4000000-b7ffffff
+--     		        	 dram on in b0000000-b3ffffff
+--              		 after write to car , dram get off
+--               		 and cart ROM in  b0000000-b3ffffff
+--		            d2=0 dram read only
+--					  =1 dram write enable
+--
+--					d5=0 clear wcf
+--					d5=1 set wcf
+--					d6=0 claer wdg
+--					d6=1 set wdf
+-------------------------------------------------------------------------------
+reset = GLOBAL(!epp_init);
+nreset = GLOBAL(epp_init);
+
+x2.clk = clk;
+x2.d = !x2.q ;
+
+x4.clk = clk;
+x4.ena = x2.q;
+x4.d = !x4.q ;
+
+clk_4 = x4.q and x2.q;
+-------------------------------------------------------------------------------
+-- DRAMM on/off for N64
+-------------------------------------------------------------------------------
+enable.clk = clk;
+enable.clrn= nreset;
+enable.d   = epp_data[0];
+enable.ena = epp_wrg5;
+
+mode.clrn= nreset; 
+mode.d   = enable.q; 		-- mode		
+mode.ena = !as;				-- EOF acces to dramm
+mode.clk = clk;
+pc = mode.q;				-- PC work with DRAMM
+-------------------------------------------------------------------------------
+-- Register of address EPP
+-------------------------------------------------------------------------------
+epp_rga[2..0].d = epp_data[2..0];
+epp_rga[].ena = epp_wra;
+epp_rga[].clk = clk;
+epp_rga[].clrn = nreset;
+
+dc.clock  = clk;				-- decoder of addres
+dc.data[] = epp_rga[].q;
+dc.enable = rg_write;
+epp_wrg[] = dc.eq[];
+-------------------------------------------------------------------------------
+-- EPP 1.9 interface
+-------------------------------------------------------------------------------
+-- main state mashine
+epp_ss.clk = clk;
+epp_ss.ena = clk_4;
+epp_ss.reset = reset;
+
+epp_busy = epp_ss.s0;
+
+epp_dstb.clk = clk;
+epp_dstb.ena = clk_4;
+epp_dstb.d = epp_data_stb;
+epp_astb.clk = clk;
+epp_astb.ena = clk_4;
+epp_astb.d = epp_addr_stb;
+
+rg_cs4 = (epp_rga[].q == 4);
+
+CASE epp_ss IS
+	WHEN s0 => 					-- Wait for no acces 
+		IF epp_dstb and epp_astb THEN			
+			epp_ss = s1;		-- Ok
+		ELSE
+			epp_ss = s0;
+		END IF;
+	WHEN s1 =>
+		IF !epp_dstb  THEN
+			IF rg_cs4 THEN
+				epp_ss = sr;	-- start dramm cycle DRAM
+			ELSE
+				epp_ss = sd;	-- start RGD acces
+	END IF;
+		ELSIF !epp_astb THEN
+			epp_ss = sa;			-- start RGA acces
+		ELSE
+			epp_ss = s1;			-- wait for acces
+		END IF;
+-- acces to RGA
+	WHEN sa =>
+			epp_ss = s0;
+-- acces to RGD
+	WHEN sd =>
+			epp_ss = s0;
+-- acces to DRAMM
+	WHEN sr =>
+		epp_ss = sr1;
+	WHEN sr1 =>
+		epp_ss = s0;
+	WHEN OTHERS =>
+		epp_ss = s0;			-- for error disable
+END CASE;
+
+-- write to RGA
+epp_wra = epp_ss.sa and !epp_write;
+
+-- write to RGD
+rg_write =  epp_ss.sd and !epp_write; 	 
+
+-- acces to DRAMM
+epp_as.d = epp_ss.sr 
+		or epp_as.q and epp_write;
+epp_as.clk =clk;
+epp_as.clrn = !epp_dstb.q;
+-------------------------------------------------------------------------------
+-- epp data bus
+-------------------------------------------------------------------------------
+epp_bmux.sel[] = cnt[0].q;
+epp_bmux.data[0][] = n64_data[7..0];
+epp_bmux.data[1][] = n64_data[15..8];
+
+epp_mux.sel[]     = epp_rga[].q; 
+epp_mux.data[0][] = cnt[7..0].q;
+epp_mux.data[1][] = cnt[15..8].q;
+epp_mux.data[2][] = cnt[23..16].q;
+epp_mux.data[3][] = (n64_cold_reset,wdf,wcf,pc,b"0",cnt[26..24].q);
+epp_mux.data[4][] = epp_bmux.result[];
+
+epp_input = (epp_write and !epp_data_stb);
+
+FOR n IN 0 TO 7 GENERATE
+	epp_data[n]=TRI(epp_mux.result[n],epp_input);
+END GENERATE;
+-------------------------------------------------------------------------------
+--- registers of addres
+-------------------------------------------------------------------------------
+dmux.sel[] = pc;
+dmux.data[0][] = (n64_data[12..0], n64_data[]);
+dmux.data[1][] = (epp_data[4..0],epp_data[],epp_data[],epp_data[]);
+
+incmux.sel[] = inc;
+incmux.data[0][] = dmux.result[8..0];
+incmux.data[1][] = add.result[8..0];
+
+add.dataa[] = cnt[8..0].q;
+add.datab[] = 1 ;
+add.cin = !pc;	-- +2
+
+cnt[].d = (dmux.result[26..9], incmux.result[8..0]);
+cnt[].clk   = clk;
+cnt[].clrn = n64_cold_reset or pc;
+
+cnt[26..24].ena = pc and epp_wrg3
+			  or !pc and aleh and alel;
+cnt[23..16].ena = pc and epp_wrg2
+			  or !pc and aleh and alel;
+cnt[15..9].ena =  pc and epp_wrg1
+			  or !pc and alel;
+cnt[8].ena     =  pc and epp_wrg1
+			  or !pc and alel
+			  or inc;
+cnt[7..0].ena  =  pc and epp_wrg0
+			  or !pc and alel
+			  or inc;
+
+-------------------------------------------------------------------------------
+-- ram data
+-------------------------------------------------------------------------------
+o_data[15..0]=(epp_data[7..0],epp_data[7..0]);
+
+dram_output = pc and epp_as and !epp_write;
+
+FOR n IN 0 TO 15 GENERATE
+	n64_data[n]=TRI(o_data[n],dram_output);	
+END GENERATE;
+
+-------------------------------------------------------------------------------
+-- mux adress
+-------------------------------------------------------------------------------
+-- max 32 mgb 
+-- mem    R x C   R11..10   C11..10
+--  8 mB  10õ10    X    X     X   X
+--        11x9     X   23     X   X  -- 20 skip      
+-- 16     11x10    X   23     X   X
+-- 32     11x11    X   23     X  24
+--        12x10   24   23     X   X 
+
+amux.sel[] = mx;
+amux.data[0][] = (cnt[24].q,cnt[24].q,cnt[22..13].q); -- COL
+amux.data[1][] = (cnt[24].q,cnt[23].q,cnt[12..3].q); -- ROWS
+dram_a[]= amux.result[];
+
+ras0 =!(  ras.q and !cnt1.q
+	   or rasr.q);
+ras1 =!(  ras.q and  cnt1.q
+	  or  rasr.q);
+cas0L=!(   cas.q and !cnt2.q and !pc				-- n64 cas
+		or cas.q and !cnt2.q and  pc and !cnt0.q	-- epp cas
+		or casr.q);									-- rfsh cas
+cas0U=!(   cas.q and !cnt2.q and !pc
+		or cas.q and !cnt2.q and  pc and  cnt0.q
+		or casr.q);
+cas1L=!(   cas.q and  cnt2.q and !pc
+		or cas.q and  cnt2.q and  pc and !cnt0.q
+		or casr.q);
+cas1U=!(   cas.q and  cnt2.q and !pc
+		or cas.q and  cnt2.q and  pc and  cnt0.q
+		or casr.q);
+-- write to dramm
+we = iwe.q;
+-------------------------------------------------------------------------------
+-- ras cas state mashine
+-------------------------------------------------------------------------------
+ras.clk = clk;
+mx.clk = clk;
+cas.clk = clk;
+inc.clk = clk;
+casr.clk = clk;
+rasr.clk = clk;
+iwe.clk = clk;
+ewe.clk = clk;
+
+ras.d = as and !refresh;
+mx.d = ras.q;
+cas.clrn = mx.q;
+cas.d = ras.q and as;
+inc.d = !ras.q and mx.q;
+
+casr.ena = clk_4;
+casr.d =   refresh and !casr.q;
+rasr.d = casr.q and !clk_4;
+ 
+ewe.clrn = cas.q;
+ewe.d = as;
+
+iwe.ena = VCC;
+iwe.d = !(dram_wr and as and !ewe.q);
+iwe.prn = ras.q;
+
+
+-------------------------------------------------------------------------------
+-- Register of mode
+-------------------------------------------------------------------------------
+write_ena.clk = clk;
+write_ena.clrn = nreset;
+write_ena.ena = epp_wrg5;
+write_ena.d = epp_data[2];
+
+cart_on.clk = clk;
+cart_on.clrn = nreset;
+cart_on.ena = epp_wrg5;
+cart_on.d = epp_data[1];
+
+-------------------------------------------------------------------------------
+-- rom acces
+-------------------------------------------------------------------------------
+--b400 0000 - b7FF FFFF
+area_b4=  cnt[26].q ; -- B"101101XX"
+
+cart_cs = cart_on and area_b4 			-- did not write to cart
+	  or  wcf.q;	  					-- was write to cartrige
+
+dram_cs = !cart_cs;
+
+ndrambuf= !(   !pc and dram_cs and rdwr
+			or !pc and alel);
+
+rom_write = !(write and cart_cs );
+rom_read =  !(read  and cart_cs );
+-------------------------------------------------------------------------------
+-- rg_3  r   (rst,wdf,wcf,pc,0,0,a[26..24])
+--          wdf=0 did not write to  dram
+--          wcf=0 was write to dramm b4000000-b7ffffff
+-------------------------------------------------------------------------------
+
+wdf.prn = !(epp_wrg5 and epp_data[6]);
+wdf.ena = !we;
+wdf.d = write_ena and !pc;
+wdf.clk = clk;
+wdf.clrn = !(epp_wrg5 and !epp_data[6]);
+
+wcf.prn = !(epp_wrg5 and epp_data[5]);
+wcf.ena = !n64_write;
+wcf.d = ( area_b4 and cart_on ) or wcf;
+wcf.clk = clk;
+wcf.clrn = !(epp_wrg5 and !epp_data[5]);
+-------------------------------------------------------------------------------
+-- Virtuall bus for dram
+-------------------------------------------------------------------------------
+read  = !n64_read and n64_cold_reset;
+write = !n64_write and n64_cold_reset; 
+aleh  =  n64_aleh;
+alel  =  n64_alel and n64_cold_reset;
+rdwr  =  read or write;
+
+-- as = 1 acces to dramm
+as = LCELL(	 !pc and rdwr and dram_cs
+	  or  pc and epp_as) ;
+
+dram_wr =(   !pc and write and write_ena.q  and dram_cs
+		 or   pc and !epp_write and epp_as);
+
+refresh = LCELL( !pc and  n64_aleh
+		or !pc and !n64_cold_reset
+		or !pc and  cart_cs
+  		or  pc and  epp_dstb.q
+		or  pc and !rg_cs4) ;
+
+-------------------------------------------------------------------------------
+-- END ;)
+-------------------------------------------------------------------------------
+END;
+
