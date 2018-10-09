@@ -4,7 +4,7 @@ Hardware PC LPT interface to the Nintendo 64 game console. This device is simila
 
 DIY PCB prototype board
 
-![PV Backup Prototyped PCB]("doc/PVBackup PCB Photo.png")
+![PV Backup Prototyped PCB](doc/PVBackup_PCB_Photo.jpg)
 
 ## Folders
 
