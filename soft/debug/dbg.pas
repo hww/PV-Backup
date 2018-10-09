@@ -334,7 +334,7 @@ begin
      end;
 end;
 //***********************************************
-// Acces to the ports
+// Access to the ports
 //***********************************************
 // In from port
 function Tpanel.InP(A : Word): byte;
@@ -468,7 +468,7 @@ begin
 end;
 
 //***********************************************
-// Timer for check samthing
+// Timer for check 
 //***********************************************
 procedure Tpanel.OneSecTimer(Sender: TObject);
 var
@@ -506,7 +506,7 @@ end;
 //***********************************************
 // Read File and do command
 //***********************************************
-// dramm mode
+// DRAM mode
 procedure Tpanel.RunBClick(Sender: TObject);
 begin
      mode(mPC);
@@ -602,7 +602,7 @@ begin
                inc(pos);
           end;
 
-          SetPtr(a shl 1);    // set pointer to a for controll
+          SetPtr(a shl 1);    // set pointer to a for control
           SetA(4);
           pos:=0;
           while pos < 256 do

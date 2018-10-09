@@ -1,7 +1,7 @@
 unit pc2n64;
 {****************************************************************************}
-{Russia Omsk Music Lab }
-{ Monitor uploade PC with n64   }
+{ Russia Omsk REMIS Lab }
+{ Monitor unloader PC with n64   }
 { VAP }
 {****************************************************************************}
 interface
@@ -188,7 +188,7 @@ dir_path: string;
 
 begin
     prn('Programm monitor of PV-Backup ');
-    prn('Omsk Russia  1999 Valery Pudov ');
+    prn('Omsk Russia  1999 REMIS Lab');
      prn('?                 This help' );
      prn('dr    $adres      dump ram PC' );
      prn('d     $adres      dump dramm n64' );
